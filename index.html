@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveena N | AI/ML Engineer & Agentic Systems Developer</title>
+  <meta name="description" content="Portfolio of Naveena N, AI/ML Engineer specializing in Agentic AI (LangGraph, AutoGen, MCP), Production RAG, MLOps, and Document Intelligence. Associate at MResult & IIT Madras Scholar.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for crisp UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Studio Lighting & Grid Overlay -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="header">
+    <nav class="nav-pill glass-card">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-avatar-mini">
+          <img src="avatar_stylized.jpg" alt="Naveena N" id="navAvatarImg">
+        </span>
+        <span class="logo-text">Naveena</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#sandbox" class="nav-link">Agent Demo</a></li>
+        <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher (☀️ / 🌙) -->
+        <button id="themeToggleBtn" class="theme-toggle-btn glass-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- Direct Resume Download Button -->
+        <a href="Naveena_s_Resume___16_09_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-primary nav-resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn glass-btn" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        
+        <!-- Hero Text & Headline -->
+        <div class="hero-content">
+          <!-- Availability & Location Chips -->
+          <div class="hero-chips">
+            <span class="badge badge-success pulse-beacon">
+              <span class="pulse-dot"></span>
+              Open to AI/ML engineering roles
+            </span>
+            <span class="badge badge-neutral">
+              <i class="fa-solid fa-location-dot"></i> Bangalore, India
+            </span>
+            <span class="badge badge-accent">
+              <i class="fa-solid fa-briefcase"></i> Associate @ MResult
+            </span>
+          </div>
+
+          <!-- Name & Tagline -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Naveena N</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I build </span>
+            <span id="typewriterText" class="typewriter-text">AI/ML &amp; Agentic Systems.</span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            AI/ML engineer at MResult building agentic AI and document-intelligence systems (LangGraph, AutoGen, MCP) from ingestion to deployment. B.Tech in AI &amp; Data Science (Jeppiaar, 2025); pursuing a B.S. in Data Science at IIT Madras. Currently learning React and Next.js to build full-stack AI products.
+          </p>
+
+          <!-- Highlight Credentials Pills -->
+          <div class="credentials-bar">
+            <div class="credential-pill">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span><strong>IIT Madras</strong>, B.S. Data Science <em>(ongoing)</em></span>
+            </div>
+            <div class="credential-pill">
+              <i class="fa-solid fa-microchip"></i>
+              <span><strong>Jeppiaar Institute of Technology</strong>, B.Tech AI &amp; Data Science (2025)</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- Direct Vercel Deployment Link for FinSight AI -->
+            <a href="https://finsight-ai-sage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary glass-btn" title="Launch FinSight AI on Vercel">
+              <i class="fa-solid fa-rocket live-pulse-icon"></i>
+              <span>FinSight Live on Vercel</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <!-- Direct Resume Download Button -->
+            <a href="Naveena_s_Resume___16_09_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-ghost glass-btn" title="Download Official Resume PDF">
+              <i class="fa-solid fa-download"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:navirajan2003@gmail.com" class="social-icon" aria-label="Email" title="navirajan2003@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <button id="copyEmailBtn" class="copy-email-chip" title="Click to copy email">
+              <i class="fa-regular fa-copy"></i>
+              <span id="copyEmailText">navirajan2003@gmail.com</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Frame with Concentric Rings & Clean Frame -->
+        <div class="hero-visual">
+          <div class="avatar-aura-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-glow-ring-secondary"></div>
+            
+            <div class="avatar-card glass-card">
+              <div class="avatar-image-container">
+                <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="avatar-img active-img">
+              </div>
+            </div>
+
+            <!-- Floating Badges around Avatar -->
+            <div class="floating-badge badge-top-right glass-card">
+              <div class="badge-icon-wrap bg-cyan">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="badge-meta">
+                <span class="badge-sub">Focus</span>
+                <span class="badge-main">Agentic AI &amp; RAG Systems</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left glass-card">
+              <div class="badge-icon-wrap bg-violet">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div class="badge-meta">
+                <span class="badge-sub">Also build</span>
+                <span class="badge-main">MLOps &amp; Document AI</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right glass-card">
+              <div class="badge-icon-wrap bg-emerald">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="badge-meta">
+                <span class="badge-sub">Experience</span>
+                <span class="badge-main">1.5+ years @ MResult</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PRODUCTION METRICS TELEMETRY BAR ==================== -->
+    <section class="telemetry-section">
+      <div class="telemetry-grid glass-card">
+        
+        <div class="telemetry-item">
+          <div class="telemetry-icon bg-emerald">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="telemetry-info">
+            <div class="telemetry-number" data-target="99" data-prefix="~" data-suffix="%">~99%</div>
+            <div class="telemetry-label">Extraction accuracy (manual validation)</div>
+          </div>
+        </div>
+
+        <div class="telemetry-divider"></div>
+
+        <div class="telemetry-item">
+          <div class="telemetry-icon bg-cyan">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="telemetry-info">
+            <div class="telemetry-number" data-target="0.845" data-decimals="3">0.845</div>
+            <div class="telemetry-label">ROC-AUC, churn model on 7,000+ records</div>
+          </div>
+        </div>
+
+        <div class="telemetry-divider"></div>
+
+        <div class="telemetry-item">
+          <div class="telemetry-icon bg-violet">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <div class="telemetry-info">
+            <div class="telemetry-number" data-target="40" data-prefix="~" data-suffix="%">~40%</div>
+            <div class="telemetry-label">Less manual effort in enterprise summarization</div>
+          </div>
+        </div>
+
+        <div class="telemetry-divider"></div>
+
+        <div class="telemetry-item">
+          <div class="telemetry-icon bg-amber">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="telemetry-info">
+            <div class="telemetry-number" data-target="42" data-suffix=" Tables">42 Tables</div>
+            <div class="telemetry-label">Structured budget data queried in FinSight</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED PROJECTS (Moved early for recruiter impact) ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <span class="section-subtitle">Featured Engineering</span>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Agentic systems, ML pipelines, and enterprise automation.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: FinSight AI (Featured) -->
+        <article class="project-card glass-card project-featured">
+          <div class="project-badge-bar">
+            <span class="project-pill pill-live">
+              <span class="pulse-dot"></span> Featured Project
+            </span>
+            <span class="project-date">Live on Vercel</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-icon bg-violet">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <div>
+                <h3 class="project-title">FinSight AI</h3>
+                <span class="project-role">Agentic Financial Budget Analyst</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              Answers questions about Tamil Nadu's Fiscal Management White Paper (2021–22 to 2025–26) with page-level citations. A LangGraph ReAct agent routes each question between vector search over 223 section-aware chunks and SQL over structured tables in Neon Postgres, and a verification agent re-checks figures against the source table. Includes a Chat Analyst and a Visual Dashboard. Frontend built with Next.js/React as part of my full-stack learning.
+            </p>
+
+            <!-- Key Engineering Highlights Checklist -->
+            <ul class="project-features-list">
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Ingestion:</strong> 121-page report parsed with PyMuPDF, keeping section and page citations.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Data layer:</strong> Neon PostgreSQL for SQL aggregation and verified lookups.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Agent:</strong> LangGraph ReAct with a verification step before each answer.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Deployment:</strong> Next.js app on Vercel.</li>
+            </ul>
+
+            <!-- Tech Stack Tags -->
+            <div class="project-tech-tags">
+              <span class="tech-tag">LangGraph</span>
+              <span class="tech-tag">PostgreSQL (Neon)</span>
+              <span class="tech-tag">Next.js / React</span>
+              <span class="tech-tag">MCP Protocol</span>
+              <span class="tech-tag">PyMuPDF</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Vercel</span>
+              <span class="tech-tag">Python</span>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="project-actions">
+              <a href="https://finsight-ai-sage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Launch FinSight AI on Vercel">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live App (Vercel)
+              </a>
+              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Customer Churn with MLOps -->
+        <article class="project-card glass-card">
+          <div class="project-badge-bar">
+            <span class="project-pill pill-mlops">
+              <i class="fa-solid fa-boxes-stacked"></i> MLOps Pipeline
+            </span>
+            <span class="project-date">Jan 2026 – Mar 2026</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-icon bg-cyan">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h3 class="project-title">Customer Churn Prediction with MLOps</h3>
+                <span class="project-role">Production Pipeline on 7,000+ Records</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              Telco churn pipeline on 7,000+ records, from preprocessing and feature engineering to training and batch inference. Compared several classifiers; Logistic Regression performed best (ROC-AUC 0.845, F1 0.61) and stayed interpretable. Tracked with MLflow, containerized with Docker, served via FastAPI.
+            </p>
+
+            <ul class="project-features-list">
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Evaluation:</strong> ROC-AUC 0.845, F1 0.61 on 7k records (compared Logistic Regression, Random Forest, XGBoost on Telco dataset).</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Experiment tracking:</strong> MLflow versioning and hyperparameter logging.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Containerized:</strong> Dockerized FastAPI service.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">MLflow</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Python</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Enterprise Multi-Agent Summarizer & Document AI -->
+        <article class="project-card glass-card">
+          <div class="project-badge-bar">
+            <span class="project-pill pill-enterprise">
+              <i class="fa-solid fa-building"></i> Enterprise System
+            </span>
+            <span class="project-date">MResult Technologies</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-icon bg-amber">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div>
+                <h3 class="project-title">Enterprise Multi-Agent Summarizer &amp; Document AI</h3>
+                <span class="project-role">MResult Technologies</span>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              Multi-agent system using AutoGen and ChromaDB to ingest, clean, and summarize enterprise datasets, reducing manual effort by ~40% (estimated before vs. after). Also built multimodal document-extraction workflows across text, tables, and charts, with ~99% accuracy in manual validation against source documents.
+            </p>
+
+            <ul class="project-features-list">
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>~40% less manual effort:</strong> Collaborative multi-agent summarization workflow.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>~99% extraction accuracy (manual validation):</strong> Multimodal document processing pipeline.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Integration:</strong> FastAPI with Snowflake and AWS S3.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">AutoGen</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Snowflake</span>
+              <span class="tech-tag">AWS S3</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#experience" class="btn btn-sm btn-ghost glass-btn">
+                <i class="fa-solid fa-briefcase"></i> View Role in Experience
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== LIVE AGENT DEMO (Directly after Projects) ==================== -->
+    <section id="sandbox" class="section sandbox-section">
+      <div class="section-header">
+        <span class="section-subtitle">Live Agent Verification</span>
+        <h2 class="section-title">FinSight agent: example trace</h2>
+        <p class="section-desc">A simulated run showing how the agent plans, retrieves, and verifies a figure before answering.</p>
+      </div>
+
+      <div class="sandbox-terminal-card glass-card">
+        
+        <!-- Terminal Header Bar -->
+        <div class="terminal-bar">
+          <div class="terminal-traffic-lights">
+            <span class="traffic-dot dot-red"></span>
+            <span class="traffic-dot dot-yellow"></span>
+            <span class="traffic-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fa-solid fa-terminal"></i> finsight_agent_runtime.py — LangGraph + MCP + PostgreSQL (Neon)
+          </div>
+          <div class="terminal-status-wrap">
+            <span class="terminal-status-pill">
+              <span class="pulse-dot"></span> Agent Ready
+            </span>
+            <span class="badge-illustrative">Illustrative trace (sample values)</span>
+          </div>
+        </div>
+
+        <div class="terminal-body">
+          <!-- Preset Query Selector -->
+          <div class="terminal-query-picker">
+            <span class="query-picker-label">Select Tamil Nadu Fiscal White Paper Query:</span>
+            <div class="query-chips">
+              <button class="query-chip active" data-query="1">
+                "What is the Public Debt & Liabilities trajectory from 2021-22 to 2025-26?"
+              </button>
+              <button class="query-chip" data-query="2">
+                "How does Committed Expenditure (salaries, pensions, debt) crowd out capital outlay?"
+              </button>
+              <button class="query-chip" data-query="3">
+                "Verify Table 2.1 Outstanding Debt & Liabilities numbers against source White Paper"
+              </button>
+            </div>
+          </div>
+
+          <!-- Live Reasoning Trace Output Area (Rendered via JS without duplicate steps) -->
+          <div id="agentTraceOutput" class="agent-trace-console"></div>
+
+          <!-- Interactive Action Controls -->
+          <div class="terminal-footer">
+            <div class="terminal-meta-tags">
+              <span><i class="fa-solid fa-database"></i> DB: PostgreSQL (Neon)</span>
+              <span id="terminalCitations"><i class="fa-solid fa-bookmark"></i> Citations: Table 2.1 (Page 27)</span>
+            </div>
+            <div class="terminal-btns">
+              <button id="btnReplayTrace" class="btn btn-sm btn-ghost glass-btn">
+                <i class="fa-solid fa-rotate-right"></i> Run Simulated Trace
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5-STAGE AI ENGINEERING PIPELINE (How I build) ==================== -->
+    <section id="pipeline" class="section pipeline-section">
+      <div class="section-header">
+        <span class="section-subtitle">How I build</span>
+        <h2 class="section-title">From raw documents to deployed agents</h2>
+        <p class="section-desc">The pipeline behind my RAG and agent projects: ingestion, reasoning, retrieval, verification, and deployment.</p>
+      </div>
+
+      <!-- Interactive 5-Stage Process Track -->
+      <div class="pipeline-track-wrapper">
+        <div class="pipeline-connector-line"></div>
+        <div class="pipeline-grid">
+          
+          <!-- Stage 1 -->
+          <div class="pipeline-step-card glass-card active" data-step="1">
+            <div class="step-badge">01</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-file-invoice"></i>
+            </div>
+            <h3 class="step-title">Ingest &amp; Chunk</h3>
+            <p class="step-summary">PyMuPDF section-aware chunking preserving chapter &amp; page metadata (121 pages into 223 chunks).</p>
+            <div class="step-pills">
+              <span class="mini-pill">PyMuPDF</span>
+              <span class="mini-pill">Pandas</span>
+              <span class="mini-pill">Metadata</span>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="pipeline-step-card glass-card" data-step="2">
+            <div class="step-badge">02</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="step-title">Reason &amp; Plan</h3>
+            <p class="step-summary">Multi-agent reasoning with LangGraph &amp; ReAct framework. Query planning and intent classification.</p>
+            <div class="step-pills">
+              <span class="mini-pill">LangGraph</span>
+              <span class="mini-pill">ReAct</span>
+              <span class="mini-pill">AutoGen</span>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="pipeline-step-card glass-card" data-step="3">
+            <div class="step-badge">03</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 class="step-title">Ground &amp; Retrieve</h3>
+            <p class="step-summary">Hybrid routing: semantic vector retrieval in ChromaDB combined with structured PostgreSQL lookups.</p>
+            <div class="step-pills">
+              <span class="mini-pill">ChromaDB</span>
+              <span class="mini-pill">PostgreSQL</span>
+              <span class="mini-pill">Snowflake</span>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="pipeline-step-card glass-card" data-step="4">
+            <div class="step-badge">04</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3 class="step-title">Verify &amp; Expose</h3>
+            <p class="step-summary">Numeric verification agents check figures against source budget tables before answering.</p>
+            <div class="step-pills">
+              <span class="mini-pill">MCP Protocol</span>
+              <span class="mini-pill">Evaluation</span>
+              <span class="mini-pill">Guardrails</span>
+            </div>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="pipeline-step-card glass-card" data-step="5">
+            <div class="step-badge">05</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3 class="step-title">Deploy &amp; Scale</h3>
+            <p class="step-summary">FastAPI microservices deployed to AWS EC2 &amp; Vercel, tracked reproducibly with MLflow &amp; Docker.</p>
+            <div class="step-pills">
+              <span class="mini-pill">FastAPI</span>
+              <span class="mini-pill">Docker</span>
+              <span class="mini-pill">AWS / Vercel</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Pipeline Inspector Drawer -->
+        <div id="pipelineDetailBox" class="pipeline-detail-box glass-card">
+          <div class="detail-header">
+            <span id="detailStepNum" class="detail-step-badge">Stage 01 Focus</span>
+            <h4 id="detailTitle" class="detail-title">Document Intelligence &amp; Section-Aware Ingestion</h4>
+          </div>
+          <p id="detailDesc" class="detail-desc">
+            Fiscal PDF reports and tables are split into section-aware chunks that keep chapter, sub-chapter, and page metadata. This lets the retriever cite the exact page and section behind each answer and reduces unsupported claims.
+          </p>
+          <div class="detail-metrics-row">
+            <div class="detail-metric">
+              <span class="dm-val" id="dmVal1">121 Pages</span>
+              <span class="dm-lbl" id="dmLbl1">Fiscal Report Size</span>
+            </div>
+            <div class="detail-metric">
+              <span class="dm-val" id="dmVal2">223 Chunks</span>
+              <span class="dm-lbl" id="dmLbl2">Section-Aware Chunks</span>
+            </div>
+            <div class="detail-metric">
+              <span class="dm-val" id="dmVal3">Table + Page Context</span>
+              <span class="dm-lbl" id="dmLbl3">Kept in Every Chunk</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & TECHNOLOGIES ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Stack</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-desc">Tools I use, grouped by area.</p>
+      </div>
+
+      <!-- Skill Filter Tabs -->
+      <div class="skills-filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Technologies</button>
+        <button class="filter-tab" data-filter="agents">Generative AI &amp; Agents</button>
+        <button class="filter-tab" data-filter="mlops">MLOps &amp; Cloud</button>
+        <button class="filter-tab" data-filter="cv">Computer Vision &amp; Doc AI</button>
+        <button class="filter-tab" data-filter="core">Core ML &amp; Backend</button>
+      </div>
+
+      <!-- Skills Card Grid -->
+      <div class="skills-grid">
+        
+        <!-- Category 1: Generative AI & AI Agents -->
+        <div class="skill-category-card glass-card" data-category="agents">
+          <div class="cat-header">
+            <i class="fa-solid fa-robot text-violet"></i>
+            <h3>Generative AI &amp; AI Agents</h3>
+          </div>
+          <div class="skill-pills-list">
+            <span class="status-pill dot-green">LangGraph</span>
+            <span class="status-pill dot-green">AutoGen</span>
+            <span class="status-pill dot-cyan">ReAct Framework</span>
+            <span class="status-pill dot-cyan">LlamaIndex</span>
+            <span class="status-pill dot-violet">MCP (Model Context Protocol)</span>
+            <span class="status-pill dot-violet">ChromaDB</span>
+            <span class="status-pill dot-cyan">RAG Architecture</span>
+            <span class="status-pill dot-yellow">Hybrid Vector/SQL Routing</span>
+          </div>
+        </div>
+
+        <!-- Category 2: MLOps & Infrastructure -->
+        <div class="skill-category-card glass-card" data-category="mlops">
+          <div class="cat-header">
+            <i class="fa-solid fa-gears text-cyan"></i>
+            <h3>MLOps &amp; Infrastructure</h3>
+          </div>
+          <div class="skill-pills-list">
+            <span class="status-pill dot-green">MLflow Tracking</span>
+            <span class="status-pill dot-green">Docker Containerization</span>
+            <span class="status-pill dot-cyan">AWS EC2 Deployment</span>
+            <span class="status-pill dot-cyan">AWS S3 Presigned URLs</span>
+            <span class="status-pill dot-cyan">CI/CD Workflows</span>
+            <span class="status-pill dot-yellow">Hyperparameter Tuning</span>
+            <span class="status-pill dot-green">Model Versioning</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Computer Vision & Document AI -->
+        <div class="skill-category-card glass-card" data-category="cv">
+          <div class="cat-header">
+            <i class="fa-solid fa-eye text-emerald"></i>
+            <h3>Computer Vision &amp; Document AI</h3>
+          </div>
+          <div class="skill-pills-list">
+            <span class="status-pill dot-green">PyMuPDF Document Parser</span>
+            <span class="status-pill dot-green">Automated Table Extraction</span>
+            <span class="status-pill dot-cyan">YOLO Object Detection</span>
+            <span class="status-pill dot-cyan">OpenCV Workflows</span>
+            <span class="status-pill dot-emerald">Multimodal Document CV</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Core ML, Web & Databases -->
+        <div class="skill-category-card glass-card" data-category="core">
+          <div class="cat-header">
+            <i class="fa-solid fa-code text-amber"></i>
+            <h3>Core ML, Web &amp; Databases</h3>
+          </div>
+          <div class="skill-pills-list">
+            <span class="status-pill dot-green">Python</span>
+            <span class="status-pill dot-green">FastAPI Microservices</span>
+            <span class="status-pill dot-cyan">SQL &amp; PostgreSQL (Neon)</span>
+            <span class="status-pill dot-cyan">Snowflake Data Cloud</span>
+            <span class="status-pill dot-violet">PyTorch</span>
+            <span class="status-pill dot-violet">Scikit-learn</span>
+            <span class="status-pill dot-yellow">NumPy &amp; Pandas</span>
+            <span class="status-pill dot-cyan">React &amp; Next.js (learning)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Exploring Banner -->
+      <div class="exploring-banner glass-card">
+        <div class="exploring-title">
+          <i class="fa-solid fa-compass live-pulse-icon"></i>
+          <span>Currently Exploring &amp; Deepening:</span>
+        </div>
+        <div class="exploring-tags">
+          <span class="exploring-tag">LangGraph Studio Evaluators</span>
+          <span class="exploring-tag">Distributed MCP Microservices</span>
+          <span class="exploring-tag">vLLM Inference Latency Optimization</span>
+          <span class="exploring-tag">Advanced Multi-Agent Reflection Loops</span>
+          <span class="exploring-tag">React &amp; Next.js for full-stack AI apps</span>
+          <span class="exploring-tag">LoRA / QLoRA Fine-Tuning</span>
+          <span class="exploring-tag">EfficientNet Architectures</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK EXPERIENCE & EDUCATION ==================== -->
+    <section id="experience" class="section experience-section">
+      <div class="section-header">
+        <span class="section-subtitle">Career Trajectory</span>
+        <h2 class="section-title">Work Experience &amp; Education</h2>
+        <p class="section-desc">My professional journey in enterprise AI/ML engineering, multimodal research, and academic foundations.</p>
+      </div>
+
+      <div class="experience-education-grid">
+        
+        <!-- Experience Timeline Column -->
+        <div class="timeline-column">
+          <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+          
+          <div class="timeline-wrapper">
+            
+            <!-- Role 1: Associate Data Science -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Associate (Data Science)</h4>
+                    <span class="t-company">MResult Technologies, Bangalore</span>
+                  </div>
+                  <span class="t-duration badge-accent">Jan 2026 – Present</span>
+                </div>
+                <ul class="t-bullets">
+                  <li>Built an end-to-end agentic pipeline using <strong>ReAct and LlamaIndex</strong> for autonomous reasoning and tool use, deployed on <strong>AWS EC2 with FastAPI</strong>.</li>
+                  <li>Built document-classification and information-extraction pipelines integrated with <strong>Snowflake via FastAPI</strong>.</li>
+                  <li>Contributed to CI/CD workflows and <strong>MLflow experiment tracking</strong>, using <strong>S3 presigned URLs</strong> for secure artifact storage.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Role 2: Trainee Data Science -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Trainee (Data Science)</h4>
+                    <span class="t-company">MResult Technologies, Bangalore</span>
+                  </div>
+                  <span class="t-duration badge-neutral">Jul 2025 – Dec 2025</span>
+                </div>
+                <ul class="t-bullets">
+                  <li>Built a document-processing system with fine-tuned models, reaching <strong>~90% accuracy</strong> on an evaluation set after parameter and inference tuning.</li>
+                  <li>Built multimodal CV workflows for text, tables, and images, with <strong>~99% extraction accuracy in manual validation</strong>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Role 3: Data Science Intern -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Data Science Intern</h4>
+                    <span class="t-company">MResult Technologies, Bangalore</span>
+                  </div>
+                  <span class="t-duration badge-neutral">Feb 2025 – Apr 2025</span>
+                </div>
+                <ul class="t-bullets">
+                  <li>Built a NumPy/Pandas pipeline for ingesting, cleaning, and transforming enterprise datasets.</li>
+                  <li>Built a multi-agent summarizer with <strong>AutoGen and ChromaDB</strong>, cutting manual effort by <strong>~40%</strong>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Role 4: Research Intern -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Data Analytics Research Intern</h4>
+                    <span class="t-company">IIITDM Chennai</span>
+                  </div>
+                  <span class="t-duration badge-neutral">Aug 2022 – Oct 2022</span>
+                </div>
+                <ul class="t-bullets">
+                  <li>Built predictive ML models (K-Means clustering and regression) on photon emission datasets, reaching <strong>87% accuracy</strong> in food-safety shelf-life estimation.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="education-column">
+          <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Foundations</h3>
+          
+          <div class="timeline-wrapper">
+            
+            <!-- Degree 1: IIT Madras -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-primary"></div>
+              <div class="timeline-card glass-card education-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Bachelor of Science in Data Science &amp; Applications</h4>
+                    <span class="t-company">Indian Institute of Technology - Madras (IIT Madras)</span>
+                  </div>
+                  <span class="t-duration badge-accent">In Progress</span>
+                </div>
+                <p class="edu-desc">Online degree program covering statistics, machine learning, and programming. In progress.</p>
+                <div class="edu-tags">
+                  <span class="mini-pill">Online Degree Program</span>
+                  <span class="mini-pill">Statistics</span>
+                  <span class="mini-pill">Machine Learning</span>
+                  <span class="mini-pill">Programming</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Degree 2: Jeppiaar Institute -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-primary"></div>
+              <div class="timeline-card glass-card education-card">
+                <div class="t-card-header">
+                  <div>
+                    <h4 class="t-role">Bachelor of Technology in Artificial Intelligence &amp; Data Science</h4>
+                    <span class="t-company">Jeppiaar Institute of Technology, Kanchipuram</span>
+                  </div>
+                  <span class="t-duration badge-neutral">2021 – 2025</span>
+                </div>
+                <p class="edu-desc">Comprehensive engineering foundation across AI architectures, deep neural networks, computer vision, data engineering, and software development.</p>
+                <div class="edu-tags">
+                  <span class="mini-pill">Full-Time</span>
+                  <span class="mini-pill">Artificial Intelligence</span>
+                  <span class="mini-pill">Data Science</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Research / Technical Philosophy Card -->
+            <div class="philosophy-box glass-card">
+              <div class="phil-header">
+                <i class="fa-solid fa-compass-drafting text-cyan"></i>
+                <h4>Engineering Philosophy</h4>
+              </div>
+              <p class="phil-text">
+                "AI is only as valuable as its reliability in production. I build agentic systems with the testing, tracking, and deployment discipline to back them up."
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT & GET IN TOUCH ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-card glass-card">
+        
+        <div class="contact-left">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="contact-heading">Let's build something together</h2>
+          <p class="contact-desc">
+            Happy to talk about agentic RAG, MLOps, or document intelligence, or about a role or project.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <div class="contact-icon bg-cyan">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span class="c-label">Direct Email</span>
+                <a href="mailto:navirajan2003@gmail.com" class="c-val">navirajan2003@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon bg-emerald">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="c-label">Location</span>
+                <span class="c-val">Bangalore, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social-row">
+            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="Naveena_s_Resume___16_09_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-ghost glass-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Message / Contact Form -->
+        <div class="contact-right">
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbjnvpzw" method="POST">
+            <h3 class="form-title">Send a message</h3>
+            
+            <div class="form-group">
+              <label for="nameInput">Your Name</label>
+              <input type="text" id="nameInput" name="name" placeholder="Jane Doe" required class="glass-input">
+            </div>
+
+            <div class="form-group">
+              <label for="emailInput">Your Email</label>
+              <input type="email" id="emailInput" name="email" placeholder="jane@company.com" required class="glass-input">
+            </div>
+
+            <div class="form-group">
+              <label for="messageInput">Message / Inquiries</label>
+              <textarea id="messageInput" name="message" rows="4" placeholder="Hi Naveena, I came across FinSight AI and wanted to discuss..." required class="glass-input"></textarea>
+            </div>
+
+            <button type="submit" id="btnSubmitForm" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="formSuccessMsg" class="form-success-msg hidden">
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="gradient-text">Naveena N</span> — AI/ML Engineer
+      </div>
+      <p class="footer-copy">
+        Built with HTML, CSS, and JavaScript.
+      </p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+        <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="Naveena_s_Resume___16_09_2026.pdf" download="Naveena_N_Resume.pdf">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING HYBRID CHATBOT (Naveena Copilot) ==================== -->
+  <div id="portfolioChatWidget" class="chat-widget">
+    <!-- Floating Launcher Trigger Button -->
+    <button id="chatLauncherBtn" class="chat-launcher-btn" aria-label="Open Navi Assistant" title="Chat with Navi">
+      <span class="chat-launcher-avatar">
+        <img src="avatar_stylized.jpg" alt="Navi Copilot">
+        <span class="chat-status-dot"></span>
+      </span>
+      <span class="chat-launcher-label">Ask Navi</span>
+      <span class="chat-close-icon"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+
+    <!-- Floating Chat Window Drawer -->
+    <div id="chatDrawer" class="chat-drawer" aria-hidden="true">
+      <!-- Drawer Header -->
+      <div class="chat-header">
+        <div class="chat-header-user">
+          <div class="chat-avatar-wrap">
+            <img src="avatar_stylized.jpg" alt="Navi">
+            <span class="chat-online-dot"></span>
+          </div>
+          <div>
+            <div class="chat-header-name">
+              Navi
+              <span class="chat-hybrid-pill">Hybrid</span>
+            </div>
+            <div class="chat-header-sub">Portfolio Copilot • Hybrid Agent</div>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button id="btnResetChat" class="chat-header-btn" title="Reset Conversation" aria-label="Reset Conversation">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <button id="btnCloseChat" class="chat-header-btn" title="Close Chat" aria-label="Close Chat">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Action Suggestion Chips -->
+      <div class="chat-quick-chips">
+        <button class="chat-chip" data-intent="experience">💼 MResult Experience</button>
+        <button class="chat-chip" data-intent="finsight">🧠 FinSight RAG Pipeline</button>
+        <button class="chat-chip" data-intent="churn">📊 Churn MLOps Model</button>
+        <button class="chat-chip" data-intent="education">🎓 IIT Madras & Education</button>
+        <button class="chat-chip" data-intent="skills">⚡ Tech Stack</button>
+        <button class="chat-chip" data-intent="resume">📄 Download Resume</button>
+        <button class="chat-chip" data-intent="contact">📬 Get in Touch</button>
+      </div>
+
+      <!-- Messages Thread Area -->
+      <div id="chatMessages" class="chat-messages">
+        <!-- Initial Welcome Message -->
+        <div class="chat-bubble chat-bubble-bot">
+          <div class="chat-bubble-avatar">
+            <img src="avatar_stylized.jpg" alt="Navi">
+          </div>
+          <div class="chat-bubble-content">
+            <p>Hi! I'm <strong>Navi</strong>, Naveena's portfolio copilot with instant intent caching and AI generative fallback.</p>
+            <p>Ask me anything about Naveena's production agentic systems, RAG architecture, ML pipelines, or pick a quick topic above!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="chatTypingIndicator" class="chat-typing hidden">
+        <span></span><span></span><span></span>
+        <span class="typing-text">Navi is thinking...</span>
+      </div>
+
+      <!-- Chat Input Form -->
+      <form id="chatInputForm" class="chat-input-form">
+        <input type="text" id="chatInputField" placeholder="Ask about experience, RAG, tech stack..." autocomplete="off" required>
+        <button type="submit" id="chatSendBtn" aria-label="Send Message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
