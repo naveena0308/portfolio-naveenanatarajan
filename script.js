@@ -787,4 +787,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==========================================================================
+  // 10. TYPOGRAPHY SWITCHER CONTROLLER
+  // ==========================================================================
+  const fontButtons = document.querySelectorAll('.font-btn');
+  const savedFont = localStorage.getItem('portfolio-font') || 'inter';
+
+  function applyFont(fontKey) {
+    document.documentElement.setAttribute('data-font', fontKey);
+    document.body.setAttribute('data-font', fontKey);
+    localStorage.setItem('portfolio-font', fontKey);
+
+    fontButtons.forEach(btn => {
+      if (btn.getAttribute('data-font-target') === fontKey) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  // Initialize default / saved font
+  applyFont(savedFont);
+
+  fontButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetFont = btn.getAttribute('data-font-target');
+      if (targetFont) applyFont(targetFont);
+    });
+  });
+
 });
