@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Left Pillar -->
+  <rect x="15" y="14" width="8" height="36" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Right Pillar -->
+  <rect x="41" y="14" width="8" height="36" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Modern Angled Crossbar -->
+  <path d="M 16 15 L 24 15 L 48 49 L 40 49 Z" fill="url(#nGrad)"/>
+  
+  <!-- AI Accent Node (Cyan Spark) -->
+  <circle cx="45" cy="17" r="3.5" fill="#38BDF8"/>
+</svg>
