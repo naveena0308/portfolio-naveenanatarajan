@@ -747,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showTyping(false);
       appendBotBubble(
         `<p>I am grounded in Naveena's production agentic pipelines, RAG architecture, and ML engineering background.</p>
-         <p>You can ask me about his <strong>MResult experience</strong>, the <strong>FinSight AI</strong> pipeline, his <strong>churn MLOps model</strong>, or his <strong>IIT Madras degree</strong>.</p>
+         <p>You can ask me about her <strong>MResult experience</strong>, the <strong>FinSight AI</strong> pipeline, her <strong>churn MLOps model</strong>, or her <strong>IIT Madras degree</strong>.</p>
          <p>For custom inquiries, you can also reach Naveena directly!</p>`,
         [
           { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
