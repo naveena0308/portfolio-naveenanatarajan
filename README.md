@@ -1,6 +1,6 @@
 # Naveena N — AI/ML Engineer & Agentic Systems Portfolio
 
-[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-2563EB?style=flat-square&logo=vercel)](https://finsight-ai-sage.vercel.app/)
+[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-2563EB?style=flat-square&logo=vercel)](https://portfolio-naveenanatarajan.vercel.app/)
 [![FinSight AI Live](https://img.shields.io/badge/FinSight%20AI-Live%20on%20Vercel-FFB800?style=flat-square&logo=vercel)](https://finsight-ai-sage.vercel.app/)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-10B981?style=flat-square)](https://github.com/naveena0308)
 [![License](https://img.shields.io/badge/License-MIT-8B5CF6?style=flat-square)](LICENSE)
