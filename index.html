@@ -14,7 +14,7 @@
   <!-- FontAwesome for crisp UI icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.2">
 </head>
 <body>
   <!-- Ambient Studio Lighting & Grid Overlay -->
@@ -42,7 +42,7 @@
       </ul>
 
       <div class="nav-actions">
-        <!-- Theme Switcher (☀️ / 🌙) -->
+        <!-- Theme Switcher (Light / Dark) -->
         <button id="themeToggleBtn" class="theme-toggle-btn glass-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Light/Dark Theme">
           <i class="fa-solid fa-moon theme-icon-dark"></i>
           <i class="fa-solid fa-sun theme-icon-light"></i>
@@ -917,17 +917,17 @@
             
             <div class="form-group">
               <label for="nameInput">Your Name</label>
-              <input type="text" id="nameInput" name="name" placeholder="Jane Doe" required class="glass-input">
+              <input type="text" id="nameInput" name="name" required class="glass-input">
             </div>
 
             <div class="form-group">
               <label for="emailInput">Your Email</label>
-              <input type="email" id="emailInput" name="email" placeholder="jane@company.com" required class="glass-input">
+              <input type="email" id="emailInput" name="email" required class="glass-input">
             </div>
 
             <div class="form-group">
               <label for="messageInput">Message / Inquiries</label>
-              <textarea id="messageInput" name="message" rows="4" placeholder="Hi Naveena, I came across FinSight AI and wanted to discuss..." required class="glass-input"></textarea>
+              <textarea id="messageInput" name="message" rows="4" required class="glass-input"></textarea>
             </div>
 
             <button type="submit" id="btnSubmitForm" class="btn btn-primary btn-block">
@@ -985,31 +985,54 @@
           </div>
           <div>
             <div class="chat-header-name">
-              Navi
-              <span class="chat-hybrid-pill">Hybrid</span>
+              <span>Navi</span>
+              <span class="chat-hybrid-pill"><i class="fa-solid fa-microchip"></i> Agentic AI</span>
             </div>
-            <div class="chat-header-sub">Portfolio Copilot • Hybrid Agent</div>
+            <div class="chat-header-sub">Portfolio Copilot • Verified Knowledge</div>
           </div>
         </div>
         <div class="chat-header-actions">
           <button id="btnResetChat" class="chat-header-btn" title="Reset Conversation" aria-label="Reset Conversation">
             <i class="fa-solid fa-rotate-right"></i>
           </button>
-          <button id="btnCloseChat" class="chat-header-btn" title="Close Chat" aria-label="Close Chat">
+          <button id="btnCloseChat" class="chat-header-btn" title="Minimize Chat" aria-label="Minimize Chat">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
         </div>
       </div>
 
-      <!-- Quick Action Suggestion Chips -->
-      <div class="chat-quick-chips">
-        <button class="chat-chip" data-intent="experience">💼 MResult Experience</button>
-        <button class="chat-chip" data-intent="finsight">🧠 FinSight RAG Pipeline</button>
-        <button class="chat-chip" data-intent="churn">📊 Churn MLOps Model</button>
-        <button class="chat-chip" data-intent="education">🎓 IIT Madras & Education</button>
-        <button class="chat-chip" data-intent="skills">⚡ Tech Stack</button>
-        <button class="chat-chip" data-intent="resume">📄 Download Resume</button>
-        <button class="chat-chip" data-intent="contact">📬 Get in Touch</button>
+      <!-- Quick Action Suggestion Chips (Zero emojis, crisp vector icons) -->
+      <div class="chat-quick-chips-wrapper">
+        <div class="chat-quick-chips">
+          <button class="chat-chip" data-intent="experience" data-label="MResult Experience">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>MResult Experience</span>
+          </button>
+          <button class="chat-chip" data-intent="finsight" data-label="FinSight RAG Pipeline">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>FinSight RAG</span>
+          </button>
+          <button class="chat-chip" data-intent="churn" data-label="Churn MLOps Model">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Churn MLOps</span>
+          </button>
+          <button class="chat-chip" data-intent="education" data-label="IIT Madras & Education">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>IIT Madras</span>
+          </button>
+          <button class="chat-chip" data-intent="skills" data-label="Tech Stack">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Tech Stack</span>
+          </button>
+          <button class="chat-chip" data-intent="resume" data-label="Download Resume">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Resume</span>
+          </button>
+          <button class="chat-chip" data-intent="contact" data-label="Get in Touch">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </button>
+        </div>
       </div>
 
       <!-- Messages Thread Area -->
@@ -1020,7 +1043,7 @@
             <img src="avatar_stylized.jpg" alt="Navi">
           </div>
           <div class="chat-bubble-content">
-            <p>Hi! I'm <strong>Navi</strong>, Naveena's portfolio copilot with instant intent caching and AI generative fallback.</p>
+            <p>Hi! I'm <strong>Navi</strong>, Naveena's portfolio copilot with instant intent caching and verified system retrieval.</p>
             <p>Ask me anything about Naveena's production agentic systems, RAG architecture, ML pipelines, or pick a quick topic above!</p>
           </div>
         </div>
@@ -1028,20 +1051,27 @@
 
       <!-- Typing Indicator -->
       <div id="chatTypingIndicator" class="chat-typing hidden">
-        <span></span><span></span><span></span>
-        <span class="typing-text">Navi is thinking...</span>
+        <div class="chat-bubble-avatar">
+          <img src="avatar_stylized.jpg" alt="Navi">
+        </div>
+        <div class="chat-typing-bubble">
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-text">Navi is reasoning...</span>
+        </div>
       </div>
 
       <!-- Chat Input Form -->
       <form id="chatInputForm" class="chat-input-form">
-        <input type="text" id="chatInputField" placeholder="Ask about experience, RAG, tech stack..." autocomplete="off" required>
-        <button type="submit" id="chatSendBtn" aria-label="Send Message">
+        <input type="text" id="chatInputField" autocomplete="off" required>
+        <button type="submit" id="chatSendBtn" aria-label="Send Message" title="Send message">
           <i class="fa-solid fa-paper-plane"></i>
         </button>
       </form>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2.2"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
  * NAVEENA N — AI/ML ENGINEER PORTFOLIO JAVASCRIPT
  * Interactive Behaviors:
  * - Dynamic Typewriter effect
- * - ☀️ Light / 🌙 Dark Mode Theme Switcher
+ * - Light / Dark Mode Theme Switcher
  * - Animated Telemetry Stat Counters (with data-prefix & data-suffix support)
  * - 5-Stage Tactile Pipeline Inspector (Ingest → Reason → Ground → Verify → Deploy)
  * - FinSight AI Agent Live Trace Simulation (Deduplicated with timer cleanup)
@@ -14,7 +14,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================================================
-  // 1. THEME SWITCHER (☀️ Light / 🌙 Dark)
+  // 1. THEME SWITCHER (Light / Dark)
   // ==========================================================================
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   const htmlRoot = document.documentElement;
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bubble.className = 'chat-bubble chat-bubble-user';
     bubble.innerHTML = `
       <div class="chat-bubble-content">
-        ${escapeHtml(text)}
+        <p class="chat-user-text">${escapeHtml(text)}</p>
       </div>
     `;
     chatMessages.appendChild(bubble);
@@ -636,13 +636,18 @@ document.addEventListener('DOMContentLoaded', () => {
       actionsHtml = `<div class="chat-action-pills">` + actions.map(act => {
         const downloadAttr = act.download ? 'download="Naveena_N_Resume.pdf"' : '';
         const targetAttr = act.external ? 'target="_blank" rel="noopener noreferrer"' : '';
-        return `<a href="${act.href}" class="chat-action-link" ${downloadAttr} ${targetAttr}><i class="fa-solid fa-arrow-up-right-from-square"></i> ${act.label}</a>`;
+        let iconClass = 'fa-solid fa-arrow-right';
+        if (act.download) iconClass = 'fa-solid fa-file-arrow-down';
+        else if (act.href && act.href.startsWith('mailto:')) iconClass = 'fa-solid fa-envelope';
+        else if (act.external) iconClass = 'fa-solid fa-arrow-up-right-from-square';
+
+        return `<a href="${act.href}" class="chat-action-link" ${downloadAttr} ${targetAttr}><i class="${iconClass}"></i> ${act.label}</a>`;
       }).join('') + `</div>`;
     }
 
     bubble.innerHTML = `
       <div class="chat-bubble-avatar">
-        <img src="avatar_stylized.jpg" alt="AI">
+        <img src="avatar_stylized.jpg" alt="Navi">
       </div>
       <div class="chat-bubble-content">
         ${htmlContent}
@@ -756,7 +761,7 @@ document.addEventListener('DOMContentLoaded', () => {
   chatChips.forEach(chip => {
     chip.addEventListener('click', () => {
       const intentKey = chip.getAttribute('data-intent');
-      const chipText = chip.textContent.trim();
+      const chipText = chip.getAttribute('data-label') || chip.textContent.trim();
 
       appendUserBubble(chipText);
       showTyping(true);
