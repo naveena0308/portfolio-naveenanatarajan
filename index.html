@@ -41,10 +41,9 @@
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link active">About</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#sandbox" class="nav-link">Agent Demo</a></li>
-        <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -103,7 +102,7 @@
           </div>
 
           <p class="hero-description">
-            AI/ML engineer at MResult building agentic AI and document-intelligence systems (LangGraph, AutoGen, MCP) from ingestion to deployment. B.Tech in AI &amp; Data Science (Jeppiaar, 2025); pursuing a B.S. in Data Science at IIT Madras. Currently learning React and Next.js to build full-stack AI products.
+            AI/ML Engineer at MResult specializing in Agentic AI (LangGraph, AutoGen, MCP), production RAG pipelines, and document intelligence. Building full-stack AI applications with Next.js and FastAPI.
           </p>
 
           <!-- Highlight Credentials Pills -->
@@ -217,7 +216,7 @@
           </div>
           <div class="telemetry-info">
             <div class="telemetry-number" data-target="99" data-prefix="~" data-suffix="%">~99%</div>
-            <div class="telemetry-label">Extraction accuracy (manual validation)</div>
+            <div class="telemetry-label">Extraction Accuracy</div>
           </div>
         </div>
 
@@ -229,7 +228,7 @@
           </div>
           <div class="telemetry-info">
             <div class="telemetry-number" data-target="0.845" data-decimals="3">0.845</div>
-            <div class="telemetry-label">ROC-AUC, churn model on 7,000+ records</div>
+            <div class="telemetry-label">ROC-AUC (7k Churn Pipeline)</div>
           </div>
         </div>
 
@@ -241,7 +240,7 @@
           </div>
           <div class="telemetry-info">
             <div class="telemetry-number" data-target="40" data-prefix="~" data-suffix="%">~40%</div>
-            <div class="telemetry-label">Less manual effort in enterprise summarization</div>
+            <div class="telemetry-label">Summarization Effort Saved</div>
           </div>
         </div>
 
@@ -253,7 +252,7 @@
           </div>
           <div class="telemetry-info">
             <div class="telemetry-number" data-target="42" data-suffix=" Tables">42 Tables</div>
-            <div class="telemetry-label">Structured budget data queried in FinSight</div>
+            <div class="telemetry-label">Structured SQL Tables Queried</div>
           </div>
         </div>
 
@@ -291,15 +290,13 @@
             </div>
 
             <p class="project-desc">
-              Answers questions about Tamil Nadu's Fiscal Management White Paper (2021–22 to 2025–26) with page-level citations. A LangGraph ReAct agent routes each question between vector search over 223 section-aware chunks and SQL over structured tables in Neon Postgres, and a verification agent re-checks figures against the source table. Includes a Chat Analyst and a Visual Dashboard. Frontend built with Next.js/React as part of my full-stack learning.
+              Agentic RAG analyst for Tamil Nadu's 121-page Fiscal White Paper. Routes questions between vector search and verified SQL over 42 structured tables with page-level citations.
             </p>
 
-            <!-- Key Engineering Highlights Checklist -->
+            <!-- Key Engineering Highlights -->
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Ingestion:</strong> 121-page report parsed with PyMuPDF, keeping section and page citations.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Data layer:</strong> Neon PostgreSQL for SQL aggregation and verified lookups.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Agent:</strong> LangGraph ReAct with a verification step before each answer.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Deployment:</strong> Next.js app on Vercel.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Dual retrieval:</strong> LangGraph ReAct agent with numeric verification against source tables.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Full-stack:</strong> Next.js frontend deployed on Vercel with FastAPI &amp; Neon Postgres.</li>
             </ul>
 
             <!-- Tech Stack Tags -->
@@ -307,20 +304,17 @@
               <span class="tech-tag">LangGraph</span>
               <span class="tech-tag">PostgreSQL (Neon)</span>
               <span class="tech-tag">Next.js / React</span>
-              <span class="tech-tag">MCP Protocol</span>
-              <span class="tech-tag">PyMuPDF</span>
               <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">Vercel</span>
               <span class="tech-tag">Python</span>
             </div>
 
             <!-- Card Actions -->
             <div class="project-actions">
               <a href="https://finsight-ai-sage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Launch FinSight AI on Vercel">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live App (Vercel)
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live App
               </a>
               <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-brands fa-github"></i> Source Code
+                <i class="fa-brands fa-github"></i> Code
               </a>
             </div>
           </div>
@@ -341,19 +335,18 @@
                 <i class="fa-solid fa-network-wired"></i>
               </div>
               <div>
-                <h3 class="project-title">Customer Churn Prediction with MLOps</h3>
-                <span class="project-role">Production Pipeline on 7,000+ Records</span>
+                <h3 class="project-title">Customer Churn with MLOps</h3>
+                <span class="project-role">Production Pipeline on 7k Records</span>
               </div>
             </div>
 
             <p class="project-desc">
-              Telco churn pipeline on 7,000+ records, from preprocessing and feature engineering to training and batch inference. Compared several classifiers; Logistic Regression performed best (ROC-AUC 0.845, F1 0.61) and stayed interpretable. Tracked with MLflow, containerized with Docker, served via FastAPI.
+              Telco churn pipeline on 7,000+ records, from feature engineering to containerized batch inference tracked reproducibly with MLflow.
             </p>
 
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Evaluation:</strong> ROC-AUC 0.845, F1 0.61 on 7k records (compared Logistic Regression, Random Forest, XGBoost on Telco dataset).</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Experiment tracking:</strong> MLflow versioning and hyperparameter logging.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Containerized:</strong> Dockerized FastAPI service.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Performance:</strong> 0.845 ROC-AUC and 0.61 F1 score with interpretable Logistic Regression.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Production ready:</strong> MLflow experiment tracking and Dockerized FastAPI serving.</li>
             </ul>
 
             <div class="project-tech-tags">
@@ -361,7 +354,6 @@
               <span class="tech-tag">Docker</span>
               <span class="tech-tag">FastAPI</span>
               <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Pandas</span>
               <span class="tech-tag">Python</span>
             </div>
 
@@ -388,19 +380,18 @@
                 <i class="fa-solid fa-users-gear"></i>
               </div>
               <div>
-                <h3 class="project-title">Enterprise Multi-Agent Summarizer &amp; Document AI</h3>
+                <h3 class="project-title">Multi-Agent Summarizer &amp; Doc AI</h3>
                 <span class="project-role">MResult Technologies</span>
               </div>
             </div>
 
             <p class="project-desc">
-              Multi-agent system using AutoGen and ChromaDB to ingest, clean, and summarize enterprise datasets, reducing manual effort by ~40% (estimated before vs. after). Also built multimodal document-extraction workflows across text, tables, and charts, with ~99% accuracy in manual validation against source documents.
+              Multi-agent system using AutoGen and ChromaDB to ingest, clean, and summarize enterprise datasets alongside multimodal document extraction.
             </p>
 
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>~40% less manual effort:</strong> Collaborative multi-agent summarization workflow.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>~99% extraction accuracy (manual validation):</strong> Multimodal document processing pipeline.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Integration:</strong> FastAPI with Snowflake and AWS S3.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Enterprise impact:</strong> Reduced manual summarization effort by ~40% across business units.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> <strong>Multimodal CV:</strong> High-precision extraction across text, tables, and charts (~99% manual validation).</li>
             </ul>
 
             <div class="project-tech-tags">
@@ -409,12 +400,11 @@
               <span class="tech-tag">FastAPI</span>
               <span class="tech-tag">Snowflake</span>
               <span class="tech-tag">AWS S3</span>
-              <span class="tech-tag">Computer Vision</span>
             </div>
 
             <div class="project-actions">
               <a href="#experience" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-solid fa-briefcase"></i> View Role in Experience
+                <i class="fa-solid fa-briefcase"></i> View Experience
               </a>
             </div>
           </div>
@@ -423,189 +413,6 @@
       </div>
     </section>
 
-    <!-- ==================== LIVE AGENT DEMO (Directly after Projects) ==================== -->
-    <section id="sandbox" class="section sandbox-section">
-      <div class="section-header">
-        <span class="section-subtitle">Live Agent Verification</span>
-        <h2 class="section-title">FinSight agent: example trace</h2>
-        <p class="section-desc">A simulated run showing how the agent plans, retrieves, and verifies a figure before answering.</p>
-      </div>
-
-      <div class="sandbox-terminal-card glass-card">
-        
-        <!-- Terminal Header Bar -->
-        <div class="terminal-bar">
-          <div class="terminal-traffic-lights">
-            <span class="traffic-dot dot-red"></span>
-            <span class="traffic-dot dot-yellow"></span>
-            <span class="traffic-dot dot-green"></span>
-          </div>
-          <div class="terminal-title">
-            <i class="fa-solid fa-terminal"></i> finsight_agent_runtime.py — LangGraph + MCP + PostgreSQL (Neon)
-          </div>
-          <div class="terminal-status-wrap">
-            <span class="terminal-status-pill">
-              <span class="pulse-dot"></span> Agent Ready
-            </span>
-            <span class="badge-illustrative">Illustrative trace (sample values)</span>
-          </div>
-        </div>
-
-        <div class="terminal-body">
-          <!-- Preset Query Selector -->
-          <div class="terminal-query-picker">
-            <span class="query-picker-label">Select Tamil Nadu Fiscal White Paper Query:</span>
-            <div class="query-chips">
-              <button class="query-chip active" data-query="1">
-                "What is the Public Debt & Liabilities trajectory from 2021-22 to 2025-26?"
-              </button>
-              <button class="query-chip" data-query="2">
-                "How does Committed Expenditure (salaries, pensions, debt) crowd out capital outlay?"
-              </button>
-              <button class="query-chip" data-query="3">
-                "Verify Table 2.1 Outstanding Debt & Liabilities numbers against source White Paper"
-              </button>
-            </div>
-          </div>
-
-          <!-- Live Reasoning Trace Output Area (Rendered via JS without duplicate steps) -->
-          <div id="agentTraceOutput" class="agent-trace-console"></div>
-
-          <!-- Interactive Action Controls -->
-          <div class="terminal-footer">
-            <div class="terminal-meta-tags">
-              <span><i class="fa-solid fa-database"></i> DB: PostgreSQL (Neon)</span>
-              <span id="terminalCitations"><i class="fa-solid fa-bookmark"></i> Citations: Table 2.1 (Page 27)</span>
-            </div>
-            <div class="terminal-btns">
-              <button id="btnReplayTrace" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-solid fa-rotate-right"></i> Run Simulated Trace
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 5-STAGE AI ENGINEERING PIPELINE (How I build) ==================== -->
-    <section id="pipeline" class="section pipeline-section">
-      <div class="section-header">
-        <span class="section-subtitle">How I build</span>
-        <h2 class="section-title">From raw documents to deployed agents</h2>
-        <p class="section-desc">The pipeline behind my RAG and agent projects: ingestion, reasoning, retrieval, verification, and deployment.</p>
-      </div>
-
-      <!-- Interactive 5-Stage Process Track -->
-      <div class="pipeline-track-wrapper">
-        <div class="pipeline-connector-line"></div>
-        <div class="pipeline-grid">
-          
-          <!-- Stage 1 -->
-          <div class="pipeline-step-card glass-card active" data-step="1">
-            <div class="step-badge">01</div>
-            <div class="step-icon-wrap">
-              <i class="fa-solid fa-file-invoice"></i>
-            </div>
-            <h3 class="step-title">Ingest &amp; Chunk</h3>
-            <p class="step-summary">PyMuPDF section-aware chunking preserving chapter &amp; page metadata (121 pages into 223 chunks).</p>
-            <div class="step-pills">
-              <span class="mini-pill">PyMuPDF</span>
-              <span class="mini-pill">Pandas</span>
-              <span class="mini-pill">Metadata</span>
-            </div>
-          </div>
-
-          <!-- Stage 2 -->
-          <div class="pipeline-step-card glass-card" data-step="2">
-            <div class="step-badge">02</div>
-            <div class="step-icon-wrap">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <h3 class="step-title">Reason &amp; Plan</h3>
-            <p class="step-summary">Multi-agent reasoning with LangGraph &amp; ReAct framework. Query planning and intent classification.</p>
-            <div class="step-pills">
-              <span class="mini-pill">LangGraph</span>
-              <span class="mini-pill">ReAct</span>
-              <span class="mini-pill">AutoGen</span>
-            </div>
-          </div>
-
-          <!-- Stage 3 -->
-          <div class="pipeline-step-card glass-card" data-step="3">
-            <div class="step-badge">03</div>
-            <div class="step-icon-wrap">
-              <i class="fa-solid fa-database"></i>
-            </div>
-            <h3 class="step-title">Ground &amp; Retrieve</h3>
-            <p class="step-summary">Hybrid routing: semantic vector retrieval in ChromaDB combined with structured PostgreSQL lookups.</p>
-            <div class="step-pills">
-              <span class="mini-pill">ChromaDB</span>
-              <span class="mini-pill">PostgreSQL</span>
-              <span class="mini-pill">Snowflake</span>
-            </div>
-          </div>
-
-          <!-- Stage 4 -->
-          <div class="pipeline-step-card glass-card" data-step="4">
-            <div class="step-badge">04</div>
-            <div class="step-icon-wrap">
-              <i class="fa-solid fa-calculator"></i>
-            </div>
-            <h3 class="step-title">Verify &amp; Expose</h3>
-            <p class="step-summary">Numeric verification agents check figures against source budget tables before answering.</p>
-            <div class="step-pills">
-              <span class="mini-pill">MCP Protocol</span>
-              <span class="mini-pill">Evaluation</span>
-              <span class="mini-pill">Guardrails</span>
-            </div>
-          </div>
-
-          <!-- Stage 5 -->
-          <div class="pipeline-step-card glass-card" data-step="5">
-            <div class="step-badge">05</div>
-            <div class="step-icon-wrap">
-              <i class="fa-solid fa-server"></i>
-            </div>
-            <h3 class="step-title">Deploy &amp; Scale</h3>
-            <p class="step-summary">FastAPI microservices deployed to AWS EC2 &amp; Vercel, tracked reproducibly with MLflow &amp; Docker.</p>
-            <div class="step-pills">
-              <span class="mini-pill">FastAPI</span>
-              <span class="mini-pill">Docker</span>
-              <span class="mini-pill">AWS / Vercel</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Dynamic Pipeline Inspector Drawer -->
-        <div id="pipelineDetailBox" class="pipeline-detail-box glass-card">
-          <div class="detail-header">
-            <span id="detailStepNum" class="detail-step-badge">Stage 01 Focus</span>
-            <h4 id="detailTitle" class="detail-title">Document Intelligence &amp; Section-Aware Ingestion</h4>
-          </div>
-          <p id="detailDesc" class="detail-desc">
-            Fiscal PDF reports and tables are split into section-aware chunks that keep chapter, sub-chapter, and page metadata. This lets the retriever cite the exact page and section behind each answer and reduces unsupported claims.
-          </p>
-          <div class="detail-metrics-row">
-            <div class="detail-metric">
-              <span class="dm-val" id="dmVal1">121 Pages</span>
-              <span class="dm-lbl" id="dmLbl1">Fiscal Report Size</span>
-            </div>
-            <div class="detail-metric">
-              <span class="dm-val" id="dmVal2">223 Chunks</span>
-              <span class="dm-lbl" id="dmLbl2">Section-Aware Chunks</span>
-            </div>
-            <div class="detail-metric">
-              <span class="dm-val" id="dmVal3">Table + Page Context</span>
-              <span class="dm-lbl" id="dmLbl3">Kept in Every Chunk</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <!-- ==================== SKILLS & TECHNOLOGIES ==================== -->
     <section id="skills" class="section skills-section">
@@ -638,10 +445,8 @@
             <span class="status-pill dot-green">AutoGen</span>
             <span class="status-pill dot-cyan">ReAct Framework</span>
             <span class="status-pill dot-cyan">LlamaIndex</span>
-            <span class="status-pill dot-violet">MCP (Model Context Protocol)</span>
-            <span class="status-pill dot-violet">ChromaDB</span>
-            <span class="status-pill dot-cyan">RAG Architecture</span>
-            <span class="status-pill dot-yellow">Hybrid Vector/SQL Routing</span>
+            <span class="status-pill dot-violet">MCP Protocol</span>
+            <span class="status-pill dot-violet">ChromaDB / RAG</span>
           </div>
         </div>
 
@@ -653,12 +458,10 @@
           </div>
           <div class="skill-pills-list">
             <span class="status-pill dot-green">MLflow Tracking</span>
-            <span class="status-pill dot-green">Docker Containerization</span>
-            <span class="status-pill dot-cyan">AWS EC2 Deployment</span>
-            <span class="status-pill dot-cyan">AWS S3 Presigned URLs</span>
+            <span class="status-pill dot-green">Docker</span>
+            <span class="status-pill dot-cyan">AWS EC2 &amp; S3</span>
+            <span class="status-pill dot-cyan">FastAPI Microservices</span>
             <span class="status-pill dot-cyan">CI/CD Workflows</span>
-            <span class="status-pill dot-yellow">Hyperparameter Tuning</span>
-            <span class="status-pill dot-green">Model Versioning</span>
           </div>
         </div>
 
@@ -669,10 +472,10 @@
             <h3>Computer Vision &amp; Document AI</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-green">PyMuPDF Document Parser</span>
-            <span class="status-pill dot-green">Automated Table Extraction</span>
-            <span class="status-pill dot-cyan">YOLO Object Detection</span>
-            <span class="status-pill dot-cyan">OpenCV Workflows</span>
+            <span class="status-pill dot-green">PyMuPDF Parser</span>
+            <span class="status-pill dot-green">Table Extraction</span>
+            <span class="status-pill dot-cyan">YOLO Detection</span>
+            <span class="status-pill dot-cyan">OpenCV</span>
             <span class="status-pill dot-emerald">Multimodal Document CV</span>
           </div>
         </div>
@@ -685,33 +488,14 @@
           </div>
           <div class="skill-pills-list">
             <span class="status-pill dot-green">Python</span>
-            <span class="status-pill dot-green">FastAPI Microservices</span>
-            <span class="status-pill dot-cyan">SQL &amp; PostgreSQL (Neon)</span>
-            <span class="status-pill dot-cyan">Snowflake Data Cloud</span>
-            <span class="status-pill dot-violet">PyTorch</span>
+            <span class="status-pill dot-green">PostgreSQL (Neon)</span>
+            <span class="status-pill dot-cyan">Snowflake</span>
             <span class="status-pill dot-violet">Scikit-learn</span>
-            <span class="status-pill dot-yellow">NumPy &amp; Pandas</span>
-            <span class="status-pill dot-cyan">React &amp; Next.js (learning)</span>
+            <span class="status-pill dot-violet">PyTorch</span>
+            <span class="status-pill dot-cyan">React &amp; Next.js</span>
           </div>
         </div>
 
-      </div>
-
-      <!-- Live Exploring Banner -->
-      <div class="exploring-banner glass-card">
-        <div class="exploring-title">
-          <i class="fa-solid fa-compass live-pulse-icon"></i>
-          <span>Currently Exploring &amp; Deepening:</span>
-        </div>
-        <div class="exploring-tags">
-          <span class="exploring-tag">LangGraph Studio Evaluators</span>
-          <span class="exploring-tag">Distributed MCP Microservices</span>
-          <span class="exploring-tag">vLLM Inference Latency Optimization</span>
-          <span class="exploring-tag">Advanced Multi-Agent Reflection Loops</span>
-          <span class="exploring-tag">React &amp; Next.js for full-stack AI apps</span>
-          <span class="exploring-tag">LoRA / QLoRA Fine-Tuning</span>
-          <span class="exploring-tag">EfficientNet Architectures</span>
-        </div>
       </div>
     </section>
 
@@ -743,9 +527,8 @@
                   <span class="t-duration badge-accent">Jan 2026 – Present</span>
                 </div>
                 <ul class="t-bullets">
-                  <li>Built an end-to-end agentic pipeline using <strong>ReAct and LlamaIndex</strong> for autonomous reasoning and tool use, deployed on <strong>AWS EC2 with FastAPI</strong>.</li>
-                  <li>Built document-classification and information-extraction pipelines integrated with <strong>Snowflake via FastAPI</strong>.</li>
-                  <li>Contributed to CI/CD workflows and <strong>MLflow experiment tracking</strong>, using <strong>S3 presigned URLs</strong> for secure artifact storage.</li>
+                  <li>Built autonomous agentic pipelines (ReAct &amp; LlamaIndex) on AWS EC2, and integrated Snowflake document extraction via FastAPI.</li>
+                  <li>Configured MLflow experiment tracking and automated CI/CD workflows using S3 presigned URLs for artifact storage.</li>
                 </ul>
               </div>
             </div>
@@ -762,8 +545,7 @@
                   <span class="t-duration badge-neutral">Jul 2025 – Dec 2025</span>
                 </div>
                 <ul class="t-bullets">
-                  <li>Built a document-processing system with fine-tuned models, reaching <strong>~90% accuracy</strong> on an evaluation set after parameter and inference tuning.</li>
-                  <li>Built multimodal CV workflows for text, tables, and images, with <strong>~99% extraction accuracy in manual validation</strong>.</li>
+                  <li>Developed multimodal CV workflows for text, tables, and images with <strong>~99% extraction accuracy</strong> in manual validation.</li>
                 </ul>
               </div>
             </div>
@@ -780,8 +562,7 @@
                   <span class="t-duration badge-neutral">Feb 2025 – Apr 2025</span>
                 </div>
                 <ul class="t-bullets">
-                  <li>Built a NumPy/Pandas pipeline for ingesting, cleaning, and transforming enterprise datasets.</li>
-                  <li>Built a multi-agent summarizer with <strong>AutoGen and ChromaDB</strong>, cutting manual effort by <strong>~40%</strong>.</li>
+                  <li>Engineered an enterprise multi-agent summarizer with <strong>AutoGen &amp; ChromaDB</strong>, reducing manual effort by <strong>~40%</strong>.</li>
                 </ul>
               </div>
             </div>
@@ -798,7 +579,7 @@
                   <span class="t-duration badge-neutral">Aug 2022 – Oct 2022</span>
                 </div>
                 <ul class="t-bullets">
-                  <li>Built predictive ML models (K-Means clustering and regression) on photon emission datasets, reaching <strong>87% accuracy</strong> in food-safety shelf-life estimation.</li>
+                  <li>Trained ML regression and clustering models on photon datasets, reaching <strong>87% accuracy</strong> for shelf-life estimation.</li>
                 </ul>
               </div>
             </div>
@@ -818,17 +599,16 @@
               <div class="timeline-card glass-card education-card">
                 <div class="t-card-header">
                   <div>
-                    <h4 class="t-role">Bachelor of Science in Data Science &amp; Applications</h4>
+                    <h4 class="t-role">B.S. in Data Science &amp; Applications</h4>
                     <span class="t-company">Indian Institute of Technology - Madras (IIT Madras)</span>
                   </div>
                   <span class="t-duration badge-accent">In Progress</span>
                 </div>
-                <p class="edu-desc">Online degree program covering statistics, machine learning, and programming. In progress.</p>
+                <p class="edu-desc">Online degree covering advanced statistical foundations, machine learning pipelines, and application engineering.</p>
                 <div class="edu-tags">
                   <span class="mini-pill">Online Degree Program</span>
                   <span class="mini-pill">Statistics</span>
                   <span class="mini-pill">Machine Learning</span>
-                  <span class="mini-pill">Programming</span>
                 </div>
               </div>
             </div>
@@ -839,29 +619,18 @@
               <div class="timeline-card glass-card education-card">
                 <div class="t-card-header">
                   <div>
-                    <h4 class="t-role">Bachelor of Technology in Artificial Intelligence &amp; Data Science</h4>
-                    <span class="t-company">Jeppiaar Institute of Technology, Kanchipuram</span>
+                    <h4 class="t-role">B.Tech in Artificial Intelligence &amp; Data Science</h4>
+                    <span class="t-company">Jeppiaar Institute of Technology</span>
                   </div>
                   <span class="t-duration badge-neutral">2021 – 2025</span>
                 </div>
-                <p class="edu-desc">Comprehensive engineering foundation across AI architectures, deep neural networks, computer vision, data engineering, and software development.</p>
+                <p class="edu-desc">Rigorous engineering foundation in deep learning, computer vision, data structures, and backend systems.</p>
                 <div class="edu-tags">
                   <span class="mini-pill">Full-Time</span>
                   <span class="mini-pill">Artificial Intelligence</span>
                   <span class="mini-pill">Data Science</span>
                 </div>
               </div>
-            </div>
-
-            <!-- Research / Technical Philosophy Card -->
-            <div class="philosophy-box glass-card">
-              <div class="phil-header">
-                <i class="fa-solid fa-compass-drafting text-cyan"></i>
-                <h4>Engineering Philosophy</h4>
-              </div>
-              <p class="phil-text">
-                "AI is only as valuable as its reliability in production. I build agentic systems with the testing, tracking, and deployment discipline to back them up."
-              </p>
             </div>
 
           </div>
@@ -968,20 +737,6 @@
     </div>
   </footer>
 
-  <!-- ==================== FLOATING FONT PREVIEW BAR ==================== -->
-  <div id="fontPreviewBar" class="font-preview-bar">
-    <div class="font-preview-label">
-      <i class="fa-solid fa-font"></i>
-      <span>Typography</span>
-    </div>
-    <div class="font-preview-options">
-      <button class="font-btn active" data-font-target="inter" title="Inter — Ultra-crisp standard">Inter</button>
-      <button class="font-btn" data-font-target="geist" title="Geist — Vercel developer font">Geist</button>
-      <button class="font-btn" data-font-target="dmsans" title="DM Sans — Geometric tech">DM Sans</button>
-      <button class="font-btn" data-font-target="manrope" title="Manrope — Modern grotesque">Manrope</button>
-      <button class="font-btn" data-font-target="original" title="Original (Outfit + Plus Jakarta Sans)">Original</button>
-    </div>
-  </div>
 
   <!-- ==================== FLOATING HYBRID CHATBOT (Naveena Copilot) ==================== -->
   <div id="portfolioChatWidget" class="chat-widget">
