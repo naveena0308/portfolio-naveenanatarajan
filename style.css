@@ -1371,7 +1371,7 @@ html[data-theme="dark"] .pipeline-detail-box {
    ========================================================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.8rem;
 }
 
@@ -1591,6 +1591,12 @@ html[data-theme="dark"] .filter-tab {
   gap: 1.6rem;
   margin-bottom: 2.5rem;
   transition: all var(--transition-normal);
+}
+
+@media (min-width: 900px) {
+  .skills-grid:not(.single-view) .skill-category-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 /* Symmetrical full-width expansion when filtered to a single category (solves empty column space) */

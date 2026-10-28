@@ -1,211 +1,196 @@
-# Naveena N — Portfolio Website Content & Copy Document
+# Naveena N — Portfolio Website Content (Revised)
 
-> **Live Deployment:** [portfolio-naveenanatarajan.vercel.app](https://portfolio-naveenanatarajan.vercel.app/)  
-> **Last Updated:** October 29, 2026  
-> **Repository:** [github.com/naveena0308/portfolio-naveenanatarajan](https://github.com/naveena0308/portfolio-naveenanatarajan)
+> **Live:** [portfolio-naveenanatarajan.vercel.app](https://portfolio-naveenanatarajan.vercel.app/)
+> **Last Updated:** October 29, 2026
+> **Availability:** Open to AI/ML roles in **Bangalore** and **Chennai**
 
 ---
 
 ## 1. Header & Navigation
 
-- **Brand Logo:** Naveena (with stylized avatar)
-- **Navigation Links:**
-  - `About` (`#hero`)
-  - `Projects` (`#projects`)
-  - `Skills` (`#skills`)
-  - `Experience` (`#experience`)
-  - `Contact` (`#contact`)
-- **Action Buttons:**
-  - **Theme Toggle:** Switch between Light (Porcelain Executive White) and Dark Mode.
-  - **Resume Download:** Downloads `Naveena_s_Resume___27_10_2026.pdf` (saved as `Naveena_N_Resume.pdf`).
+- **Brand:** Naveena
+- **Links:** About (`#hero`) · Projects (`#projects`) · Skills (`#skills`) · Experience (`#experience`) · Contact (`#contact`)
+- **Actions:** Theme toggle (light/dark) · Resume download (`Naveena_s_Resume___27_10_2026.pdf`, saved as `Naveena_N_Resume.pdf`)
 
 ---
 
-## 2. Hero Section
+## 2. Hero
 
-### Status Chips
-- `Open to AI/ML engineering roles` (with animated green pulse beacon)
-- `Bangalore, India` (location pin)
-- `Associate @ MResult` (briefcase)
+### Status chips
+- **Open to AI/ML roles in Bangalore & Chennai** (animated green pulse)
+- Bangalore, India
+- Associate @ MResult
 
-### Headline & Dynamic Typewriter
-- **Headline:** "Hi, I'm **Naveena N**"
-- **Typewriter Prefix:** "I build "
-- **Rotated Phrases:**
-  1. `AI/ML & Agentic Systems.`
-  2. `Multi-Agent Workflows with LangGraph & MCP.`
-  3. `Production RAG & Financial Intelligence.`
-  4. `Scalable MLOps Pipelines with FastAPI & MLflow.`
-  5. `Multimodal Document AI with 99% Extraction.`
+### Headline
+Hi, I'm **Naveena N**
 
-### Bio Paragraph
-> "AI/ML Engineer at MResult specializing in Agentic AI (LangGraph, AutoGen, MCP), production RAG pipelines, and document intelligence. Building full-stack AI applications with Next.js and FastAPI."
+### Typewriter: "I build…"
+1. Agentic AI systems that reason and act.
+2. RAG that cites its sources and checks its math.
+3. Multi-agent workflows with LangGraph & MCP.
+4. Document AI that cuts manual work by 95%.
+5. ML pipelines that ship with MLflow & Docker.
 
-### Academic Highlight Pills
+### Bio
+> AI/ML Engineer at MResult. I ship agentic AI, production RAG, and document intelligence, from the model to the FastAPI backend to the live app. My latest build answers questions over a 121-page government budget with page-level citations and verified numbers.
+
+### Academic pills
 - **IIT Madras**, B.S. Data Science *(ongoing)*
 - **Jeppiaar Institute of Technology**, B.Tech AI & Data Science *(2025)*
 
-### Action CTAs
-- **Explore Projects:** Primary button linking to `#projects`.
-- **FinSight Live on Vercel:** Glass button opening [finsight-ai-sage.vercel.app](https://finsight-ai-sage.vercel.app/) in a new tab.
-- **Resume:** Direct download link for `Naveena_s_Resume___27_10_2026.pdf`.
+### CTAs
+- **See FinSight Live** (primary) → [finsight-ai-sage.vercel.app](https://finsight-ai-sage.vercel.app/)
+- **Explore Projects** → `#projects`
+- **Download Resume**
 
-### Social & Quick Connect
+### Social & quick connect
 - **GitHub:** [github.com/naveena0308](https://github.com/naveena0308)
-- **LinkedIn:** [linkedin.com](https://linkedin.com)
+- **LinkedIn:** *(replace with your full profile URL)*
+- **Email:** `navirajan2003@gmail.com` (one-click copy)
+
+### Hero visual badges
+- **Focus:** Agentic AI & RAG
+- **Also:** MLOps & Document AI
+- **Experience:** Since Feb 2025 @ MResult
+
+---
+
+## 3. Telemetry Bar
+
+| Metric | Label |
+| :--- | :--- |
+| **95.6%** | Answer precision, FinSight eval suite (30 test cases) |
+| **0.845** | ROC-AUC, telecom churn model (7,000+ records) |
+| **~95%** | Manual effort cut by multimodal document workflows |
+| **~40%** | Summarization effort saved by a multi-agent system |
+
+---
+
+## 4. Projects
+
+### 4.1 FinSight AI: Agentic Financial Budget Analyst
+*Live on Vercel · Jun 2026 – Present*
+
+Ask a 121-page government fiscal white paper anything. A LangGraph agent plans the query, routes it between SQL and vector search, and verifies every number against source tables before answering, with page-level citations.
+
+- Multi-agent RAG that **checks numeric answers against ground truth** to curb hallucinations
+- PyMuPDF ETL turned the PDF into **223 section-aware chunks and 42 relational tables**
+- **MCP server (4 tools)** for Claude Desktop and Cursor, plus **Gemini → GPT-4o-mini failover**
+- **95.6% precision** on a 30-case automated eval suite
+
+**Stack:** `LangGraph` `Next.js 14` `FastAPI` `Neon Postgres` `pgvector` `MCP`
+**Actions:** [Launch Live App](https://finsight-ai-sage.vercel.app/) · View Code *(link to the FinSight repo, not your profile)*
+
+### 4.2 Customer Churn Prediction with MLOps
+*Jan 2026 – Mar 2026*
+
+An end-to-end churn pipeline on 7,000+ telecom records, from preprocessing to batch inference, with every experiment tracked and reproducible.
+
+- Compared multiple classifiers; **Logistic Regression won at 0.845 ROC-AUC and 0.61 F1**, with interpretability
+- **MLflow** for experiment tracking and model versioning
+- Container-ready architecture with **Docker + FastAPI**
+
+**Stack:** `MLflow` `Docker` `FastAPI` `Scikit-learn`
+**Actions:** View Repository *(link to the churn repo)*
+
+### 4.3 Multi-Agent Summarizer
+*MResult · Enterprise*
+
+An AutoGen + ChromaDB system that ingests, cleans, and summarizes enterprise datasets into structured insights, **cutting manual effort by ~40%**.
+
+**Stack:** `AutoGen` `ChromaDB` `NumPy` `Pandas`
+
+### 4.4 Multimodal Document AI
+*MResult · Enterprise*
+
+CV workflows that read text, tables, and images in documents, **cutting manual effort by ~95%**. Production document classification and extraction run on FastAPI + Snowflake.
+
+**Stack:** `OpenCV` `YOLO` `FastAPI` `Snowflake`
+
+---
+
+## 5. Skills
+
+**Filter tabs:** All · Generative AI & Agents · ML & Model Development · MLOps & Cloud · Computer Vision & Doc AI · Data & Backend
+
+- **Generative AI & Agents:** LangGraph, LangChain, LlamaIndex, AutoGen, MCP, ReAct, RAG
+- **ML & Model Development:** Python, PyTorch, Scikit-learn, LoRA/QLoRA, NumPy, Pandas
+- **MLOps & Cloud:** MLflow, Docker, CI/CD, AWS (S3, EC2), GCP Vertex AI
+- **Computer Vision & Doc AI:** YOLO, OpenCV, EfficientNet, PyMuPDF
+- **Data & Backend:** PostgreSQL, pgvector, ChromaDB, Snowflake, SQL, FastAPI, Next.js
+
+---
+
+## 6. Experience
+
+### Associate, Data Science
+**MResult Technologies, Bangalore** · Jan 2026 – Present
+- Built **GnA Intelligence Engine**, an agentic finance and analytics platform (ReAct + LlamaIndex) deployed on AWS EC2
+- Shipped a **real-time Vertex AI avatar** that demos a logistics app and answers feature questions live
+- Delivered document classification and extraction pipelines (FastAPI + Snowflake), tuned for accuracy and latency
+- Contributed to CI/CD and MLflow tracking, with secure artifact storage via S3 presigned URLs
+
+### Trainee, Data Science
+**MResult Technologies, Bangalore** · Jul 2025 – Dec 2025
+- Authored an internal white paper benchmarking **VoxAPI**, a secure LLM gateway, using BLEU, ROUGE and BERTScore
+- Built multimodal CV workflows that cut manual effort by **~95%**
+
+### Data Science Intern
+**MResult Technologies, Bangalore** · Feb 2025 – Apr 2025
+- Built a NumPy/Pandas ingestion pipeline and an **AutoGen + ChromaDB** multi-agent summarizer that cut manual effort by **40%**
+
+---
+
+## 7. Education
+
+### B.S. in Data Science & Applications
+**IIT Madras** · 2024 – Present · Online degree
+Statistics, machine learning pipelines, and application engineering.
+
+### B.Tech in Artificial Intelligence & Data Science
+**Jeppiaar Institute of Technology** · 2021 – 2025
+Deep learning, computer vision, data structures, and backend systems.
+
+---
+
+## 8. Contact
+
+- **Subtitle:** Let's Connect
+- **Heading:** Let's build something together.
+- **Subtext:** Agentic RAG, MLOps, document AI, or a role on your team. I'm open to opportunities in **Bangalore and Chennai**, and I'd love to hear about it.
 - **Email:** `navirajan2003@gmail.com`
-- **Copy Email Chip:** One-click copy interaction with instant feedback ("Copied to clipboard!").
-
-### Hero Visual Frame Badges
-- **Top Right Badge:** Focus — *Agentic AI & RAG Systems*
-- **Bottom Left Badge:** Also build — *MLOps & Document AI*
-- **Bottom Right Badge:** Experience — *1.5+ years @ MResult*
+- **Location:** Bangalore, Karnataka, India · Open to Chennai
+- **Form fields:** Name · Email · Message
+- **Submission:** Formspree (`https://formspree.io/f/xbjnvpzw`) with email-client fallback
 
 ---
 
-## 3. Production Telemetry Bar
+## 9. Footer
 
-| Metric | Label | Description |
-| :--- | :--- | :--- |
-| **~99%** | **Extraction Accuracy** | Multimodal document extraction accuracy validated against source ground truth. |
-| **0.845** | **ROC-AUC (7k Churn Pipeline)** | Telecom customer churn model evaluated across 7,000+ records. |
-| **~40%** | **Summarization Effort Saved** | Reduction in manual effort achieved through collaborative multi-agent workflows. |
-| **42 Tables** | **Structured SQL Tables Queried** | Structured fiscal tables ingested into Neon PostgreSQL and queried via SQL agents. |
+- **Brand:** Naveena N · AI/ML Engineer · Bangalore & Chennai
+- **Links:** Back to Top ↑ · GitHub · Resume PDF
 
 ---
 
-## 4. Selected Projects
+## 10. Navi (AI Copilot) Knowledge Base
 
-### 4.1 FinSight AI (Featured Project — Live on Vercel)
-- **Role / Subtitle:** Agentic Financial Budget Analyst
-- **Status:** Featured Project • Live on Vercel
-- **Description:** Agentic RAG analyst for Tamil Nadu's 121-page Fiscal White Paper. Routes questions between vector search and verified SQL over 42 structured tables with page-level citations.
-- **Key Engineering Highlights:**
-  - **Dual retrieval:** LangGraph ReAct agent with numeric verification against source tables.
-  - **Full-stack:** Next.js frontend deployed on Vercel with FastAPI & Neon Postgres.
-- **Tech Stack:** `LangGraph` • `PostgreSQL (Neon)` • `Next.js / React` • `FastAPI` • `Python`
-- **Actions:**
-  - `Launch Live App`: [finsight-ai-sage.vercel.app](https://finsight-ai-sage.vercel.app/)
-  - `Code`: [github.com/naveena0308](https://github.com/naveena0308)
+Keep answers consistent with the numbers above.
 
-### 4.2 Customer Churn with MLOps
-- **Role / Subtitle:** Production Pipeline on 7k Records
-- **Timeline:** Jan 2026 – Mar 2026
-- **Description:** Telco churn pipeline on 7,000+ records, from feature engineering to containerized batch inference tracked reproducibly with MLflow.
-- **Key Engineering Highlights:**
-  - **Performance:** 0.845 ROC-AUC and 0.61 F1 score with interpretable Logistic Regression.
-  - **Production ready:** MLflow experiment tracking and Dockerized FastAPI serving.
-- **Tech Stack:** `MLflow` • `Docker` • `FastAPI` • `Scikit-learn` • `Python`
-- **Actions:**
-  - `View Repository`: [github.com/naveena0308](https://github.com/naveena0308)
-
-### 4.3 Multi-Agent Summarizer & Doc AI
-- **Role / Subtitle:** MResult Technologies (Enterprise System)
-- **Status:** Enterprise System
-- **Description:** Multi-agent system using AutoGen and ChromaDB to ingest, clean, and summarize enterprise datasets alongside multimodal document extraction.
-- **Key Engineering Highlights:**
-  - **Enterprise impact:** Reduced manual summarization effort by ~40% across business units.
-  - **Multimodal CV:** High-precision extraction across text, tables, and charts (~99% manual validation).
-- **Tech Stack:** `AutoGen` • `ChromaDB` • `FastAPI` • `Snowflake` • `AWS S3`
-- **Actions:**
-  - `View Experience`: Links to `#experience`
+1. **Experience:** MResult since Feb 2025; GnA Intelligence Engine, Vertex AI avatar, document classification pipelines.
+2. **FinSight:** 121-page white paper, 223 section-aware chunks, 42 Neon Postgres tables, MCP server (4 tools), Gemini → GPT-4o-mini failover, **95.6% precision on 30 test cases**.
+3. **Churn MLOps:** 7,000+ records, 0.845 ROC-AUC, 0.61 F1, MLflow tracking, container-ready Docker + FastAPI.
+4. **Education:** IIT Madras B.S. (ongoing); Jeppiaar B.Tech (2025).
+5. **Skills:** Agentic AI, Core ML, MLOps, Computer Vision, Backend.
+6. **Resume:** One-click download.
+7. **Contact:** Email, GitHub, LinkedIn.
+8. **Availability (new):** "Naveena is open to AI/ML roles in Bangalore and Chennai." Currently based in Bangalore.
 
 ---
 
-## 5. Skills & Technologies
+## Pre-launch checklist
 
-### Filter Tabs
-- `All Technologies`
-- `Generative AI & Agents`
-- `MLOps & Cloud`
-- `Computer Vision & Doc AI`
-- `Core ML & Backend`
-
-### Categories & Tools
-
-- **Generative AI & Agents:** `LangGraph`, `AutoGen`, `ReAct Framework`, `LlamaIndex`, `MCP Protocol`, `ChromaDB / RAG`
-- **MLOps & Infrastructure:** `MLflow Tracking`, `Docker`, `AWS EC2 & S3`, `FastAPI Microservices`, `CI/CD Workflows`
-- **Computer Vision & Document AI:** `PyMuPDF Parser`, `Table Extraction`, `YOLO Detection`, `OpenCV`, `Multimodal Document CV`
-- **Core ML, Web & Databases:** `Python`, `PostgreSQL (Neon)`, `Snowflake`, `Scikit-learn`, `PyTorch`, `React & Next.js`
-
----
-
-## 6. Work Experience & Academic Foundations
-
-### Professional Timeline
-
-#### 1. Associate (Data Science)
-- **Company:** MResult Technologies, Bangalore
-- **Duration:** Jan 2026 – Present
-- **Impact & Responsibilities:**
-  - Developed **GnA Intelligence Engine** (ReAct & LlamaIndex on AWS EC2) and a real-time **Google Cloud Vertex AI avatar guide** for logistics.
-  - Built ML document intelligence pipelines with FastAPI & Snowflake, tracked reproducibly via MLflow.
-
-#### 2. Trainee (Data Science)
-- **Company:** MResult Technologies, Bangalore
-- **Duration:** Jul 2025 – Dec 2025
-- **Impact & Responsibilities:**
-  - Authored an internal research white paper on **VoxAPI** LLM gateway benchmarking output quality (BLEU, ROUGE, BERTScore).
-  - Built multimodal CV workflows across text, tables, and images, reducing manual effort by **~95%**.
-
-#### 3. Data Science Intern
-- **Company:** MResult Technologies, Bangalore
-- **Duration:** Feb 2025 – Apr 2025
-- **Impact & Responsibilities:**
-  - Built a NumPy/Pandas ETL pipeline and engineered an enterprise multi-agent summarizer with **AutoGen & ChromaDB**, reducing manual effort by **~40%**.
-
----
-
-### Academic Foundations
-
-#### 1. B.S. in Data Science & Applications
-- **Institution:** Indian Institute of Technology - Madras (IIT Madras)
-- **Duration:** In Progress
-- **Overview:** Online degree covering advanced statistical foundations, machine learning pipelines, and application engineering.
-- **Tags:** `Online Degree Program` • `Statistics` • `Machine Learning`
-
-#### 2. B.Tech in Artificial Intelligence & Data Science
-- **Institution:** Jeppiaar Institute of Technology
-- **Duration:** 2021 – 2025
-- **Overview:** Rigorous engineering foundation in deep learning, computer vision, data structures, and backend systems.
-- **Tags:** `Full-Time` • `Artificial Intelligence` • `Data Science`
-
----
-
-## 7. Contact Section
-
-- **Section Subtitle:** Let's Connect
-- **Heading:** "Let's build something together"
-- **Description:** "Happy to talk about agentic RAG, MLOps, or document intelligence, or about a role or project."
-- **Direct Email:** `navirajan2003@gmail.com`
-- **Location:** Bangalore, Karnataka, India
-- **Form Fields:**
-  - Name
-  - Email
-  - Message / Inquiries
-- **Form Submission:** Posts directly to Formspree (`https://formspree.io/f/xbjnvpzw`) with auto-fallback to direct email client.
-
----
-
-## 8. Footer
-
-- **Brand:** `Naveena N — AI/ML Engineer`
-- **Colophon:** "Built with HTML, CSS, and JavaScript."
-- **Quick Links:**
-  - [Back to Top ↑](#hero)
-  - [GitHub](https://github.com/naveena0308)
-  - [Resume PDF](Naveena_s_Resume___27_10_2026.pdf)
-
----
-
-## 9. Navi — AI Copilot Knowledge Base
-
-The floating assistant widget includes instant intent answers and verified details:
-
-1. **Experience Query:** Details 1.5+ years of MResult tenure, GnA Intelligence Engine, Vertex AI live avatar, and document classification pipelines.
-2. **FinSight Query:** Explains 121-page White Paper ETL, 223 section-aware chunks, 42 Neon PostgreSQL tables, and 95.6% benchmark precision.
-3. **Churn MLOps Query:** Explains 7,000+ Telco record modeling, 0.845 ROC-AUC, 0.61 F1 score, MLflow tracking, and Docker deployment.
-4. **Education Query:** Summarizes the ongoing IIT Madras B.S. in Data Science and Jeppiaar B.Tech in AI & Data Science.
-5. **Skills Query:** Categorizes tools across Agentic AI, Core ML, MLOps, and Full-Stack.
-6. **Resume Query:** Direct one-click download for `Naveena_s_Resume___27_10_2026.pdf`.
-7. **Contact Query:** Provides email, location, and GitHub profile details.
+- [ ] Replace the generic LinkedIn link with your profile URL
+- [ ] Point each "Code" / "View Repository" button to its own repo
+- [ ] Remove every "99%" claim (hero, telemetry, project card, Navi)
+- [ ] Update the footer, contact and status chip to say Bangalore & Chennai
+- [ ] Add "Open to roles in Bangalore & Chennai" to your resume objective and LinkedIn headline

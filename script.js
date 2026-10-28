@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const typewriterText = document.getElementById('typewriterText');
   const phrases = [
-    'AI/ML & Agentic Systems.',
-    'Multi-Agent Workflows with LangGraph & MCP.',
-    'Production RAG & Financial Intelligence.',
-    'Scalable MLOps Pipelines with FastAPI & MLflow.',
-    'Multimodal Document AI with 99% Extraction.'
+    'Agentic AI systems that reason and act.',
+    'RAG that cites its sources and checks its math.',
+    'Multi-agent workflows with LangGraph & MCP.',
+    'Document AI that cuts manual work by 95%.',
+    'ML pipelines that ship with MLflow & Docker.'
   ];
 
   let phraseIndex = 0;
@@ -305,9 +305,9 @@ document.addEventListener('DOMContentLoaded', () => {
     experience: {
       text: `<p>Naveena has <strong>1.5+ years of experience</strong> at <strong>MResult</strong>, driving agentic AI and document intelligence from ingestion to production:</p>
       <ul>
-        <li><strong>Associate (Jan 2026 – Present):</strong> Developed GnA Intelligence Engine (agentic AI finance with ReAct &amp; LlamaIndex on AWS EC2), built a live Vertex AI avatar guide for logistics, and integrated Snowflake document extraction via FastAPI &amp; MLflow.</li>
-        <li><strong>Trainee (Jul – Dec 2025):</strong> Authored research on VoxAPI LLM gateway, and developed multimodal CV document workflows reducing manual effort by <strong>~95%</strong>.</li>
-        <li><strong>Intern (Feb – Apr 2025):</strong> Built an enterprise multi-agent summarizer with AutoGen and ChromaDB, reducing manual effort by <strong>~40%</strong>.</li>
+        <li><strong>Associate (Jan 2026 – Present):</strong> Built GnA Intelligence Engine (agentic AI finance with ReAct &amp; LlamaIndex on AWS EC2), shipped a live Vertex AI avatar guide for logistics, and delivered document classification &amp; extraction pipelines (FastAPI + Snowflake) with MLflow tracking.</li>
+        <li><strong>Trainee (Jul – Dec 2025):</strong> Authored an internal white paper on VoxAPI LLM gateway benchmarking (BLEU, ROUGE, BERTScore), and built multimodal CV workflows cutting manual effort by <strong>~95%</strong>.</li>
+        <li><strong>Intern (Feb – Apr 2025):</strong> Built an enterprise multi-agent summarizer with AutoGen and ChromaDB, cutting manual effort by <strong>40%</strong>.</li>
       </ul>`,
       actions: [
         { label: 'View Experience Section', href: '#experience' },
@@ -317,10 +317,10 @@ document.addEventListener('DOMContentLoaded', () => {
     finsight: {
       text: `<p><strong>FinSight AI</strong> is Naveena's production agentic system for Tamil Nadu's 121-page Fiscal Management White Paper:</p>
       <ul>
-        <li><strong>Section-Aware RAG:</strong> 121 pages split into 223 section-aware chunks keeping chapter and page citations.</li>
-        <li><strong>Data Grounding:</strong> 42 structured budget tables in <strong>Neon PostgreSQL</strong> for SQL aggregations.</li>
-        <li><strong>Multi-Agent Reasoning:</strong> LangGraph ReAct agent with numeric verification agents checking figures against source budget tables (95.6% benchmark precision).</li>
-        <li><strong>Full-Stack Frontend:</strong> Built with Next.js/React on Vercel.</li>
+        <li><strong>Section-Aware RAG:</strong> 121-page white paper parsed with PyMuPDF into 223 section-aware chunks keeping page citations.</li>
+        <li><strong>Data Grounding:</strong> 42 relational tables in <strong>Neon PostgreSQL</strong> for SQL query routing.</li>
+        <li><strong>Multi-Agent Reasoning:</strong> LangGraph ReAct agent that checks numeric answers against source tables to curb hallucinations.</li>
+        <li><strong>Evaluations &amp; Protocol:</strong> <strong>95.6% precision</strong> on a 30-case eval suite, MCP server (4 tools) for Claude Desktop/Cursor, and Gemini &rarr; GPT-4o-mini failover.</li>
       </ul>`,
       actions: [
         { label: 'Launch FinSight Live', href: 'https://finsight-ai-sage.vercel.app/', external: true },
@@ -330,8 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
     churn: {
       text: `<p><strong>Customer Churn Prediction with MLOps:</strong></p>
       <ul>
-        <li>Trained and evaluated on <strong>7,000+ Telco records</strong>.</li>
-        <li>Compared multiple classifiers; Logistic Regression achieved the strongest balance of accuracy and explainability (<strong>ROC-AUC 0.845, F1 0.61</strong>).</li>
+        <li>Trained and evaluated on <strong>7,000+ telecom records</strong>.</li>
+        <li>Compared multiple classifiers; Logistic Regression won at <strong>0.845 ROC-AUC and 0.61 F1</strong> with interpretability.</li>
         <li>Tracked experiments and model versioning via <strong>MLflow</strong>; containerized with <strong>Docker</strong> and served via <strong>FastAPI</strong> for batch inference.</li>
       </ul>`,
       actions: [
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     education: {
       text: `<p>Naveena's academic credentials:</p>
       <ul>
-        <li><strong>IIT Madras:</strong> B.S. in Data Science &amp; Applications <em>(ongoing distance degree covering advanced statistics, ML, and programming)</em>.</li>
+        <li><strong>IIT Madras:</strong> B.S. in Data Science &amp; Applications <em>(ongoing online degree covering statistics, ML pipelines, and application engineering)</em>.</li>
         <li><strong>Jeppiaar Institute of Technology (2021 – 2025):</strong> B.Tech in Artificial Intelligence &amp; Data Science.</li>
       </ul>`,
       actions: [
@@ -351,14 +351,22 @@ document.addEventListener('DOMContentLoaded', () => {
     skills: {
       text: `<p>Naveena's core technical toolkit:</p>
       <ul>
-        <li><strong>Agentic AI:</strong> LangGraph, AutoGen, LlamaIndex, MCP, ReAct loops, ChromaDB.</li>
-        <li><strong>Machine Learning:</strong> Python, PyTorch, Scikit-Learn, XGBoost, OpenCV, Pandas, NumPy.</li>
-        <li><strong>MLOps & Cloud:</strong> Docker, FastAPI, MLflow, AWS EC2 & S3, CI/CD.</li>
-        <li><strong>Databases:</strong> PostgreSQL (Neon), Snowflake, SQL.</li>
-        <li><strong>Full-Stack:</strong> React & Next.js.</li>
+        <li><strong>Generative AI &amp; Agents:</strong> LangGraph, LangChain, LlamaIndex, AutoGen, MCP, ReAct, RAG.</li>
+        <li><strong>ML &amp; Model Development:</strong> Python, PyTorch, Scikit-learn, LoRA/QLoRA, NumPy, Pandas.</li>
+        <li><strong>MLOps &amp; Cloud:</strong> MLflow, Docker, CI/CD, AWS (S3, EC2), GCP Vertex AI.</li>
+        <li><strong>Computer Vision &amp; Doc AI:</strong> YOLO, OpenCV, EfficientNet, PyMuPDF.</li>
+        <li><strong>Data &amp; Backend:</strong> PostgreSQL, pgvector, ChromaDB, Snowflake, SQL, FastAPI, Next.js.</li>
       </ul>`,
       actions: [
         { label: 'Explore Skills Matrix', href: '#skills' }
+      ]
+    },
+    availability: {
+      text: `<p><strong>Availability &amp; Preferred Locations:</strong></p>
+      <p>Naveena is actively <strong>open to AI/ML engineering roles in Bangalore and Chennai</strong>. Currently based in Bangalore, India, and open to immediate discussions.</p>`,
+      actions: [
+        { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
+        { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
       ]
     },
     resume: {
@@ -368,10 +376,10 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     contact: {
-      text: `<p>Naveena is actively <strong>open to AI/ML engineering roles</strong>:</p>
+      text: `<p>Naveena is open to AI/ML engineering roles and collaboration:</p>
       <ul>
         <li><strong>Email:</strong> <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a></li>
-        <li><strong>Location:</strong> Bangalore, Karnataka, India</li>
+        <li><strong>Location:</strong> Bangalore, Karnataka, India · Open to Chennai</li>
         <li><strong>GitHub:</strong> <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer">github.com/naveena0308</a></li>
       </ul>`,
       actions: [
@@ -499,6 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function classifyIntent(input) {
     const q = input.toLowerCase().trim();
 
+    if (q.match(/\b(availab|relocat|chennai|notice|immediate)\b/)) return 'availability';
     if (q.match(/\b(mresult|work|job|experience|career|associate|intern|trainee|company)\b/)) return 'experience';
     if (q.match(/\b(finsight|rag|white paper|budget|fiscal|tamil nadu|chunks|table|react agent)\b/)) return 'finsight';
     if (q.match(/\b(churn|telco|roc|auc|mlops|fastapi|mlflow|docker|classifier)\b/)) return 'churn';
