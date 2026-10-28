@@ -305,13 +305,13 @@ document.addEventListener('DOMContentLoaded', () => {
     experience: {
       text: `<p>Naveena has <strong>1.5+ years of experience</strong> at <strong>MResult</strong>, driving agentic AI and document intelligence from ingestion to production:</p>
       <ul>
-        <li><strong>Associate (Jan 2026 – Present):</strong> Built autonomous agentic pipelines with ReAct and LlamaIndex on AWS EC2 via FastAPI; integrated Snowflake document extraction with S3 presigned artifact tracking.</li>
-        <li><strong>Trainee (Jul – Dec 2025):</strong> Developed multimodal CV workflows for text, tables, and charts with <strong>~99% extraction accuracy</strong> in manual validation.</li>
+        <li><strong>Associate (Jan 2026 – Present):</strong> Developed GnA Intelligence Engine (agentic AI finance with ReAct &amp; LlamaIndex on AWS EC2), built a live Vertex AI avatar guide for logistics, and integrated Snowflake document extraction via FastAPI &amp; MLflow.</li>
+        <li><strong>Trainee (Jul – Dec 2025):</strong> Authored research on VoxAPI LLM gateway, and developed multimodal CV document workflows reducing manual effort by <strong>~95%</strong>.</li>
         <li><strong>Intern (Feb – Apr 2025):</strong> Built an enterprise multi-agent summarizer with AutoGen and ChromaDB, reducing manual effort by <strong>~40%</strong>.</li>
       </ul>`,
       actions: [
         { label: 'View Experience Section', href: '#experience' },
-        { label: 'Download Resume', href: 'Naveena_s_Resume___16_09_2026.pdf', download: true }
+        { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
       ]
     },
     finsight: {
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <ul>
         <li><strong>Section-Aware RAG:</strong> 121 pages split into 223 section-aware chunks keeping chapter and page citations.</li>
         <li><strong>Data Grounding:</strong> 42 structured budget tables in <strong>Neon PostgreSQL</strong> for SQL aggregations.</li>
-        <li><strong>Multi-Agent Reasoning:</strong> LangGraph ReAct agent with numeric verification agents checking figures against source budget tables (0.00% discrepancy).</li>
+        <li><strong>Multi-Agent Reasoning:</strong> LangGraph ReAct agent with numeric verification agents checking figures against source budget tables (95.6% benchmark precision).</li>
         <li><strong>Full-Stack Frontend:</strong> Built with Next.js/React on Vercel.</li>
       </ul>`,
       actions: [
@@ -341,12 +341,11 @@ document.addEventListener('DOMContentLoaded', () => {
     education: {
       text: `<p>Naveena's academic credentials:</p>
       <ul>
-        <li><strong>IIT Madras:</strong> B.S. in Data Science <em>(ongoing online degree program covering advanced statistics, ML, and programming)</em>.</li>
-        <li><strong>Jeppiaar Engineering College (2025):</strong> B.Tech in Artificial Intelligence & Data Science.</li>
-        <li><strong>IIITDM Chennai (2022):</strong> Data Analytics Research Intern; built predictive ML models on photon emission datasets with 87% shelf-life estimation accuracy.</li>
+        <li><strong>IIT Madras:</strong> B.S. in Data Science &amp; Applications <em>(ongoing distance degree covering advanced statistics, ML, and programming)</em>.</li>
+        <li><strong>Jeppiaar Institute of Technology (2021 – 2025):</strong> B.Tech in Artificial Intelligence &amp; Data Science.</li>
       </ul>`,
       actions: [
-        { label: 'View Education Section', href: '#education' }
+        { label: 'View Education Section', href: '#experience' }
       ]
     },
     skills: {
@@ -356,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li><strong>Machine Learning:</strong> Python, PyTorch, Scikit-Learn, XGBoost, OpenCV, Pandas, NumPy.</li>
         <li><strong>MLOps & Cloud:</strong> Docker, FastAPI, MLflow, AWS EC2 & S3, CI/CD.</li>
         <li><strong>Databases:</strong> PostgreSQL (Neon), Snowflake, SQL.</li>
-        <li><strong>Full-Stack:</strong> React & Next.js (currently learning to build full-stack AI apps).</li>
+        <li><strong>Full-Stack:</strong> React & Next.js.</li>
       </ul>`,
       actions: [
         { label: 'Explore Skills Matrix', href: '#skills' }
@@ -365,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resume: {
       text: `<p>You can download Naveena's verified resume right here. It includes all verified metrics, MResult roles, and project architectures.</p>`,
       actions: [
-        { label: 'Download Resume (PDF)', href: 'Naveena_s_Resume___16_09_2026.pdf', download: true }
+        { label: 'Download Resume (PDF)', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
       ]
     },
     contact: {
@@ -542,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.reply && !data.fallback) {
           showTyping(false);
           appendBotBubble(`<p>${escapeHtml(data.reply)}</p>`, [
-            { label: 'Download Resume', href: 'Naveena_s_Resume___16_09_2026.pdf', download: true },
+            { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true },
             { label: 'Contact Naveena', href: 'mailto:navirajan2003@gmail.com' }
           ]);
           return;
@@ -561,7 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
          <p>For custom inquiries, you can also reach Naveena directly!</p>`,
         [
           { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
-          { label: 'Download Resume', href: 'Naveena_s_Resume___16_09_2026.pdf', download: true }
+          { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
         ]
       );
     }, 450);

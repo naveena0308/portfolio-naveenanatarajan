@@ -47,7 +47,7 @@ portfolio-naveenanatarajan/
 ├── style.css                            # Executive design system, typography, animations
 ├── script.js                            # Interactive state, trace simulation, hybrid chatbot
 ├── vercel.json                          # Vercel deployment headers & clean routing
-├── Naveena_s_Resume___16_09_2026.pdf    # Downloadable verified resume
+├── Naveena_s_Resume___27_10_2026.pdf    # Downloadable verified resume
 ├── avatar_stylized.jpg                  # Stylized 3D tech portrait
 ├── photo_original.jpg                   # Original professional photograph
 ├── myphoto.jpeg                         # Original uploaded photo source
