@@ -897,6 +897,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==========================================================================
+  // 14. STICKY STACKING EXPERIENCE CARDS (Dynamic Depth & Layering on Scroll)
+  // ==========================================================================
+  const experienceTimeline = document.getElementById('experienceTimeline');
+  if (experienceTimeline && !prefersReducedMotion) {
+    const timelineEntries = Array.from(experienceTimeline.querySelectorAll('.timeline-entry'));
+
+    function updateCardStackDepth() {
+      const navOffset = window.innerWidth <= 480 ? 64 : (window.innerWidth <= 768 ? 70 : 88);
+      const stepOffset = window.innerWidth <= 480 ? 18 : (window.innerWidth <= 768 ? 22 : 32);
+
+      timelineEntries.forEach((entry, idx) => {
+        const cardInner = entry.querySelector('.timeline-card');
+        if (!cardInner) return;
+
+        // Skip inline transforms if hovered
+        if (entry.matches(':hover')) return;
+
+        // Count how many subsequent cards have arrived at their sticky positions above this card
+        let stackedAbove = 0;
+        for (let j = idx + 1; j < timelineEntries.length; j++) {
+          const nextRect = timelineEntries[j].getBoundingClientRect();
+          const nextStickyThreshold = navOffset + (j * stepOffset);
+          if (nextRect.top <= nextStickyThreshold + 4) {
+            stackedAbove++;
+          }
+        }
+
+        if (stackedAbove > 0) {
+          const scale = Math.max(0.92, 1 - (stackedAbove * 0.032));
+          const brightness = Math.max(0.85, 1 - (stackedAbove * 0.05));
+          cardInner.style.transform = `scale(${scale})`;
+          cardInner.style.filter = `brightness(${brightness})`;
+          entry.classList.add('is-stacked-behind');
+        } else {
+          cardInner.style.transform = '';
+          cardInner.style.filter = '';
+          entry.classList.remove('is-stacked-behind');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateCardStackDepth, { passive: true });
+    window.addEventListener('resize', updateCardStackDepth, { passive: true });
+    updateCardStackDepth();
+
+    // Mouse enter / leave helpers for instant hover restoration
+    timelineEntries.forEach(entry => {
+      entry.addEventListener('mouseenter', () => {
+        const cardInner = entry.querySelector('.timeline-card');
+        if (cardInner) {
+          cardInner.style.transform = 'translateY(-4px) scale(1)';
+          cardInner.style.filter = 'brightness(1)';
+        }
+      });
+      entry.addEventListener('mouseleave', () => {
+        updateCardStackDepth();
+      });
+    });
+  }
+
   // Ensure clean typography baseline
   document.documentElement.setAttribute('data-font', 'inter');
 
