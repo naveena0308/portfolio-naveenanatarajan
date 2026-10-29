@@ -155,17 +155,24 @@
 
         <!-- Right Column: Clean Architectural Portrait Card -->
         <div class="hero-visual">
-          <div class="portrait-card glass-card">
+          <div class="portrait-card glass-card" id="heroPortraitCard">
+            <!-- Wave Bubble: Links avatar directly to assistant chat -->
+            <button type="button" class="avatar-wave-bubble" id="avatarWaveBubble" aria-label="Hi, ask me anything - opens assistant chat">
+              <span class="wave-text">Hi, ask me anything</span>
+              <span class="wave-hand">👋</span>
+            </button>
+
             <div class="portrait-image-wrapper">
               <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="portrait-img">
             </div>
-            <!-- Integrated Focus Strip (Structured, No Floating Overflows) -->
+
+            <!-- Integrated Focus Strip with Rotating Keywords -->
             <div class="portrait-focus-strip">
               <div class="focus-strip-item">
                 <i class="fa-solid fa-brain"></i>
                 <div>
                   <span class="fs-title">Focus</span>
-                  <span class="fs-desc">Agentic AI &amp; RAG</span>
+                  <span class="fs-desc rotating-keyword" id="heroKeywordFocus">Agentic AI &amp; Vision</span>
                 </div>
               </div>
               <div class="focus-strip-divider"></div>
@@ -173,7 +180,7 @@
                 <i class="fa-solid fa-gears"></i>
                 <div>
                   <span class="fs-title">Systems</span>
-                  <span class="fs-desc">MLOps &amp; Doc AI</span>
+                  <span class="fs-desc rotating-keyword" id="heroKeywordSystems">RAG &amp; MLOps</span>
                 </div>
               </div>
             </div>
@@ -895,7 +902,7 @@
             </button>
             <button type="button" class="contact-tab" id="tabContactCopilot" role="tab" aria-selected="false" aria-controls="paneContactCopilot">
               <i class="fa-solid fa-robot"></i>
-              <span>Ask my assistant</span>
+              <span>Ask me anything</span>
             </button>
           </div>
 
@@ -964,7 +971,7 @@
           <!-- Pane 2: Ask my assistant (Instant Interactive Q&A) -->
           <div class="contact-pane hidden" id="paneContactCopilot" role="tabpanel" aria-labelledby="tabContactCopilot">
             <div class="form-header-bar">
-              <h3 class="form-title">Ask my assistant</h3>
+              <h3 class="form-title">Ask me anything</h3>
               <span class="form-note"><i class="fa-solid fa-bolt"></i> Instant 0ms Copilot</span>
             </div>
 
@@ -972,7 +979,7 @@
               <div class="embedded-bubble embedded-bot">
                 <div class="embedded-avatar"><img src="avatar_stylized.jpg" alt="Navi"></div>
                 <div class="embedded-content">
-                  <p>Hi, I’m <strong>Navi</strong>. Ask me what Naveena works on, her remote availability, or her agentic systems!</p>
+                  <p>Hi, I’m <strong>Navi</strong>, Naveena’s AI copilot. Ask me anything about my agentic systems, computer vision models, or availability for onsite and remote roles!</p>
                 </div>
               </div>
             </div>
@@ -1102,8 +1109,7 @@
             <img src="avatar_stylized.jpg" alt="Navi">
           </div>
           <div class="chat-bubble-content">
-            <p>Hi! I'm <strong>Navi</strong>, Naveena's portfolio copilot with instant intent caching and verified system retrieval.</p>
-            <p>Ask me anything about Naveena's production agentic systems, RAG architecture, ML pipelines, or pick a quick topic above!</p>
+            <p>Hi! I'm <strong>Navi</strong>, Naveena's AI copilot. Ask me anything about my production agentic systems, computer vision models, MLOps pipelines, or pick a quick topic above!</p>
           </div>
         </div>
       </div>

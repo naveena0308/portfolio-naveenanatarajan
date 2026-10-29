@@ -401,10 +401,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Grounded Deterministic Knowledge Base (Level 1: 0ms Intent Cache)
   const hybridKnowledge = {
     experience: {
-      text: `<p>Naveena has <strong>1.5+ years of experience</strong> at <strong>MResult</strong>, driving agentic AI and document intelligence from ingestion to production:</p>
+      text: `<p>I have <strong>1.5+ years of experience</strong> at <strong>MResult</strong>, engineering agentic AI and document intelligence from ingestion to production:</p>
       <ul>
         <li><strong>Associate (Jan 2026 – Present):</strong> Built GnA Intelligence Engine (agentic AI finance with ReAct &amp; LlamaIndex on AWS EC2), shipped a live Vertex AI avatar guide for logistics, and delivered document classification &amp; extraction pipelines (FastAPI + Snowflake) with MLflow tracking.</li>
-        <li><strong>Trainee (Jul – Dec 2025):</strong> Authored an internal white paper on VoxAPI LLM gateway benchmarking (BLEU, ROUGE, BERTScore), and built multimodal CV workflows cutting manual effort by <strong>~95%</strong>.</li>
+        <li><strong>Trainee (Jul – Dec 2025):</strong> Authored an internal white paper on VoxAPI LLM gateway benchmarking (BLEU, ROUGE, BERTScore), and built multimodal computer vision workflows cutting manual effort by <strong>~95%</strong>.</li>
         <li><strong>Intern (Feb – Apr 2025):</strong> Built an enterprise multi-agent summarizer with AutoGen and ChromaDB, cutting manual effort by <strong>40%</strong>.</li>
       </ul>`,
       actions: [
@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     finsight: {
-      text: `<p><strong>FinSight AI</strong> is Naveena's production agentic system for Tamil Nadu's 121-page Fiscal Management White Paper:</p>
+      text: `<p><strong>FinSight AI</strong> is my production agentic system for Tamil Nadu's 121-page Fiscal Management White Paper:</p>
       <ul>
         <li><strong>Section-Aware RAG:</strong> 121-page white paper parsed with PyMuPDF into 223 section-aware chunks keeping page citations.</li>
         <li><strong>Data Grounding:</strong> 42 relational tables in <strong>Neon PostgreSQL</strong> for SQL query routing.</li>
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     education: {
-      text: `<p>Naveena's academic credentials:</p>
+      text: `<p>My academic credentials:</p>
       <ul>
         <li><strong>IIT Madras:</strong> B.S. in Data Science &amp; Applications <em>(ongoing online degree covering statistics, ML pipelines, and application engineering)</em>.</li>
         <li><strong>Jeppiaar Institute of Technology (2021 – 2025):</strong> B.Tech in Artificial Intelligence &amp; Data Science.</li>
@@ -447,12 +447,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     skills: {
-      text: `<p>Naveena's core technical toolkit:</p>
+      text: `<p>My core technical toolkit:</p>
       <ul>
         <li><strong>Generative AI &amp; Agents:</strong> LangGraph, LangChain, LlamaIndex, AutoGen, MCP, ReAct, RAG.</li>
+        <li><strong>Computer Vision &amp; Multimodal:</strong> YOLO, OpenCV, EfficientNet, multimodal layout parsing.</li>
         <li><strong>ML &amp; Model Development:</strong> Python, PyTorch, Scikit-learn, LoRA/QLoRA, NumPy, Pandas.</li>
         <li><strong>MLOps &amp; Cloud:</strong> MLflow, Docker, CI/CD, AWS (S3, EC2), GCP Vertex AI.</li>
-        <li><strong>Computer Vision &amp; Doc AI:</strong> YOLO, OpenCV, EfficientNet, PyMuPDF.</li>
         <li><strong>Data &amp; Backend:</strong> PostgreSQL, pgvector, ChromaDB, Snowflake, SQL, FastAPI, Next.js.</li>
       </ul>`,
       actions: [
@@ -461,20 +461,20 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     availability: {
       text: `<p><strong>Availability &amp; Preferred Locations:</strong></p>
-      <p>Naveena is actively <strong>open to AI/ML engineering roles in Bangalore, Chennai, and remote opportunities worldwide</strong>. Currently based in Bangalore, India, and open to immediate discussions.</p>`,
+      <p>I am actively <strong>open to AI/ML engineering roles in Bangalore, Chennai, and remote opportunities worldwide</strong>. Currently based in Bangalore, India, and ready for immediate discussions.</p>`,
       actions: [
-        { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
+        { label: 'Email Me Directly', href: 'mailto:navirajan2003@gmail.com' },
         { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
       ]
     },
     resume: {
-      text: `<p>You can download Naveena's verified resume right here. It includes all verified metrics, MResult roles, and project architectures.</p>`,
+      text: `<p>You can download my verified resume right here. It includes all verified metrics, MResult roles, and project architectures.</p>`,
       actions: [
         { label: 'Download Resume (PDF)', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
       ]
     },
     contact: {
-      text: `<p>Naveena is open to AI/ML engineering roles and collaboration:</p>
+      text: `<p>I am open to AI/ML engineering roles, collaboration, and remote opportunities worldwide:</p>
       <ul>
         <li><strong>Email:</strong> <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a></li>
         <li><strong>Location:</strong> Bangalore, India · Open to Chennai &amp; Remote Worldwide</li>
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="avatar_stylized.jpg" alt="Navi">
           </div>
           <div class="chat-bubble-content">
-            <p>Conversation reset. I'm <strong>Navi</strong>, Naveena's portfolio copilot with instant intent caching and AI generative fallback.</p>
+            <p>Conversation reset. I'm <strong>Navi</strong>, Naveena's AI copilot with instant intent caching and verified system retrieval.</p>
             <p>Pick a topic or ask a custom question!</p>
           </div>
         </div>
@@ -662,11 +662,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       showTyping(false);
       appendBotBubble(
-        `<p>I am grounded in Naveena's production agentic pipelines, RAG architecture, and ML engineering background.</p>
-         <p>You can ask me about her <strong>MResult experience</strong>, the <strong>FinSight AI</strong> pipeline, her <strong>churn MLOps model</strong>, or her <strong>IIT Madras degree</strong>.</p>
-         <p>For custom inquiries, you can also reach Naveena directly!</p>`,
+        `<p>I am grounded in my production agentic pipelines, computer vision workflows, and ML engineering background.</p>
+         <p>You can ask me about my <strong>MResult experience</strong>, the <strong>FinSight AI</strong> pipeline, my <strong>churn MLOps model</strong>, or my <strong>IIT Madras degree</strong>.</p>
+         <p>For custom inquiries, you can also reach me directly!</p>`,
         [
-          { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
+          { label: 'Email Me Directly', href: 'mailto:navirajan2003@gmail.com' },
           { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
         ]
       );
@@ -759,8 +759,8 @@ document.addEventListener('DOMContentLoaded', () => {
         appendEmbeddedMsg(html, false);
       } else {
         appendEmbeddedMsg(
-          `<p>I am grounded in Naveena's production agentic AI pipelines and ML background. She is actively open to AI/ML engineering roles in Bangalore, Chennai, and remote worldwide!</p>
-           <p>Feel free to send a message via the other tab or email <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a>.</p>`,
+          `<p>I am grounded in my production agentic AI pipelines, computer vision workflows, and ML background. I am actively open to AI/ML engineering roles in Bangalore, Chennai, and remote worldwide!</p>
+           <p>Feel free to send me a message via the other tab or email <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a>.</p>`,
           false
         );
       }
@@ -783,6 +783,70 @@ document.addEventListener('DOMContentLoaded', () => {
       handleEmbeddedQuery(q);
     });
   });
+
+  // ==========================================================================
+  // 11. HERO CARD DYNAMICS: ROTATING KEYWORDS & WAVE BUBBLE
+  // ==========================================================================
+  const heroKeywordFocus = document.getElementById('heroKeywordFocus');
+  const heroKeywordSystems = document.getElementById('heroKeywordSystems');
+  const avatarWaveBubble = document.getElementById('avatarWaveBubble');
+
+  // Rotating Keywords Array (3 pairs covering Agentic AI, Vision/Multimodal, Systems/MLOps)
+  const keywordPairs = [
+    { focus: 'Agentic AI & Vision', systems: 'RAG & MLOps' },
+    { focus: 'Computer Vision & Multimodal', systems: 'Pipelines & Evaluation' },
+    { focus: 'Autonomous Agents & LLMs', systems: 'FastAPI & Production AI' }
+  ];
+
+  let currentPairIndex = 0;
+  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (heroKeywordFocus && heroKeywordSystems && !prefersReducedMotion) {
+    setInterval(() => {
+      // Fade out
+      heroKeywordFocus.classList.add('fade-out');
+      heroKeywordSystems.classList.add('fade-out');
+
+      setTimeout(() => {
+        currentPairIndex = (currentPairIndex + 1) % keywordPairs.length;
+        heroKeywordFocus.textContent = keywordPairs[currentPairIndex].focus;
+        heroKeywordSystems.textContent = keywordPairs[currentPairIndex].systems;
+
+        // Fade in
+        heroKeywordFocus.classList.remove('fade-out');
+        heroKeywordSystems.classList.remove('fade-out');
+      }, 280);
+    }, 3200);
+  }
+
+  // Wave Bubble Appear after 2s and Click-to-Scroll to Assistant
+  if (avatarWaveBubble) {
+    setTimeout(() => {
+      avatarWaveBubble.classList.add('visible');
+    }, 2000);
+
+    avatarWaveBubble.addEventListener('click', () => {
+      const contactSection = document.getElementById('contact');
+      const tabContactCopilot = document.getElementById('tabContactCopilot');
+      const embeddedChatInput = document.getElementById('embeddedChatInput');
+
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Activate Assistant tab
+      if (tabContactCopilot) {
+        tabContactCopilot.click();
+      }
+
+      // Focus input field with a friendly nudge after scrolling completes
+      setTimeout(() => {
+        if (embeddedChatInput) {
+          embeddedChatInput.focus();
+        }
+      }, 700);
+    });
+  }
 
   // Ensure clean typography baseline
   document.documentElement.setAttribute('data-font', 'inter');

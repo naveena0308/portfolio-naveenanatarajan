@@ -48,10 +48,12 @@ Hi, I'm **Naveena N**
 - **LinkedIn:** *(replace with your full profile URL)*
 - **Email:** `navirajan2003@gmail.com` (one-click copy)
 
-### Hero visual badges
-- **Focus:** Agentic AI & RAG
-- **Also:** MLOps & Document AI
-- **Experience:** Since Feb 2025 @ MResult
+### Hero visual badges & dynamics
+- **Focus:** Agentic AI & Vision
+- **Systems:** RAG & MLOps
+- **Rotating Keywords:** Cycles every 3s through Agentic AI & Vision, Computer Vision & Multimodal, Autonomous Agents & LLMs, RAG & MLOps, and Pipelines.
+- **Wave Bubble:** "Hi, ask me anything 👋" appears after 2s; clicking scrolls smoothly to the assistant chat.
+- **Animation:** Gentle 8px vertical float with soft primary glow (respects `prefers-reduced-motion: reduce`).
 
 ---
 
