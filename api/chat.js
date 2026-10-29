@@ -40,7 +40,7 @@ PROFILE SUMMARY:
 - Location: Bangalore, Karnataka, India.
 - Email: navirajan2003@gmail.com
 - GitHub: https://github.com/naveena0308
-- Current Availability: Actively open to AI/ML engineering roles in Bangalore and Chennai.
+- Current Availability: Actively open to AI/ML engineering roles in Bangalore, Chennai, and remote opportunities worldwide.
 
 EXPERIENCE (1.5+ years at MResult):
 - Associate (Data Science), Jan 2026 – Present:

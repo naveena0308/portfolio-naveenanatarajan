@@ -163,11 +163,46 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 7. ONE-CLICK EMAIL COPY & FORMSPREE CONTACT FORM DISPATCH
+  // 7. CONTACT SECTION: SPOTLIGHT, TABS, INTENT CHIPS, COPY & FORMSPREE
   // ==========================================================================
+  
+  // Global Toast Notification Helper
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2200);
+  }
+
+  // One-Click Email Copy Handlers
+  const copyContactEmailBtn = document.getElementById('copyContactEmailBtn');
+  if (copyContactEmailBtn) {
+    copyContactEmailBtn.addEventListener('click', () => {
+      const email = 'navirajan2003@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const label = copyContactEmailBtn.querySelector('.copy-label');
+        const icon = copyContactEmailBtn.querySelector('i');
+        if (label) label.textContent = 'Copied!';
+        if (icon) icon.className = 'fa-solid fa-check';
+        copyContactEmailBtn.classList.add('copied');
+        showToast('Email copied: navirajan2003@gmail.com');
+
+        setTimeout(() => {
+          if (label) label.textContent = 'Copy';
+          if (icon) icon.className = 'fa-regular fa-copy';
+          copyContactEmailBtn.classList.remove('copied');
+        }, 2200);
+      }).catch(() => {
+        showToast('navirajan2003@gmail.com');
+      });
+    });
+  }
+
   const copyEmailBtn = document.getElementById('copyEmailBtn');
   const copyEmailText = document.getElementById('copyEmailText');
-
   if (copyEmailBtn && copyEmailText) {
     copyEmailBtn.addEventListener('click', () => {
       const email = 'navirajan2003@gmail.com';
@@ -176,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         copyEmailText.textContent = 'Copied to clipboard!';
         copyEmailBtn.style.borderColor = 'var(--color-emerald)';
         copyEmailBtn.style.color = 'var(--color-emerald)';
+        showToast('Email copied: navirajan2003@gmail.com');
 
         setTimeout(() => {
           copyEmailText.textContent = origText;
@@ -187,6 +223,66 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Spotlight Cursor Tracking on Contact Interactive Card
+  const contactInteractiveCard = document.getElementById('contactInteractiveCard');
+  if (contactInteractiveCard) {
+    contactInteractiveCard.addEventListener('pointermove', (e) => {
+      const rect = contactInteractiveCard.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      contactInteractiveCard.style.setProperty('--spotlight-x', `${x}px`);
+      contactInteractiveCard.style.setProperty('--spotlight-y', `${y}px`);
+    });
+  }
+
+  // Dual Tabs Switcher (Send a Message vs Ask Assistant)
+  const tabContactForm = document.getElementById('tabContactForm');
+  const tabContactCopilot = document.getElementById('tabContactCopilot');
+  const paneContactForm = document.getElementById('paneContactForm');
+  const paneContactCopilot = document.getElementById('paneContactCopilot');
+
+  if (tabContactForm && tabContactCopilot && paneContactForm && paneContactCopilot) {
+    tabContactForm.addEventListener('click', () => {
+      tabContactForm.classList.add('active');
+      tabContactForm.setAttribute('aria-selected', 'true');
+      tabContactCopilot.classList.remove('active');
+      tabContactCopilot.setAttribute('aria-selected', 'false');
+      paneContactForm.classList.remove('hidden');
+      paneContactCopilot.classList.add('hidden');
+    });
+
+    tabContactCopilot.addEventListener('click', () => {
+      tabContactCopilot.classList.add('active');
+      tabContactCopilot.setAttribute('aria-selected', 'true');
+      tabContactForm.classList.remove('active');
+      tabContactForm.setAttribute('aria-selected', 'false');
+      paneContactCopilot.classList.remove('hidden');
+      paneContactForm.classList.add('hidden');
+      const embeddedChatLog = document.getElementById('embeddedChatLog');
+      if (embeddedChatLog) embeddedChatLog.scrollTop = embeddedChatLog.scrollHeight;
+    });
+  }
+
+  // "What's this about?" Quick Intent Chips
+  const intentChips = document.querySelectorAll('.intent-chip');
+  const formTopicInput = document.getElementById('formTopicInput');
+  const messageInput = document.getElementById('messageInput');
+
+  intentChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      intentChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+
+      const intent = chip.getAttribute('data-intent');
+      const placeholder = chip.getAttribute('data-placeholder');
+
+      if (formTopicInput) formTopicInput.value = intent;
+      if (messageInput && placeholder) {
+        messageInput.placeholder = placeholder;
+      }
+    });
+  });
 
   // Contact Form Submission (Formspree AJAX with Mailto Fallback)
   const contactForm = document.getElementById('contactForm');
@@ -200,10 +296,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('nameInput')?.value || '';
       const email = document.getElementById('emailInput')?.value || '';
       const message = document.getElementById('messageInput')?.value || '';
+      const topic = formTopicInput?.value || 'General Inquiry';
 
       if (btnSubmitForm) {
         btnSubmitForm.disabled = true;
-        btnSubmitForm.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Dispatching message...';
+        btnSubmitForm.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Dispatching to inbox...';
       }
 
       try {
@@ -218,13 +315,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           if (formSuccessMsg) {
             formSuccessMsg.classList.remove('hidden');
-            formSuccessMsg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.';
+            formSuccessMsg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message was delivered directly to Naveena. She replies within 24 hours.';
           }
           if (btnSubmitForm) {
             btnSubmitForm.innerHTML = '<i class="fa-solid fa-check"></i> Message Dispatched';
             btnSubmitForm.style.background = 'var(--color-emerald)';
             btnSubmitForm.style.color = '#FFFFFF';
           }
+          showToast('Message dispatched to Naveena\'s inbox!');
           contactForm.reset();
         } else {
           throw new Error('Formspree endpoint returned non-200');
@@ -235,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
           formSuccessMsg.classList.remove('hidden');
           formSuccessMsg.innerHTML = '<i class="fa-solid fa-circle-info"></i> Direct email client triggered for navirajan2003@gmail.com.';
         }
-        const mailtoLink = `mailto:navirajan2003@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
+        const mailtoLink = `mailto:navirajan2003@gmail.com?subject=${encodeURIComponent('[' + topic + '] from ' + name)}&body=${encodeURIComponent(message)}%0A%0A— ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
         window.location.href = mailtoLink;
 
         if (btnSubmitForm) {
@@ -363,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     availability: {
       text: `<p><strong>Availability &amp; Preferred Locations:</strong></p>
-      <p>Naveena is actively <strong>open to AI/ML engineering roles in Bangalore and Chennai</strong>. Currently based in Bangalore, India, and open to immediate discussions.</p>`,
+      <p>Naveena is actively <strong>open to AI/ML engineering roles in Bangalore, Chennai, and remote opportunities worldwide</strong>. Currently based in Bangalore, India, and open to immediate discussions.</p>`,
       actions: [
         { label: 'Email Naveena Directly', href: 'mailto:navirajan2003@gmail.com' },
         { label: 'Download Resume', href: 'Naveena_s_Resume___27_10_2026.pdf', download: true }
@@ -379,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
       text: `<p>Naveena is open to AI/ML engineering roles and collaboration:</p>
       <ul>
         <li><strong>Email:</strong> <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a></li>
-        <li><strong>Location:</strong> Bangalore, Karnataka, India · Open to Chennai</li>
+        <li><strong>Location:</strong> Bangalore, India · Open to Chennai &amp; Remote Worldwide</li>
         <li><strong>GitHub:</strong> <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer">github.com/naveena0308</a></li>
       </ul>`,
       actions: [
@@ -604,6 +702,87 @@ document.addEventListener('DOMContentLoaded', () => {
       handleUserQuery(val);
     });
   }
+
+  // ==========================================================================
+  // 10. EMBEDDED CONTACT ASSISTANT (Pane 2: Ask My Assistant)
+  // ==========================================================================
+  const embeddedChatLog = document.getElementById('embeddedChatLog');
+  const embeddedChatForm = document.getElementById('embeddedChatForm');
+  const embeddedChatInput = document.getElementById('embeddedChatInput');
+  const embeddedSuggestions = document.querySelectorAll('.embedded-sugg-btn');
+
+  function appendEmbeddedMsg(text, isUser = false) {
+    if (!embeddedChatLog) return;
+    const bubble = document.createElement('div');
+    bubble.className = `embedded-bubble ${isUser ? 'embedded-user' : 'embedded-bot'}`;
+
+    if (isUser) {
+      bubble.innerHTML = `<div class="embedded-content"><p>${escapeHtml(text)}</p></div>`;
+    } else {
+      bubble.innerHTML = `
+        <div class="embedded-avatar"><img src="avatar_stylized.jpg" alt="Navi"></div>
+        <div class="embedded-content">${text}</div>
+      `;
+    }
+    embeddedChatLog.appendChild(bubble);
+    embeddedChatLog.scrollTop = embeddedChatLog.scrollHeight;
+  }
+
+  function handleEmbeddedQuery(query) {
+    if (!query || !query.trim()) return;
+    appendEmbeddedMsg(query, true);
+
+    const typingEl = document.createElement('div');
+    typingEl.className = 'embedded-bubble embedded-bot';
+    typingEl.innerHTML = `
+      <div class="embedded-avatar"><img src="avatar_stylized.jpg" alt="Navi"></div>
+      <div class="embedded-content"><span class="typing-text"><i class="fa-solid fa-spinner fa-spin"></i> Reasoning...</span></div>
+    `;
+    embeddedChatLog.appendChild(typingEl);
+    embeddedChatLog.scrollTop = embeddedChatLog.scrollHeight;
+
+    const intent = classifyIntent(query);
+    setTimeout(() => {
+      typingEl.remove();
+      if (intent && hybridKnowledge[intent]) {
+        const item = hybridKnowledge[intent];
+        let html = item.text;
+        if (item.actions && item.actions.length > 0) {
+          html += `<div style="margin-top:0.4rem;display:flex;gap:0.4rem;flex-wrap:wrap;">`;
+          item.actions.forEach(act => {
+            const dl = act.download ? 'download="Naveena_N_Resume.pdf"' : '';
+            const ext = act.external ? 'target="_blank" rel="noopener noreferrer"' : '';
+            html += `<a href="${act.href}" class="chat-action-link" style="font-size:0.75rem;padding:0.25rem 0.6rem;" ${dl} ${ext}>${act.label}</a>`;
+          });
+          html += `</div>`;
+        }
+        appendEmbeddedMsg(html, false);
+      } else {
+        appendEmbeddedMsg(
+          `<p>I am grounded in Naveena's production agentic AI pipelines and ML background. She is actively open to AI/ML engineering roles in Bangalore, Chennai, and remote worldwide!</p>
+           <p>Feel free to send a message via the other tab or email <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a>.</p>`,
+          false
+        );
+      }
+    }, 400);
+  }
+
+  if (embeddedChatForm && embeddedChatInput) {
+    embeddedChatForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const val = embeddedChatInput.value.trim();
+      if (!val) return;
+      embeddedChatInput.value = '';
+      handleEmbeddedQuery(val);
+    });
+  }
+
+  embeddedSuggestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const q = btn.getAttribute('data-query') || btn.textContent.trim();
+      handleEmbeddedQuery(q);
+    });
+  });
 
   // Ensure clean typography baseline
   document.documentElement.setAttribute('data-font', 'inter');

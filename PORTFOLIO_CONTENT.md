@@ -2,7 +2,7 @@
 
 > **Live:** [portfolio-naveenanatarajan.vercel.app](https://portfolio-naveenanatarajan.vercel.app/)
 > **Last Updated:** October 29, 2026
-> **Availability:** Open to AI/ML roles in **Bangalore** and **Chennai**
+> **Availability:** Open to AI/ML roles in **Bangalore**, **Chennai**, and **Remote Worldwide**
 
 ---
 
@@ -17,7 +17,7 @@
 ## 2. Hero
 
 ### Status chips
-- **Open to AI/ML roles in Bangalore & Chennai** (animated green pulse)
+- **Open to AI/ML roles · Bangalore, Chennai & Remote** (animated green pulse)
 - Bangalore, India
 - Associate @ MResult
 
@@ -155,19 +155,20 @@ Deep learning, computer vision, data structures, and backend systems.
 
 ## 8. Contact
 
-- **Subtitle:** Let's Connect
-- **Heading:** Let's build something together.
-- **Subtext:** Agentic RAG, MLOps, document AI, or a role on your team. I'm open to opportunities in **Bangalore and Chennai**, and I'd love to hear about it.
-- **Email:** `navirajan2003@gmail.com`
-- **Location:** Bangalore, Karnataka, India · Open to Chennai
-- **Form fields:** Name · Email · Message
-- **Submission:** Formspree (`https://formspree.io/f/xbjnvpzw`) with email-client fallback
+- **Status Badge:** Open to roles · replies within 24h
+- **Heading:** Messy data, hard problem? Let’s build the AI that solves it.
+- **Subtext:** Agentic AI, computer vision, RAG, MLOps, document AI, or a role on your team. I’m open to opportunities in **Bangalore, Chennai, and remote worldwide**, and I’d love to hear about it.
+- **Email:** `navirajan2003@gmail.com` (with one-click copy button)
+- **Location:** Bangalore, India · Open to Chennai & Remote Worldwide
+- **Map Visual:** Animated corridor & remote beacon connecting Bangalore, Chennai, and worldwide
+- **Interactive Card:** Dual tabs (Send a message with intent chips + Ask my assistant with 0ms copilot)
+- **Submission:** Formspree (`https://formspree.io/f/xbjnvpzw`) directly to inbox with email-client fallback
 
 ---
 
 ## 9. Footer
 
-- **Brand:** Naveena N · AI/ML Engineer · Bangalore & Chennai
+- **Brand:** Naveena N · AI/ML Engineer · Bangalore, Chennai & Remote
 - **Links:** Back to Top ↑ · GitHub · Resume PDF
 
 ---
@@ -183,7 +184,7 @@ Keep answers consistent with the numbers above.
 5. **Skills:** Agentic AI, Core ML, MLOps, Computer Vision, Backend.
 6. **Resume:** One-click download.
 7. **Contact:** Email, GitHub, LinkedIn.
-8. **Availability (new):** "Naveena is open to AI/ML roles in Bangalore and Chennai." Currently based in Bangalore.
+8. **Availability:** "Naveena is open to AI/ML roles in Bangalore, Chennai, and remote worldwide." Currently based in Bangalore.
 
 ---
 
@@ -192,5 +193,5 @@ Keep answers consistent with the numbers above.
 - [ ] Replace the generic LinkedIn link with your profile URL
 - [ ] Point each "Code" / "View Repository" button to its own repo
 - [ ] Remove every "99%" claim (hero, telemetry, project card, Navi)
-- [ ] Update the footer, contact and status chip to say Bangalore & Chennai
-- [ ] Add "Open to roles in Bangalore & Chennai" to your resume objective and LinkedIn headline
+- [ ] Update the footer, contact and status chip to say Bangalore, Chennai & Remote
+- [ ] Add "Open to roles in Bangalore, Chennai & Remote Worldwide" to your resume objective and LinkedIn headline

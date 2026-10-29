@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naveena N | AI/ML Engineer &amp; Agentic Systems Developer</title>
-  <meta name="description" content="Portfolio of Naveena N, AI/ML Engineer specializing in Agentic AI (LangGraph, AutoGen, MCP), Production RAG, MLOps, and Document Intelligence. Associate at MResult &amp; IIT Madras Scholar. Open to roles in Bangalore &amp; Chennai.">
+  <meta name="description" content="Portfolio of Naveena N, AI/ML Engineer specializing in Agentic AI (LangGraph, AutoGen, MCP), Production RAG, MLOps, and Document Intelligence. Associate at MResult &amp; IIT Madras Scholar. Open to roles in Bangalore, Chennai &amp; remote worldwide.">
   
   <!-- Clean Google Fonts: Inter (Typography) & JetBrains Mono (Code/Metrics) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +80,7 @@
           <div class="hero-chips">
             <span class="badge badge-success pulse-beacon">
               <span class="pulse-dot"></span>
-              Open to AI/ML roles in Bangalore &amp; Chennai
+              Open to AI/ML roles · Bangalore, Chennai &amp; Remote
             </span>
             <span class="badge badge-neutral">
               <i class="fa-solid fa-location-dot"></i> Bangalore, India
@@ -103,7 +103,7 @@
 
           <!-- Concise High-Impact Bio -->
           <p class="hero-description">
-            AI/ML Engineer at MResult. I ship agentic AI, production RAG, and document intelligence, from the model to the FastAPI backend to the live app. My latest build answers questions over a 121-page government budget with page-level citations and verified numbers.
+            AI/ML Engineer at MResult. I ship agentic AI, production RAG, and document intelligence, from the model to the FastAPI backend to the live app. My latest build answers questions over a 121-page government budget with page-level citations and verified numbers. Open to onsite and remote roles worldwide.
           </p>
 
           <!-- Academic Affiliation Chips -->
@@ -781,10 +781,17 @@
         
         <!-- Left: Context & Contact Points -->
         <div class="contact-left">
-          <span class="section-subtitle">Let's Connect</span>
-          <h2 class="contact-heading">Let's build something together.</h2>
+          <div class="contact-status-wrap">
+            <span class="badge badge-success pulse-beacon">
+              <span class="pulse-dot"></span> Open to roles · replies within 24h
+            </span>
+          </div>
+
+          <h2 class="contact-heading">
+            Messy data, hard problem? <span class="gradient-text">Let’s build the AI that solves it.</span>
+          </h2>
           <p class="contact-desc">
-            Agentic RAG, MLOps, document AI, or a role on your team. I'm open to opportunities in <strong>Bangalore and Chennai</strong>, and I'd love to hear about it.
+            Agentic AI, computer vision, RAG, MLOps, document AI, or a role on your team. I’m open to opportunities in <strong>Bangalore, Chennai, and remote worldwide</strong>, and I’d love to hear about it.
           </p>
 
           <div class="contact-details-list">
@@ -792,20 +799,75 @@
               <div class="contact-icon">
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <div>
+              <div class="contact-item-info">
                 <span class="c-label">Direct Email</span>
                 <a href="mailto:navirajan2003@gmail.com" class="c-val">navirajan2003@gmail.com</a>
               </div>
+              <button type="button" class="btn-copy-email" id="copyContactEmailBtn" title="Copy email address">
+                <i class="fa-regular fa-copy"></i>
+                <span class="copy-label">Copy</span>
+              </button>
             </div>
 
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <div>
-                <span class="c-label">Location</span>
-                <span class="c-val">Bangalore, Karnataka, India · Open to Chennai</span>
+              <div class="contact-item-info">
+                <span class="c-label">Location &amp; Availability</span>
+                <span class="c-val">Bangalore, India · Open to Chennai &amp; Remote</span>
               </div>
+            </div>
+          </div>
+
+          <!-- Animated Route & Remote Graphic -->
+          <div class="route-map-card" aria-label="Bangalore, Chennai, and Remote Worldwide Availability Map">
+            <svg viewBox="0 0 420 86" class="route-svg" role="img" aria-hidden="true">
+              <!-- Arc 1: Bangalore to Chennai -->
+              <path id="routeCorridor" d="M 52 48 Q 132 12 212 48" fill="none" class="route-path-corridor" stroke-dasharray="4 5" />
+              <circle r="3.5" class="route-particle particle-blue">
+                <animateMotion dur="3.4s" repeatCount="indefinite">
+                  <mpath href="#routeCorridor"/>
+                </animateMotion>
+              </circle>
+
+              <!-- Arc 2: Chennai to Remote Worldwide -->
+              <path id="routeRemote" d="M 212 48 Q 290 12 368 48" fill="none" class="route-path-remote" stroke-dasharray="4 5" />
+              <circle r="3.5" class="route-particle particle-emerald">
+                <animateMotion dur="2.8s" repeatCount="indefinite">
+                  <mpath href="#routeRemote"/>
+                </animateMotion>
+              </circle>
+
+              <!-- Node 1: Bangalore -->
+              <circle cx="52" cy="48" r="14" class="node-pulse node-pulse-blue">
+                <animate attributeName="r" values="7;16;7" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="52" cy="48" r="5" class="node-dot node-dot-blue"/>
+              <text x="52" y="74" class="node-label">Bangalore</text>
+
+              <!-- Node 2: Chennai -->
+              <circle cx="212" cy="48" r="14" class="node-pulse node-pulse-blue">
+                <animate attributeName="r" values="7;16;7" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="212" cy="48" r="5" class="node-dot node-dot-blue"/>
+              <text x="212" y="74" class="node-label">Chennai</text>
+
+              <!-- Node 3: Remote Worldwide Beacon -->
+              <circle cx="368" cy="48" r="14" class="node-pulse node-pulse-emerald">
+                <animate attributeName="r" values="7;17;7" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="368" cy="48" r="5" class="node-dot node-dot-emerald"/>
+              <text x="368" y="74" class="node-label node-label-highlight">Remote Anywhere</text>
+
+              <!-- Badges on arcs -->
+              <text x="132" y="24" class="route-meta-text" text-anchor="middle">~350 km</text>
+              <text x="290" y="24" class="route-meta-text route-meta-remote" text-anchor="middle">Worldwide</text>
+            </svg>
+            <div class="route-caption">
+              <span><i class="fa-solid fa-location-dot"></i> Base: Bangalore / Chennai</span>
+              <span class="route-sep">·</span>
+              <span class="route-remote-tag"><i class="fa-solid fa-earth-americas"></i> Remote Worldwide</span>
             </div>
           </div>
 
@@ -823,34 +885,114 @@
           </div>
         </div>
 
-        <!-- Right: Message Form -->
-        <div class="contact-right">
-          <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbjnvpzw" method="POST">
-            <h3 class="form-title">Send a message</h3>
-            
-            <div class="form-group">
-              <label for="nameInput">Your Name</label>
-              <input type="text" id="nameInput" name="name" required class="glass-input" placeholder="e.g. Jane Doe">
-            </div>
-
-            <div class="form-group">
-              <label for="emailInput">Your Email</label>
-              <input type="email" id="emailInput" name="email" required class="glass-input" placeholder="jane@example.com">
-            </div>
-
-            <div class="form-group">
-              <label for="messageInput">Message / Inquiries</label>
-              <textarea id="messageInput" name="message" rows="4" required class="glass-input" placeholder="Tell me about your project, team, or opportunity..."></textarea>
-            </div>
-
-            <button type="submit" id="btnSubmitForm" class="btn btn-primary btn-block">
-              <span>Send Message</span>
+        <!-- Right: Interactive Dual-Tab Card (Send a Message & Ask Assistant) -->
+        <div class="contact-right" id="contactInteractiveCard">
+          <!-- Tabs Header -->
+          <div class="contact-tabs" role="tablist">
+            <button type="button" class="contact-tab active" id="tabContactForm" role="tab" aria-selected="true" aria-controls="paneContactForm">
               <i class="fa-solid fa-paper-plane"></i>
+              <span>Send a message</span>
             </button>
-            <div id="formSuccessMsg" class="form-success-msg hidden">
-              <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent.
+            <button type="button" class="contact-tab" id="tabContactCopilot" role="tab" aria-selected="false" aria-controls="paneContactCopilot">
+              <i class="fa-solid fa-robot"></i>
+              <span>Ask my assistant</span>
+            </button>
+          </div>
+
+          <!-- Pane 1: Send a message Form -->
+          <div class="contact-pane active" id="paneContactForm" role="tabpanel" aria-labelledby="tabContactForm">
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbjnvpzw" method="POST">
+              <div class="form-header-bar">
+                <h3 class="form-title">Send a message</h3>
+                <span class="form-note"><i class="fa-solid fa-bolt"></i> Direct to Inbox · replies in &lt;24h</span>
+              </div>
+
+              <!-- "What's this about?" Quick Intent Chips -->
+              <div class="intent-selection-block">
+                <label class="intent-label">What’s this about?</label>
+                <div class="intent-chips-grid">
+                  <button type="button" class="intent-chip active" data-intent="Full-Time Role" data-placeholder="Hi Naveena, I'd like to discuss an AI/ML engineering opportunity with our team...">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Full-Time Role</span>
+                  </button>
+                  <button type="button" class="intent-chip" data-intent="Remote Opportunity" data-placeholder="Hi Naveena, we have a remote AI/ML engineering opportunity and would love to connect...">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Remote Role</span>
+                  </button>
+                  <button type="button" class="intent-chip" data-intent="Agentic AI / RAG Build" data-placeholder="Hi Naveena, we're building an agentic AI / RAG pipeline and want your expertise on...">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>Agentic AI / RAG</span>
+                  </button>
+                  <button type="button" class="intent-chip" data-intent="Quick Chat / Say Hi" data-placeholder="Hi Naveena, saw your portfolio and wanted to reach out regarding...">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Quick Chat</span>
+                  </button>
+                </div>
+                <input type="hidden" name="topic" id="formTopicInput" value="Full-Time Role">
+              </div>
+              
+              <div class="form-group">
+                <label for="nameInput">Your Name</label>
+                <input type="text" id="nameInput" name="name" required class="glass-input" placeholder="e.g. Jane Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Your Email</label>
+                <input type="email" id="emailInput" name="email" required class="glass-input" placeholder="jane@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message / Inquiries</label>
+                <textarea id="messageInput" name="message" rows="4" required class="glass-input" placeholder="Hi Naveena, I'd like to discuss an AI/ML engineering opportunity with our team..."></textarea>
+              </div>
+
+              <button type="submit" id="btnSubmitForm" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div class="form-direct-mail">
+                Prefer direct email? <a href="mailto:navirajan2003@gmail.com">navirajan2003@gmail.com</a>
+              </div>
+
+              <div id="formSuccessMsg" class="form-success-msg hidden">
+                <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent.
+              </div>
+            </form>
+          </div>
+
+          <!-- Pane 2: Ask my assistant (Instant Interactive Q&A) -->
+          <div class="contact-pane hidden" id="paneContactCopilot" role="tabpanel" aria-labelledby="tabContactCopilot">
+            <div class="form-header-bar">
+              <h3 class="form-title">Ask my assistant</h3>
+              <span class="form-note"><i class="fa-solid fa-bolt"></i> Instant 0ms Copilot</span>
             </div>
-          </form>
+
+            <div class="embedded-chat-log" id="embeddedChatLog" aria-live="polite">
+              <div class="embedded-bubble embedded-bot">
+                <div class="embedded-avatar"><img src="avatar_stylized.jpg" alt="Navi"></div>
+                <div class="embedded-content">
+                  <p>Hi, I’m <strong>Navi</strong>. Ask me what Naveena works on, her remote availability, or her agentic systems!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Suggested Quick Prompts -->
+            <div class="embedded-suggestions" id="embeddedSuggestions">
+              <button type="button" class="embedded-sugg-btn" data-query="Are you open to remote roles?">Open to remote roles?</button>
+              <button type="button" class="embedded-sugg-btn" data-query="What do you work on?">What do you work on?</button>
+              <button type="button" class="embedded-sugg-btn" data-query="Tell me about FinSight AI">FinSight AI?</button>
+              <button type="button" class="embedded-sugg-btn" data-query="How do I reach Naveena?">How do I reach her?</button>
+            </div>
+
+            <!-- Chat Input Form -->
+            <form class="embedded-chat-bar" id="embeddedChatForm">
+              <input type="text" id="embeddedChatInput" class="glass-input embedded-chat-input" placeholder="Ask anything, e.g. “Are you open to remote roles?”" autocomplete="off" aria-label="Ask a question">
+              <button type="submit" class="btn btn-primary embedded-chat-submit" id="btnEmbeddedSend" aria-label="Send question">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
         </div>
 
       </div>
@@ -862,7 +1004,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="gradient-text">Naveena N</span> · AI/ML Engineer · Bangalore &amp; Chennai
+        <span class="gradient-text">Naveena N</span> · AI/ML Engineer · Bangalore, Chennai &amp; Remote
       </div>
       <p class="footer-copy">
         Built with clean semantic HTML, CSS, and JavaScript.
@@ -937,7 +1079,7 @@
             <i class="fa-solid fa-layer-group"></i>
             <span>Tech Stack</span>
           </button>
-          <button class="chat-chip" data-intent="availability" data-label="Bangalore &amp; Chennai Roles">
+          <button class="chat-chip" data-intent="availability" data-label="Bangalore, Chennai &amp; Remote">
             <i class="fa-solid fa-location-dot"></i>
             <span>Availability</span>
           </button>
@@ -988,6 +1130,9 @@
       </form>
     </div>
   </div>
+
+  <!-- Global Floating Toast Notification -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
 
   <script src="script.js?v=3.0"></script>
 </body>

@@ -1,4 +1,6 @@
-# Byte-compiled / optimized / DLL files
+# Local reference files
+Contact*
+
 __pycache__/
 *.py[codz]
 *$py.class
