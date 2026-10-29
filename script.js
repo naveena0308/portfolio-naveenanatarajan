@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skillCards.forEach(card => {
         const cat = card.getAttribute('data-category');
         if (filter === 'all' || cat === filter) {
-          card.style.display = 'block';
+          card.style.display = '';
           setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'scale(1)';

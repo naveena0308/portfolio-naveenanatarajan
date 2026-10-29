@@ -485,7 +485,7 @@
       <div class="section-header">
         <span class="section-subtitle">Technical Stack</span>
         <h2 class="section-title">Skills &amp; Technologies</h2>
-        <p class="section-desc">Production tools and frameworks grouped by technical domain.</p>
+        <p class="section-desc">Production tools, frameworks, and architectures grouped by engineering domain.</p>
       </div>
 
       <!-- Skill Filter Tabs -->
@@ -498,85 +498,144 @@
         <button class="filter-tab" data-filter="backend" role="tab" aria-selected="false">Data &amp; Backend</button>
       </div>
 
-      <!-- Skills Cards Grid -->
+      <!-- Symmetrical Bento Skills Grid (Row 1: 2+1, Row 2: 1+1+1) -->
       <div class="skills-grid">
         
-        <!-- Category 1: Generative AI & Agents -->
-        <div class="skill-category-card glass-card" data-category="genai">
+        <!-- Category 1: Generative AI & Autonomous Agents (Spans 2 Columns - Flagship Specialty) -->
+        <div class="skill-category-card skill-card-flagship glass-card" data-category="genai">
           <div class="cat-header">
-            <div class="cat-icon"><i class="fa-solid fa-robot"></i></div>
-            <h3>Generative AI &amp; Agents</h3>
+            <div class="cat-header-main">
+              <div class="cat-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Generative AI &amp; Autonomous Agents</h3>
+                <span class="cat-subtitle">Naveena's Primary Engineering Specialization</span>
+              </div>
+            </div>
+            <span class="badge badge-accent cat-badge">
+              <span class="pulse-dot"></span> Core Specialty
+            </span>
           </div>
-          <div class="skill-pills-list">
-            <span class="skill-badge">LangGraph</span>
-            <span class="skill-badge">LangChain</span>
-            <span class="skill-badge">LlamaIndex</span>
-            <span class="skill-badge">AutoGen</span>
-            <span class="skill-badge">MCP</span>
-            <span class="skill-badge">ReAct</span>
-            <span class="skill-badge">RAG</span>
+
+          <div class="genai-bento-content">
+            <div class="genai-subgroup">
+              <span class="subgroup-label"><i class="fa-solid fa-network-wired"></i> Orchestration &amp; Reasoning</span>
+              <div class="skill-pills-list">
+                <span class="skill-badge badge-featured"><i class="fa-solid fa-diagram-project"></i> LangGraph</span>
+                <span class="skill-badge"><i class="fa-solid fa-users-gear"></i> AutoGen</span>
+                <span class="skill-badge"><i class="fa-solid fa-brain"></i> LlamaIndex</span>
+                <span class="skill-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> ReAct</span>
+              </div>
+            </div>
+
+            <div class="genai-subgroup">
+              <span class="subgroup-label"><i class="fa-solid fa-plug"></i> Retrieval &amp; Protocols</span>
+              <div class="skill-pills-list">
+                <span class="skill-badge badge-featured"><i class="fa-solid fa-magnifying-glass"></i> RAG</span>
+                <span class="skill-badge badge-featured"><i class="fa-solid fa-cube"></i> MCP</span>
+                <span class="skill-badge"><i class="fa-solid fa-link"></i> LangChain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-footer-note">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Powers multi-agent task planning, SQL/vector routing, and numeric ground-truth verification.</span>
           </div>
         </div>
 
         <!-- Category 2: ML & Model Development -->
         <div class="skill-category-card glass-card" data-category="ml">
           <div class="cat-header">
-            <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
-            <h3>ML &amp; Model Development</h3>
+            <div class="cat-header-main">
+              <div class="cat-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">ML &amp; Model Development</h3>
+                <span class="cat-subtitle">Training &amp; Inference</span>
+              </div>
+            </div>
+            <span class="badge badge-neutral cat-badge">Core ML</span>
           </div>
           <div class="skill-pills-list">
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">PyTorch</span>
-            <span class="skill-badge">Scikit-learn</span>
-            <span class="skill-badge">LoRA/QLoRA</span>
-            <span class="skill-badge">NumPy</span>
-            <span class="skill-badge">Pandas</span>
+            <span class="skill-badge badge-featured"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-fire"></i> PyTorch</span>
+            <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> Scikit-learn</span>
+            <span class="skill-badge"><i class="fa-solid fa-sliders"></i> LoRA/QLoRA</span>
+            <span class="skill-badge"><i class="fa-solid fa-calculator"></i> NumPy</span>
+            <span class="skill-badge"><i class="fa-solid fa-table"></i> Pandas</span>
           </div>
         </div>
 
         <!-- Category 3: MLOps & Cloud -->
         <div class="skill-category-card glass-card" data-category="mlops">
           <div class="cat-header">
-            <div class="cat-icon"><i class="fa-solid fa-gears"></i></div>
-            <h3>MLOps &amp; Cloud</h3>
+            <div class="cat-header-main">
+              <div class="cat-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">MLOps &amp; Cloud</h3>
+                <span class="cat-subtitle">Lifecycle &amp; Infra</span>
+              </div>
+            </div>
+            <span class="badge badge-neutral cat-badge">Production</span>
           </div>
           <div class="skill-pills-list">
-            <span class="skill-badge">MLflow</span>
-            <span class="skill-badge">Docker</span>
-            <span class="skill-badge">CI/CD</span>
-            <span class="skill-badge">AWS (S3, EC2)</span>
-            <span class="skill-badge">GCP Vertex AI</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-flask"></i> MLflow</span>
+            <span class="skill-badge badge-featured"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="skill-badge"><i class="fa-solid fa-code-branch"></i> CI/CD</span>
+            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS (S3, EC2)</span>
+            <span class="skill-badge"><i class="fa-brands fa-google"></i> GCP Vertex AI</span>
           </div>
         </div>
 
         <!-- Category 4: Computer Vision & Doc AI -->
         <div class="skill-category-card glass-card" data-category="cv">
           <div class="cat-header">
-            <div class="cat-icon"><i class="fa-solid fa-eye"></i></div>
-            <h3>Computer Vision &amp; Doc AI</h3>
+            <div class="cat-header-main">
+              <div class="cat-icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Computer Vision &amp; Doc AI</h3>
+                <span class="cat-subtitle">Multimodal Intelligence</span>
+              </div>
+            </div>
+            <span class="badge badge-neutral cat-badge">Multimodal</span>
           </div>
           <div class="skill-pills-list">
-            <span class="skill-badge">YOLO</span>
-            <span class="skill-badge">OpenCV</span>
-            <span class="skill-badge">EfficientNet</span>
-            <span class="skill-badge">PyMuPDF</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-crosshairs"></i> YOLO</span>
+            <span class="skill-badge"><i class="fa-solid fa-camera"></i> OpenCV</span>
+            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> EfficientNet</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-file-pdf"></i> PyMuPDF</span>
           </div>
         </div>
 
         <!-- Category 5: Data & Backend -->
         <div class="skill-category-card glass-card" data-category="backend">
           <div class="cat-header">
-            <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
-            <h3>Data &amp; Backend</h3>
+            <div class="cat-header-main">
+              <div class="cat-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Data &amp; Backend</h3>
+                <span class="cat-subtitle">Pipelines &amp; APIs</span>
+              </div>
+            </div>
+            <span class="badge badge-neutral cat-badge">Scale &amp; APIs</span>
           </div>
           <div class="skill-pills-list">
-            <span class="skill-badge">PostgreSQL</span>
-            <span class="skill-badge">pgvector</span>
-            <span class="skill-badge">ChromaDB</span>
-            <span class="skill-badge">Snowflake</span>
-            <span class="skill-badge">SQL</span>
-            <span class="skill-badge">FastAPI</span>
-            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-vector-square"></i> pgvector</span>
+            <span class="skill-badge"><i class="fa-solid fa-layer-group"></i> ChromaDB</span>
+            <span class="skill-badge"><i class="fa-regular fa-snowflake"></i> Snowflake</span>
+            <span class="skill-badge"><i class="fa-solid fa-code"></i> SQL</span>
+            <span class="skill-badge badge-featured"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+            <span class="skill-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> Next.js</span>
           </div>
         </div>
 
