@@ -31,13 +31,22 @@
   <!-- ==================== FLOATING GLASS NAVBAR ==================== -->
   <header class="header">
     <nav class="nav-pill glass-card" aria-label="Main Navigation">
+      <!-- Reading Progress Line along bottom edge of the pill -->
+      <div class="nav-scroll-progress" id="navScrollProgress" aria-hidden="true"></div>
+
+      <!-- Left: Logo with Avatar & Name + Role -->
       <a href="#hero" class="nav-logo" aria-label="Naveena N Home">
         <span class="logo-avatar-mini">
           <img src="avatar_stylized.jpg" alt="Naveena N">
+          <span class="avatar-status-dot" aria-hidden="true"></span>
         </span>
-        <span class="logo-text">Naveena</span>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Naveena</span>
+          <span class="nav-brand-role">AI/ML Engineer</span>
+        </div>
       </a>
 
+      <!-- Center: Navigation Links -->
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link active">About</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -46,7 +55,13 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
+      <!-- Right: Live Bangalore Time + Actions -->
       <div class="nav-actions">
+        <div class="nav-status-time" title="Bangalore, India Time (IST)">
+          <span class="status-pulse-dot"></span>
+          <span>Bangalore · <span id="bangaloreNavTime">10:23 pm</span></span>
+        </div>
+
         <!-- Theme Switcher (Light / Dark) -->
         <button id="themeToggleBtn" class="theme-toggle-btn glass-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Light/Dark Theme">
           <i class="fa-solid fa-moon theme-icon-dark"></i>

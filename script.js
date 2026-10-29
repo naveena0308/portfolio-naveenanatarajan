@@ -33,6 +33,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
+  // 1b. NAVBAR DYNAMICS: READING PROGRESS BAR & LIVE BANGALORE TIME
+  // ==========================================================================
+  const navScrollProgress = document.getElementById('navScrollProgress');
+  function updateScrollProgress() {
+    if (!navScrollProgress) return;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+    navScrollProgress.style.width = `${progress}%`;
+  }
+  window.addEventListener('scroll', updateScrollProgress, { passive: true });
+  updateScrollProgress();
+
+  const bangaloreNavTime = document.getElementById('bangaloreNavTime');
+  function updateBangaloreTime() {
+    if (!bangaloreNavTime) return;
+    try {
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString('en-US', {
+        timeZone: 'Asia/Kolkata',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      }).toLowerCase();
+      bangaloreNavTime.textContent = timeStr;
+    } catch (e) {
+      // Fallback if Intl timeZone unavailable
+    }
+  }
+  updateBangaloreTime();
+  setInterval(updateBangaloreTime, 10000);
+
+  // ==========================================================================
   // 2. TYPEWRITER EFFECT
   // ==========================================================================
   const typewriterText = document.getElementById('typewriterText');
