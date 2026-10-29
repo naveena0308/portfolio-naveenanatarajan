@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const typewriterText = document.getElementById('typewriterText');
   const phrases = [
-    'Agentic AI systems that reason and act.',
-    'RAG that cites its sources and checks its math.',
-    'Multi-agent workflows with LangGraph & MCP.',
-    'Document AI that cuts manual work by 95%.',
-    'ML pipelines that ship with MLflow & Docker.'
+    'agents that plan, act, and double-check themselves.',
+    'RAG that shows its sources and verifies its numbers.',
+    'pipelines where pixels and PDFs go in and structure comes out.',
+    'AI products people can actually talk to.',
+    'ML systems that ship: tracked, containerized, reproducible.'
   ];
 
   let phraseIndex = 0;

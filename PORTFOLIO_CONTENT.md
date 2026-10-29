@@ -25,11 +25,11 @@
 Hi, I'm **Naveena N**
 
 ### Typewriter: "I build…"
-1. Agentic AI systems that reason and act.
-2. RAG that cites its sources and checks its math.
-3. Multi-agent workflows with LangGraph & MCP.
-4. Document AI that cuts manual work by 95%.
-5. ML pipelines that ship with MLflow & Docker.
+1. agents that plan, act, and double-check themselves.
+2. RAG that shows its sources and verifies its numbers.
+3. pipelines where pixels and PDFs go in and structure comes out.
+4. AI products people can actually talk to.
+5. ML systems that ship: tracked, containerized, reproducible.
 
 ### Bio
 > AI/ML Engineer at MResult. I ship agentic AI, production RAG, and document intelligence, from the model to the FastAPI backend to the live app. My latest build answers questions over a 121-page government budget with page-level citations and verified numbers.

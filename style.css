@@ -550,28 +550,33 @@ html[data-theme="dark"] .theme-icon-light { display: block; }
 
 .typewriter-container {
   font-family: var(--font-mono);
-  font-size: 1.2rem;
+  font-size: 1.18rem;
+  line-height: 1.6;
   color: var(--text-secondary);
   margin-bottom: 1.25rem;
-  min-height: 2rem;
-  display: flex;
-  align-items: center;
+  min-height: 3.8rem;
+  display: block;
 }
 
 .typewriter-prefix {
   color: var(--text-muted);
-  margin-right: 0.4rem;
+  white-space: nowrap;
+  display: inline;
 }
 
 .typewriter-text {
   color: var(--color-primary);
   font-weight: 600;
+  display: inline;
+  word-break: break-word;
 }
 
 .typewriter-cursor {
   color: var(--color-primary);
+  font-weight: 600;
   animation: blink 0.8s infinite;
   margin-left: 2px;
+  display: inline-block;
 }
 
 @keyframes blink {
@@ -2960,7 +2965,7 @@ html[data-theme="dark"] .chat-status-dot {
   }
 
   .typewriter-container {
-    justify-content: center;
+    text-align: center;
   }
 
   .projects-grid {
@@ -3035,7 +3040,10 @@ html[data-theme="dark"] .chat-status-dot {
   }
 
   .typewriter-container {
-    font-size: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    min-height: 3.4rem;
+    text-align: center;
   }
 
   .telemetry-grid {
