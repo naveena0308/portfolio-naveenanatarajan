@@ -788,32 +788,48 @@ document.addEventListener('DOMContentLoaded', () => {
   // 11. HERO CARD DYNAMICS: ROTATING KEYWORDS & WAVE BUBBLE
   // ==========================================================================
   const heroKeywordFocus = document.getElementById('heroKeywordFocus');
+  const heroKeywordVision = document.getElementById('heroKeywordVision');
   const heroKeywordSystems = document.getElementById('heroKeywordSystems');
   const avatarWaveBubble = document.getElementById('avatarWaveBubble');
 
-  // Rotating Keywords Array (3 pairs covering Agentic AI, Vision/Multimodal, Systems/MLOps)
-  const keywordPairs = [
-    { focus: 'Agentic AI & Vision', systems: 'RAG & MLOps' },
-    { focus: 'Computer Vision & Multimodal', systems: 'Pipelines & Evaluation' },
-    { focus: 'Autonomous Agents & LLMs', systems: 'FastAPI & Production AI' }
+  // Rotating Keywords Array for the 3 floaters
+  const keywordSets = [
+    {
+      focus: 'Agentic AI & LLMs',
+      vision: 'Computer Vision & Multimodal',
+      systems: 'RAG & MLOps'
+    },
+    {
+      focus: 'LangGraph & AutoGen',
+      vision: 'YOLO & OpenCV',
+      systems: 'FastAPI & Docker'
+    },
+    {
+      focus: 'Autonomous Agents',
+      vision: 'Document Intelligence',
+      systems: 'PostgreSQL & pgvector'
+    }
   ];
 
-  let currentPairIndex = 0;
+  let currentSetIndex = 0;
   const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  if (heroKeywordFocus && heroKeywordSystems && !prefersReducedMotion) {
+  if (heroKeywordFocus && heroKeywordVision && heroKeywordSystems && !prefersReducedMotion) {
     setInterval(() => {
       // Fade out
       heroKeywordFocus.classList.add('fade-out');
+      heroKeywordVision.classList.add('fade-out');
       heroKeywordSystems.classList.add('fade-out');
 
       setTimeout(() => {
-        currentPairIndex = (currentPairIndex + 1) % keywordPairs.length;
-        heroKeywordFocus.textContent = keywordPairs[currentPairIndex].focus;
-        heroKeywordSystems.textContent = keywordPairs[currentPairIndex].systems;
+        currentSetIndex = (currentSetIndex + 1) % keywordSets.length;
+        heroKeywordFocus.textContent = keywordSets[currentSetIndex].focus;
+        heroKeywordVision.textContent = keywordSets[currentSetIndex].vision;
+        heroKeywordSystems.textContent = keywordSets[currentSetIndex].systems;
 
         // Fade in
         heroKeywordFocus.classList.remove('fade-out');
+        heroKeywordVision.classList.remove('fade-out');
         heroKeywordSystems.classList.remove('fade-out');
       }, 280);
     }, 3200);

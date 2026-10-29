@@ -153,35 +153,52 @@
           </div>
         </div>
 
-        <!-- Right Column: Clean Architectural Portrait Card -->
+        <!-- Right Column: Avatar Frame with Surrounding Floating Badges -->
         <div class="hero-visual">
-          <div class="portrait-card glass-card" id="heroPortraitCard">
-            <!-- Wave Bubble: Links avatar directly to assistant chat -->
-            <button type="button" class="avatar-wave-bubble" id="avatarWaveBubble" aria-label="Hi, ask me anything - opens assistant chat">
-              <span class="wave-text">Hi, ask me anything</span>
-              <span class="wave-hand">👋</span>
-            </button>
+          <div class="avatar-aura-wrapper">
+            <!-- Subtle architectural glow ring -->
+            <div class="avatar-glow-ring"></div>
 
-            <div class="portrait-image-wrapper">
-              <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="portrait-img">
+            <div class="avatar-card glass-card" id="heroPortraitCard">
+              <!-- Wave Bubble: Links avatar directly to assistant chat -->
+              <button type="button" class="avatar-wave-bubble" id="avatarWaveBubble" aria-label="Hi, ask me anything - opens assistant chat">
+                <span class="wave-text">Hi, ask me anything</span>
+                <span class="wave-hand">👋</span>
+              </button>
+
+              <div class="avatar-image-container">
+                <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="avatar-img">
+              </div>
             </div>
 
-            <!-- Integrated Focus Strip with Rotating Keywords -->
-            <div class="portrait-focus-strip">
-              <div class="focus-strip-item">
+            <!-- Floating Badges around Avatar (Focus, Vision, Systems) -->
+            <div class="floating-badge badge-focus glass-card">
+              <div class="badge-icon-wrap">
                 <i class="fa-solid fa-brain"></i>
-                <div>
-                  <span class="fs-title">Focus</span>
-                  <span class="fs-desc rotating-keyword" id="heroKeywordFocus">Agentic AI &amp; Vision</span>
-                </div>
               </div>
-              <div class="focus-strip-divider"></div>
-              <div class="focus-strip-item">
+              <div class="badge-meta">
+                <span class="badge-sub">Focus</span>
+                <span class="badge-main rotating-keyword" id="heroKeywordFocus">Agentic AI &amp; LLMs</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-vision glass-card">
+              <div class="badge-icon-wrap">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="badge-meta">
+                <span class="badge-sub">Vision</span>
+                <span class="badge-main rotating-keyword" id="heroKeywordVision">Computer Vision &amp; Multimodal</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-systems glass-card">
+              <div class="badge-icon-wrap">
                 <i class="fa-solid fa-gears"></i>
-                <div>
-                  <span class="fs-title">Systems</span>
-                  <span class="fs-desc rotating-keyword" id="heroKeywordSystems">RAG &amp; MLOps</span>
-                </div>
+              </div>
+              <div class="badge-meta">
+                <span class="badge-sub">Systems</span>
+                <span class="badge-main rotating-keyword" id="heroKeywordSystems">RAG &amp; MLOps</span>
               </div>
             </div>
           </div>
