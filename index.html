@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" data-font="inter">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naveena N | AI/ML Engineer & Agentic Systems Developer</title>
-  <meta name="description" content="Portfolio of Naveena N, AI/ML Engineer specializing in Agentic AI (LangGraph, AutoGen, MCP), Production RAG, MLOps, and Document Intelligence. Associate at MResult & IIT Madras Scholar.">
+  <title>Naveena N | AI/ML Engineer &amp; Agentic Systems Developer</title>
+  <meta name="description" content="Portfolio of Naveena N, AI/ML Engineer specializing in Agentic AI (LangGraph, AutoGen, MCP), Production RAG, MLOps, and Document Intelligence. Associate at MResult &amp; IIT Madras Scholar. Open to roles in Bangalore &amp; Chennai.">
   
-  <!-- Google Fonts: Inter, Geist, DM Sans, Manrope, Outfit, Plus Jakarta Sans, JetBrains Mono -->
+  <!-- Clean Google Fonts: Inter (Typography) & JetBrains Mono (Code/Metrics) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- FontAwesome for crisp UI icons -->
+  <!-- FontAwesome 6 for vector icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Favicons -->
@@ -20,20 +20,20 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="style.css?v=2.4">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
-  <!-- Ambient Studio Lighting & Grid Overlay -->
+  <!-- Ambient Subtle Studio Lighting & Fine Grid Overlay -->
   <div class="ambient-glow ambient-glow-1"></div>
   <div class="ambient-glow ambient-glow-2"></div>
   <div class="grid-overlay"></div>
 
-  <!-- Floating Glass Navbar -->
+  <!-- ==================== FLOATING GLASS NAVBAR ==================== -->
   <header class="header">
-    <nav class="nav-pill glass-card">
-      <a href="#hero" class="nav-logo">
+    <nav class="nav-pill glass-card" aria-label="Main Navigation">
+      <a href="#hero" class="nav-logo" aria-label="Naveena N Home">
         <span class="logo-avatar-mini">
-          <img src="avatar_stylized.jpg" alt="Naveena N" id="navAvatarImg">
+          <img src="avatar_stylized.jpg" alt="Naveena N">
         </span>
         <span class="logo-text">Naveena</span>
       </a>
@@ -54,12 +54,12 @@
         </button>
 
         <!-- Direct Resume Download Button -->
-        <a href="Naveena_s_Resume___27_10_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-primary nav-resume-btn">
+        <a href="Naveena_s_Resume___27_10_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-primary nav-resume-btn" title="Download Resume PDF">
           <i class="fa-solid fa-file-arrow-down"></i>
           <span>Resume</span>
         </a>
 
-        <!-- Mobile Menu Toggle -->
+        <!-- Mobile Menu Toggle Button -->
         <button id="mobileMenuBtn" class="mobile-menu-btn glass-btn" aria-label="Open Mobile Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -67,16 +67,16 @@
     </nav>
   </header>
 
-  <!-- Main Content Container -->
+  <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
   <main class="main-container">
     
     <!-- ==================== HERO SECTION ==================== -->
     <section id="hero" class="hero-section">
       <div class="hero-grid">
         
-        <!-- Hero Text & Headline -->
+        <!-- Left Column: Bio & Core Pitch -->
         <div class="hero-content">
-          <!-- Availability & Location Chips -->
+          <!-- Status Chips Row -->
           <div class="hero-chips">
             <span class="badge badge-success pulse-beacon">
               <span class="pulse-dot"></span>
@@ -90,117 +90,93 @@
             </span>
           </div>
 
-          <!-- Name & Tagline -->
+          <!-- Headline & Animated Typewriter -->
           <h1 class="hero-title">
             Hi, I'm <span class="gradient-text">Naveena N</span>
           </h1>
 
-          <div class="typewriter-container">
+          <div class="typewriter-container" aria-live="polite">
             <span class="typewriter-prefix">I build </span>
             <span id="typewriterText" class="typewriter-text">Agentic AI systems that reason and act.</span>
             <span class="typewriter-cursor">|</span>
           </div>
 
+          <!-- Concise High-Impact Bio -->
           <p class="hero-description">
             AI/ML Engineer at MResult. I ship agentic AI, production RAG, and document intelligence, from the model to the FastAPI backend to the live app. My latest build answers questions over a 121-page government budget with page-level citations and verified numbers.
           </p>
 
-          <!-- Highlight Credentials Pills -->
-          <div class="credentials-bar">
-            <div class="credential-pill">
+          <!-- Academic Affiliation Chips -->
+          <div class="hero-academic-bar">
+            <div class="academic-chip">
               <i class="fa-solid fa-graduation-cap"></i>
               <span><strong>IIT Madras</strong>, B.S. Data Science <em>(ongoing)</em></span>
             </div>
-            <div class="credential-pill">
-              <i class="fa-solid fa-microchip"></i>
-              <span><strong>Jeppiaar Institute of Technology</strong>, B.Tech AI &amp; Data Science (2025)</span>
+            <div class="academic-chip">
+              <i class="fa-solid fa-building-columns"></i>
+              <span><strong>Jeppiaar Institute of Technology</strong>, B.Tech AI &amp; DS (2025)</span>
             </div>
           </div>
 
-          <!-- Hero Action CTAs -->
+          <!-- Action CTAs -->
           <div class="hero-actions">
-            <!-- Primary Action: Live FinSight Demo -->
             <a href="https://finsight-ai-sage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" title="Launch FinSight AI on Vercel">
-              <i class="fa-solid fa-rocket live-pulse-icon"></i>
+              <i class="fa-solid fa-rocket"></i>
               <span>See FinSight Live</span>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
 
-            <!-- Secondary Action: Explore Projects -->
             <a href="#projects" class="btn btn-secondary glass-btn">
               <span>Explore Projects</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <!-- Direct Resume Download Button -->
             <a href="Naveena_s_Resume___27_10_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-ghost glass-btn" title="Download Official Resume PDF">
               <i class="fa-solid fa-download"></i>
               <span>Resume</span>
             </a>
           </div>
 
-          <!-- Social Quick Links -->
+          <!-- Quick Connect & One-Click Email Copy -->
           <div class="hero-socials">
             <span class="social-label">Connect:</span>
-            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="mailto:navirajan2003@gmail.com" class="social-icon" aria-label="Email" title="navirajan2003@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <button id="copyEmailBtn" class="copy-email-chip" title="Click to copy email">
+            <button id="copyEmailBtn" class="copy-email-chip" title="Click to copy email address" aria-label="Copy Email">
               <i class="fa-regular fa-copy"></i>
               <span id="copyEmailText">navirajan2003@gmail.com</span>
             </button>
           </div>
         </div>
 
-        <!-- Hero Avatar Frame with Concentric Rings & Clean Frame -->
+        <!-- Right Column: Clean Architectural Portrait Card -->
         <div class="hero-visual">
-          <div class="avatar-aura-wrapper">
-            <div class="avatar-glow-ring"></div>
-            <div class="avatar-glow-ring-secondary"></div>
-            
-            <div class="avatar-card glass-card">
-              <div class="avatar-image-container">
-                <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="avatar-img active-img">
-              </div>
+          <div class="portrait-card glass-card">
+            <div class="portrait-image-wrapper">
+              <img src="avatar_stylized.jpg" alt="Naveena N - AI Developer" id="heroAvatarImg" class="portrait-img">
             </div>
-
-            <!-- Floating Badges around Avatar -->
-            <div class="floating-badge badge-top-right glass-card">
-              <div class="badge-icon-wrap bg-cyan">
+            <!-- Integrated Focus Strip (Structured, No Floating Overflows) -->
+            <div class="portrait-focus-strip">
+              <div class="focus-strip-item">
                 <i class="fa-solid fa-brain"></i>
+                <div>
+                  <span class="fs-title">Focus</span>
+                  <span class="fs-desc">Agentic AI &amp; RAG</span>
+                </div>
               </div>
-              <div class="badge-meta">
-                <span class="badge-sub">Focus</span>
-                <span class="badge-main">Agentic AI &amp; RAG</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-bottom-left glass-card">
-              <div class="badge-icon-wrap bg-violet">
+              <div class="focus-strip-divider"></div>
+              <div class="focus-strip-item">
                 <i class="fa-solid fa-gears"></i>
-              </div>
-              <div class="badge-meta">
-                <span class="badge-sub">Also</span>
-                <span class="badge-main">MLOps &amp; Document AI</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-bottom-right glass-card">
-              <div class="badge-icon-wrap bg-emerald">
-                <i class="fa-solid fa-briefcase"></i>
-              </div>
-              <div class="badge-meta">
-                <span class="badge-sub">Experience</span>
-                <span class="badge-main">Since Feb 2025 @ MResult</span>
+                <div>
+                  <span class="fs-title">Systems</span>
+                  <span class="fs-desc">MLOps &amp; Doc AI</span>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -208,11 +184,11 @@
     </section>
 
     <!-- ==================== PRODUCTION METRICS TELEMETRY BAR ==================== -->
-    <section class="telemetry-section">
+    <section class="telemetry-section" aria-label="Production Performance Metrics">
       <div class="telemetry-grid glass-card">
         
         <div class="telemetry-item">
-          <div class="telemetry-icon bg-emerald">
+          <div class="telemetry-icon">
             <i class="fa-solid fa-circle-check"></i>
           </div>
           <div class="telemetry-info">
@@ -224,7 +200,7 @@
         <div class="telemetry-divider"></div>
 
         <div class="telemetry-item">
-          <div class="telemetry-icon bg-cyan">
+          <div class="telemetry-icon">
             <i class="fa-solid fa-chart-line"></i>
           </div>
           <div class="telemetry-info">
@@ -236,7 +212,7 @@
         <div class="telemetry-divider"></div>
 
         <div class="telemetry-item">
-          <div class="telemetry-icon bg-violet">
+          <div class="telemetry-icon">
             <i class="fa-solid fa-file-waveform"></i>
           </div>
           <div class="telemetry-info">
@@ -248,7 +224,7 @@
         <div class="telemetry-divider"></div>
 
         <div class="telemetry-item">
-          <div class="telemetry-icon bg-amber">
+          <div class="telemetry-icon">
             <i class="fa-solid fa-users-gear"></i>
           </div>
           <div class="telemetry-info">
@@ -260,14 +236,15 @@
       </div>
     </section>
 
-    <!-- ==================== SELECTED PROJECTS (Moved early for recruiter impact) ==================== -->
+    <!-- ==================== SELECTED PROJECTS ==================== -->
     <section id="projects" class="section projects-section">
       <div class="section-header">
         <span class="section-subtitle">Featured Engineering</span>
         <h2 class="section-title">Selected Projects</h2>
-        <p class="section-desc">Agentic systems, ML pipelines, and enterprise automation.</p>
+        <p class="section-desc">Agentic architectures, ML pipelines, and production automation.</p>
       </div>
 
+      <!-- Symmetrical 2x2 Projects Grid -->
       <div class="projects-grid">
         
         <!-- Project 1: FinSight AI (Featured) -->
@@ -281,7 +258,7 @@
 
           <div class="project-content">
             <div class="project-header">
-              <div class="project-icon bg-violet">
+              <div class="project-icon">
                 <i class="fa-solid fa-chart-pie"></i>
               </div>
               <div>
@@ -294,15 +271,25 @@
               Ask a 121-page government fiscal white paper anything. A LangGraph agent plans the query, routes it between SQL and vector search, and verifies every number against source tables before answering, with page-level citations.
             </p>
 
-            <!-- Key Engineering Highlights -->
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> Multi-agent RAG that <strong>checks numeric answers against ground truth</strong> to curb hallucinations.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> PyMuPDF ETL turned the PDF into <strong>223 section-aware chunks and 42 relational tables</strong>.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>MCP server (4 tools)</strong> for Claude Desktop and Cursor, plus <strong>Gemini &rarr; GPT-4o-mini failover</strong>.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>95.6% precision</strong> on a 30-case automated eval suite.</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Multi-agent RAG that <strong>checks numeric answers against ground truth</strong> to curb hallucinations.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                PyMuPDF ETL turned the PDF into <strong>223 section-aware chunks and 42 relational tables</strong>.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <strong>MCP server (4 tools)</strong> for Claude Desktop &amp; Cursor, plus <strong>Gemini &rarr; GPT-4o-mini failover</strong>.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <strong>95.6% precision</strong> on a 30-case automated eval suite.
+              </li>
             </ul>
 
-            <!-- Tech Stack Tags -->
             <div class="project-tech-tags">
               <span class="tech-tag">LangGraph</span>
               <span class="tech-tag">Next.js 14</span>
@@ -312,13 +299,14 @@
               <span class="tech-tag">MCP</span>
             </div>
 
-            <!-- Card Actions -->
             <div class="project-actions">
               <a href="https://finsight-ai-sage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Launch FinSight AI on Vercel">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live App
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Launch Live App</span>
               </a>
-              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-brands fa-github"></i> Code
+              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn" title="View FinSight Source Code">
+                <i class="fa-brands fa-github"></i>
+                <span>Code</span>
               </a>
             </div>
           </div>
@@ -335,7 +323,7 @@
 
           <div class="project-content">
             <div class="project-header">
-              <div class="project-icon bg-cyan">
+              <div class="project-icon">
                 <i class="fa-solid fa-network-wired"></i>
               </div>
               <div>
@@ -349,9 +337,18 @@
             </p>
 
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> Compared multiple classifiers; <strong>Logistic Regression won at 0.845 ROC-AUC and 0.61 F1</strong>, with interpretability.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> <strong>MLflow</strong> for experiment tracking and model versioning.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> Container-ready architecture with <strong>Docker + FastAPI</strong>.</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Compared multiple classifiers; <strong>Logistic Regression won at 0.845 ROC-AUC and 0.61 F1</strong>, with interpretability.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <strong>MLflow</strong> for experiment tracking and model versioning.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Container-ready architecture with <strong>Docker + FastAPI</strong>.
+              </li>
             </ul>
 
             <div class="project-tech-tags">
@@ -362,8 +359,9 @@
             </div>
 
             <div class="project-actions">
-              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-brands fa-github"></i> View Repository
+              <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost glass-btn" title="View Repository on GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>View Repository</span>
               </a>
             </div>
           </div>
@@ -380,7 +378,7 @@
 
           <div class="project-content">
             <div class="project-header">
-              <div class="project-icon bg-amber">
+              <div class="project-icon">
                 <i class="fa-solid fa-users-gear"></i>
               </div>
               <div>
@@ -394,8 +392,18 @@
             </p>
 
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> Multi-agent workflow engineered with <strong>AutoGen</strong> to orchestrate dataset cleaning and summarization.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> Vector storage &amp; retrieval powered by <strong>ChromaDB</strong> for rapid contextual insight synthesis.</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Multi-agent workflow engineered with <strong>AutoGen</strong> to orchestrate dataset cleaning and summarization.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Vector storage &amp; retrieval powered by <strong>ChromaDB</strong> for rapid contextual insight synthesis.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                NumPy and Pandas ingestion pipeline tuned for structured enterprise reporting.
+              </li>
             </ul>
 
             <div class="project-tech-tags">
@@ -407,7 +415,8 @@
 
             <div class="project-actions">
               <a href="#experience" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-solid fa-briefcase"></i> View Experience
+                <i class="fa-solid fa-briefcase"></i>
+                <span>View Experience</span>
               </a>
             </div>
           </div>
@@ -424,7 +433,7 @@
 
           <div class="project-content">
             <div class="project-header">
-              <div class="project-icon bg-emerald">
+              <div class="project-icon">
                 <i class="fa-solid fa-file-invoice"></i>
               </div>
               <div>
@@ -438,8 +447,18 @@
             </p>
 
             <ul class="project-features-list">
-              <li><i class="fa-solid fa-check text-cyan"></i> Multimodal computer vision models processing unstructured layouts across text, tables, and images.</li>
-              <li><i class="fa-solid fa-check text-cyan"></i> Production document classification and extraction APIs built with <strong>FastAPI</strong> and synced to <strong>Snowflake</strong>.</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Multimodal computer vision models processing unstructured layouts across text, tables, and images.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Production document classification &amp; extraction APIs built with <strong>FastAPI</strong> synced to <strong>Snowflake</strong>.
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Tuned for high OCR accuracy and low latency inference on enterprise document workflows.
+              </li>
             </ul>
 
             <div class="project-tech-tags">
@@ -451,7 +470,8 @@
 
             <div class="project-actions">
               <a href="#experience" class="btn btn-sm btn-ghost glass-btn">
-                <i class="fa-solid fa-briefcase"></i> View Experience
+                <i class="fa-solid fa-briefcase"></i>
+                <span>View Experience</span>
               </a>
             </div>
           </div>
@@ -460,104 +480,103 @@
       </div>
     </section>
 
-
     <!-- ==================== SKILLS & TECHNOLOGIES ==================== -->
     <section id="skills" class="section skills-section">
       <div class="section-header">
         <span class="section-subtitle">Technical Stack</span>
         <h2 class="section-title">Skills &amp; Technologies</h2>
-        <p class="section-desc">Tools I use, grouped by area.</p>
+        <p class="section-desc">Production tools and frameworks grouped by technical domain.</p>
       </div>
 
       <!-- Skill Filter Tabs -->
-      <div class="skills-filter-tabs">
-        <button class="filter-tab active" data-filter="all">All</button>
-        <button class="filter-tab" data-filter="genai">Generative AI &amp; Agents</button>
-        <button class="filter-tab" data-filter="ml">ML &amp; Model Development</button>
-        <button class="filter-tab" data-filter="mlops">MLOps &amp; Cloud</button>
-        <button class="filter-tab" data-filter="cv">Computer Vision &amp; Doc AI</button>
-        <button class="filter-tab" data-filter="backend">Data &amp; Backend</button>
+      <div class="skills-filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="genai" role="tab" aria-selected="false">Generative AI &amp; Agents</button>
+        <button class="filter-tab" data-filter="ml" role="tab" aria-selected="false">ML &amp; Model Development</button>
+        <button class="filter-tab" data-filter="mlops" role="tab" aria-selected="false">MLOps &amp; Cloud</button>
+        <button class="filter-tab" data-filter="cv" role="tab" aria-selected="false">Computer Vision &amp; Doc AI</button>
+        <button class="filter-tab" data-filter="backend" role="tab" aria-selected="false">Data &amp; Backend</button>
       </div>
 
-      <!-- Skills Card Grid -->
+      <!-- Skills Cards Grid -->
       <div class="skills-grid">
         
         <!-- Category 1: Generative AI & Agents -->
         <div class="skill-category-card glass-card" data-category="genai">
           <div class="cat-header">
-            <i class="fa-solid fa-robot text-violet"></i>
+            <div class="cat-icon"><i class="fa-solid fa-robot"></i></div>
             <h3>Generative AI &amp; Agents</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-green">LangGraph</span>
-            <span class="status-pill dot-green">LangChain</span>
-            <span class="status-pill dot-cyan">LlamaIndex</span>
-            <span class="status-pill dot-cyan">AutoGen</span>
-            <span class="status-pill dot-violet">MCP</span>
-            <span class="status-pill dot-violet">ReAct</span>
-            <span class="status-pill dot-green">RAG</span>
+            <span class="skill-badge">LangGraph</span>
+            <span class="skill-badge">LangChain</span>
+            <span class="skill-badge">LlamaIndex</span>
+            <span class="skill-badge">AutoGen</span>
+            <span class="skill-badge">MCP</span>
+            <span class="skill-badge">ReAct</span>
+            <span class="skill-badge">RAG</span>
           </div>
         </div>
 
         <!-- Category 2: ML & Model Development -->
         <div class="skill-category-card glass-card" data-category="ml">
           <div class="cat-header">
-            <i class="fa-solid fa-brain text-cyan"></i>
+            <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
             <h3>ML &amp; Model Development</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-green">Python</span>
-            <span class="status-pill dot-violet">PyTorch</span>
-            <span class="status-pill dot-violet">Scikit-learn</span>
-            <span class="status-pill dot-cyan">LoRA/QLoRA</span>
-            <span class="status-pill dot-green">NumPy</span>
-            <span class="status-pill dot-green">Pandas</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">PyTorch</span>
+            <span class="skill-badge">Scikit-learn</span>
+            <span class="skill-badge">LoRA/QLoRA</span>
+            <span class="skill-badge">NumPy</span>
+            <span class="skill-badge">Pandas</span>
           </div>
         </div>
 
         <!-- Category 3: MLOps & Cloud -->
         <div class="skill-category-card glass-card" data-category="mlops">
           <div class="cat-header">
-            <i class="fa-solid fa-gears text-emerald"></i>
+            <div class="cat-icon"><i class="fa-solid fa-gears"></i></div>
             <h3>MLOps &amp; Cloud</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-green">MLflow</span>
-            <span class="status-pill dot-green">Docker</span>
-            <span class="status-pill dot-cyan">CI/CD</span>
-            <span class="status-pill dot-cyan">AWS (S3, EC2)</span>
-            <span class="status-pill dot-emerald">GCP Vertex AI</span>
+            <span class="skill-badge">MLflow</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">CI/CD</span>
+            <span class="skill-badge">AWS (S3, EC2)</span>
+            <span class="skill-badge">GCP Vertex AI</span>
           </div>
         </div>
 
         <!-- Category 4: Computer Vision & Doc AI -->
         <div class="skill-category-card glass-card" data-category="cv">
           <div class="cat-header">
-            <i class="fa-solid fa-eye text-amber"></i>
+            <div class="cat-icon"><i class="fa-solid fa-eye"></i></div>
             <h3>Computer Vision &amp; Doc AI</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-cyan">YOLO</span>
-            <span class="status-pill dot-cyan">OpenCV</span>
-            <span class="status-pill dot-violet">EfficientNet</span>
-            <span class="status-pill dot-green">PyMuPDF</span>
+            <span class="skill-badge">YOLO</span>
+            <span class="skill-badge">OpenCV</span>
+            <span class="skill-badge">EfficientNet</span>
+            <span class="skill-badge">PyMuPDF</span>
           </div>
         </div>
 
         <!-- Category 5: Data & Backend -->
         <div class="skill-category-card glass-card" data-category="backend">
           <div class="cat-header">
-            <i class="fa-solid fa-database text-violet"></i>
+            <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
             <h3>Data &amp; Backend</h3>
           </div>
           <div class="skill-pills-list">
-            <span class="status-pill dot-green">PostgreSQL</span>
-            <span class="status-pill dot-cyan">pgvector</span>
-            <span class="status-pill dot-violet">ChromaDB</span>
-            <span class="status-pill dot-cyan">Snowflake</span>
-            <span class="status-pill dot-green">SQL</span>
-            <span class="status-pill dot-cyan">FastAPI</span>
-            <span class="status-pill dot-emerald">Next.js</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">pgvector</span>
+            <span class="skill-badge">ChromaDB</span>
+            <span class="skill-badge">Snowflake</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">FastAPI</span>
+            <span class="skill-badge">Next.js</span>
           </div>
         </div>
 
@@ -572,128 +591,136 @@
         <p class="section-desc">My professional journey in enterprise AI/ML engineering, multimodal research, and academic foundations.</p>
       </div>
 
-      <div class="experience-education-grid">
-        
-        <!-- Experience Timeline Column -->
-        <div class="timeline-column">
-          <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
-          
-          <div class="timeline-wrapper">
-            
-            <!-- Role 1: Associate Data Science -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card glass-card">
-                <div class="t-card-header">
-                  <div>
-                    <h4 class="t-role">Associate, Data Science</h4>
-                    <span class="t-company">MResult Technologies, Bangalore</span>
-                  </div>
-                  <span class="t-duration badge-accent">Jan 2026 – Present</span>
-                </div>
-                <ul class="t-bullets">
-                  <li>Built <strong>GnA Intelligence Engine</strong>, an agentic finance and analytics platform (ReAct + LlamaIndex) deployed on AWS EC2.</li>
-                  <li>Shipped a <strong>real-time Vertex AI avatar</strong> that demos a logistics app and answers feature questions live.</li>
-                  <li>Delivered document classification and extraction pipelines (FastAPI + Snowflake), tuned for accuracy and latency.</li>
-                  <li>Contributed to CI/CD and MLflow tracking, with secure artifact storage via S3 presigned URLs.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Role 2: Trainee Data Science -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card glass-card">
-                <div class="t-card-header">
-                  <div>
-                    <h4 class="t-role">Trainee, Data Science</h4>
-                    <span class="t-company">MResult Technologies, Bangalore</span>
-                  </div>
-                  <span class="t-duration badge-neutral">Jul 2025 – Dec 2025</span>
-                </div>
-                <ul class="t-bullets">
-                  <li>Authored an internal white paper benchmarking <strong>VoxAPI</strong>, a secure LLM gateway, using BLEU, ROUGE and BERTScore.</li>
-                  <li>Built multimodal CV workflows that cut manual effort by <strong>~95%</strong>.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Role 3: Data Science Intern -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card glass-card">
-                <div class="t-card-header">
-                  <div>
-                    <h4 class="t-role">Data Science Intern</h4>
-                    <span class="t-company">MResult Technologies, Bangalore</span>
-                  </div>
-                  <span class="t-duration badge-neutral">Feb 2025 – Apr 2025</span>
-                </div>
-                <ul class="t-bullets">
-                  <li>Built a NumPy/Pandas ingestion pipeline and an <strong>AutoGen + ChromaDB</strong> multi-agent summarizer that cut manual effort by <strong>40%</strong>.</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
+      <!-- Subsection 1: Professional Experience Timeline -->
+      <div class="experience-block">
+        <div class="subsection-header">
+          <h3 class="subsection-title">
+            <i class="fa-solid fa-briefcase"></i> Professional Experience
+          </h3>
+          <span class="subsection-tag">MResult Technologies · Bangalore</span>
         </div>
 
-        <!-- Education Column -->
-        <div class="education-column">
-          <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Foundations</h3>
+        <div class="timeline-container">
           
-          <div class="timeline-wrapper">
-            
-            <!-- Degree 1: IIT Madras -->
-            <div class="timeline-item">
-              <div class="timeline-dot dot-primary"></div>
-              <div class="timeline-card glass-card education-card">
-                <div class="t-card-header">
-                  <div>
-                    <h4 class="t-role">B.S. in Data Science &amp; Applications</h4>
-                    <span class="t-company">IIT Madras</span>
-                  </div>
-                  <span class="t-duration badge-accent">2024 – Present · Online degree</span>
+          <!-- Role 1: Associate Data Science -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Associate, Data Science</h4>
+                  <span class="entry-company">MResult Technologies, Bangalore</span>
                 </div>
-                <p class="edu-desc">Statistics, machine learning pipelines, and application engineering.</p>
-                <div class="edu-tags">
-                  <span class="mini-pill">Online Degree Program</span>
-                  <span class="mini-pill">Statistics</span>
-                  <span class="mini-pill">Machine Learning</span>
-                </div>
+                <span class="entry-badge badge-accent">Jan 2026 – Present</span>
               </div>
+              <ul class="entry-bullets">
+                <li>Built <strong>GnA Intelligence Engine</strong>, an agentic finance and analytics platform (ReAct + LlamaIndex) deployed on AWS EC2.</li>
+                <li>Shipped a <strong>real-time Vertex AI avatar</strong> that demos a logistics app and answers feature questions live.</li>
+                <li>Delivered document classification and extraction pipelines (FastAPI + Snowflake), tuned for accuracy and latency.</li>
+                <li>Contributed to CI/CD and MLflow tracking, with secure artifact storage via S3 presigned URLs.</li>
+              </ul>
             </div>
-
-            <!-- Degree 2: Jeppiaar Institute -->
-            <div class="timeline-item">
-              <div class="timeline-dot dot-primary"></div>
-              <div class="timeline-card glass-card education-card">
-                <div class="t-card-header">
-                  <div>
-                    <h4 class="t-role">B.Tech in Artificial Intelligence &amp; Data Science</h4>
-                    <span class="t-company">Jeppiaar Institute of Technology</span>
-                  </div>
-                  <span class="t-duration badge-neutral">2021 – 2025</span>
-                </div>
-                <p class="edu-desc">Deep learning, computer vision, data structures, and backend systems.</p>
-                <div class="edu-tags">
-                  <span class="mini-pill">Full-Time</span>
-                  <span class="mini-pill">Artificial Intelligence</span>
-                  <span class="mini-pill">Data Science</span>
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
 
+          <!-- Role 2: Trainee Data Science -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Trainee, Data Science</h4>
+                  <span class="entry-company">MResult Technologies, Bangalore</span>
+                </div>
+                <span class="entry-badge badge-neutral">Jul 2025 – Dec 2025</span>
+              </div>
+              <ul class="entry-bullets">
+                <li>Authored an internal white paper benchmarking <strong>VoxAPI</strong>, a secure LLM gateway, using BLEU, ROUGE and BERTScore.</li>
+                <li>Built multimodal CV workflows that cut manual effort by <strong>~95%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 3: Data Science Intern -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Data Science Intern</h4>
+                  <span class="entry-company">MResult Technologies, Bangalore</span>
+                </div>
+                <span class="entry-badge badge-neutral">Feb 2025 – Apr 2025</span>
+              </div>
+              <ul class="entry-bullets">
+                <li>Built a NumPy/Pandas ingestion pipeline and an <strong>AutoGen + ChromaDB</strong> multi-agent summarizer that cut manual effort by <strong>40%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+      <!-- Subsection 2: Academic Foundations (Balanced 2-Column Grid) -->
+      <div class="education-block">
+        <div class="subsection-header">
+          <h3 class="subsection-title">
+            <i class="fa-solid fa-graduation-cap"></i> Academic Foundations
+          </h3>
+          <span class="subsection-tag">Degrees &amp; Formal Training</span>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Degree 1: IIT Madras -->
+          <div class="education-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h4 class="edu-degree">B.S. in Data Science &amp; Applications</h4>
+                <span class="edu-school">IIT Madras</span>
+              </div>
+            </div>
+            <span class="edu-badge badge-accent">2024 – Present · Online degree</span>
+            <p class="edu-desc">Statistics, machine learning pipelines, and application engineering.</p>
+            <div class="edu-tags">
+              <span class="mini-pill">Online Degree Program</span>
+              <span class="mini-pill">Statistics</span>
+              <span class="mini-pill">Machine Learning</span>
+            </div>
+          </div>
+
+          <!-- Degree 2: Jeppiaar Institute -->
+          <div class="education-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div>
+                <h4 class="edu-degree">B.Tech in Artificial Intelligence &amp; Data Science</h4>
+                <span class="edu-school">Jeppiaar Institute of Technology</span>
+              </div>
+            </div>
+            <span class="edu-badge badge-neutral">2021 – 2025 · Full-Time</span>
+            <p class="edu-desc">Deep learning, computer vision, data structures, and backend systems.</p>
+            <div class="edu-tags">
+              <span class="mini-pill">Full-Time</span>
+              <span class="mini-pill">Artificial Intelligence</span>
+              <span class="mini-pill">Data Science</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
     <!-- ==================== CONTACT & GET IN TOUCH ==================== -->
     <section id="contact" class="section contact-section">
       <div class="contact-card glass-card">
         
+        <!-- Left: Context & Contact Points -->
         <div class="contact-left">
           <span class="section-subtitle">Let's Connect</span>
           <h2 class="contact-heading">Let's build something together.</h2>
@@ -703,7 +730,7 @@
 
           <div class="contact-details-list">
             <div class="contact-item">
-              <div class="contact-icon bg-cyan">
+              <div class="contact-icon">
                 <i class="fa-solid fa-envelope"></i>
               </div>
               <div>
@@ -713,7 +740,7 @@
             </div>
 
             <div class="contact-item">
-              <div class="contact-icon bg-emerald">
+              <div class="contact-icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div>
@@ -724,36 +751,37 @@
           </div>
 
           <div class="contact-social-row">
-            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub">
+            <a href="https://github.com/naveena0308" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile" title="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile" title="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="Naveena_s_Resume___27_10_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-ghost glass-btn">
-              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            <a href="Naveena_s_Resume___27_10_2026.pdf" download="Naveena_N_Resume.pdf" class="btn btn-sm btn-ghost glass-btn" title="Download Resume">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Resume PDF</span>
             </a>
           </div>
         </div>
 
-        <!-- Quick Message / Contact Form -->
+        <!-- Right: Message Form -->
         <div class="contact-right">
           <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbjnvpzw" method="POST">
             <h3 class="form-title">Send a message</h3>
             
             <div class="form-group">
               <label for="nameInput">Your Name</label>
-              <input type="text" id="nameInput" name="name" required class="glass-input">
+              <input type="text" id="nameInput" name="name" required class="glass-input" placeholder="e.g. Jane Doe">
             </div>
 
             <div class="form-group">
               <label for="emailInput">Your Email</label>
-              <input type="email" id="emailInput" name="email" required class="glass-input">
+              <input type="email" id="emailInput" name="email" required class="glass-input" placeholder="jane@example.com">
             </div>
 
             <div class="form-group">
               <label for="messageInput">Message / Inquiries</label>
-              <textarea id="messageInput" name="message" rows="4" required class="glass-input"></textarea>
+              <textarea id="messageInput" name="message" rows="4" required class="glass-input" placeholder="Tell me about your project, team, or opportunity..."></textarea>
             </div>
 
             <button type="submit" id="btnSubmitForm" class="btn btn-primary btn-block">
@@ -778,7 +806,7 @@
         <span class="gradient-text">Naveena N</span> · AI/ML Engineer · Bangalore &amp; Chennai
       </div>
       <p class="footer-copy">
-        Built with HTML, CSS, and JavaScript.
+        Built with clean semantic HTML, CSS, and JavaScript.
       </p>
       <div class="footer-links">
         <a href="#hero">Back to Top ↑</a>
@@ -788,8 +816,7 @@
     </div>
   </footer>
 
-
-  <!-- ==================== FLOATING HYBRID CHATBOT (Naveena Copilot) ==================== -->
+  <!-- ==================== FLOATING HYBRID CHATBOT (Navi Copilot) ==================== -->
   <div id="portfolioChatWidget" class="chat-widget">
     <!-- Floating Launcher Trigger Button -->
     <button id="chatLauncherBtn" class="chat-launcher-btn" aria-label="Open Navi Assistant" title="Chat with Navi">
@@ -828,7 +855,7 @@
         </div>
       </div>
 
-      <!-- Quick Action Suggestion Chips (Zero emojis, crisp vector icons) -->
+      <!-- Quick Action Suggestion Chips -->
       <div class="chat-quick-chips-wrapper">
         <div class="chat-quick-chips">
           <button class="chat-chip" data-intent="experience" data-label="MResult Experience">
@@ -843,7 +870,7 @@
             <i class="fa-solid fa-chart-line"></i>
             <span>Churn MLOps</span>
           </button>
-          <button class="chat-chip" data-intent="education" data-label="IIT Madras & Education">
+          <button class="chat-chip" data-intent="education" data-label="IIT Madras &amp; Education">
             <i class="fa-solid fa-graduation-cap"></i>
             <span>IIT Madras</span>
           </button>
@@ -851,9 +878,13 @@
             <i class="fa-solid fa-layer-group"></i>
             <span>Tech Stack</span>
           </button>
+          <button class="chat-chip" data-intent="availability" data-label="Bangalore &amp; Chennai Roles">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Availability</span>
+          </button>
           <button class="chat-chip" data-intent="resume" data-label="Download Resume">
             <i class="fa-solid fa-file-arrow-down"></i>
-            <span>Download Resume</span>
+            <span>Resume</span>
           </button>
           <button class="chat-chip" data-intent="contact" data-label="Get in Touch">
             <i class="fa-solid fa-envelope"></i>
@@ -891,7 +922,7 @@
 
       <!-- Chat Input Form -->
       <form id="chatInputForm" class="chat-input-form">
-        <input type="text" id="chatInputField" autocomplete="off" required>
+        <input type="text" id="chatInputField" placeholder="Ask about FinSight, MResult experience, MLOps..." autocomplete="off" required>
         <button type="submit" id="chatSendBtn" aria-label="Send Message" title="Send message">
           <i class="fa-solid fa-paper-plane"></i>
         </button>
@@ -899,6 +930,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2.4"></script>
+  <script src="script.js?v=3.0"></script>
 </body>
 </html>
